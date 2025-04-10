@@ -162,3 +162,51 @@ p {
     font-size: 1.25rem;
     color: var(--green);
 }
+/* ---------------------------------------------------------- */
+/*                    3. Navbar                                */
+/* ---------------------------------------------------------- */
+
+.navbar-custom {
+    background-color: var(--dark-blue);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 0 0.625rem;
+    transition: color 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--green);
+}
+
+.navbar-custom .navbar-toggler {
+    border: none;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.img-logo {
+    height: 50px;
+    width: auto;
+}
