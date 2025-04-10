@@ -79,12 +79,13 @@ Our mission is to:
 
 ## Accessibility Features
     
-    -WCAG AA contrast compliance for text readability
+    -WCAG AA contrast compliance for text readability (Verified by AI)
+        WCAG AA is a level of the Web Content Accessibility Guidelines (WCAG) that represents a high standard of accessibility, going beyond the basic requirements of Level A. It's considered a recommended level of compliance for many organizations and is often legally required for public sector websites in the UK. 
 
     -Semantic HTML structure (header, section, article)
 
-    -ARIA attributes for interactive elements:
-
+    -ARIA attributes for interactive elements (Verified by AI): 
+        In web development, ARIA, short for Accessible Rich Internet Applications, is a set of HTML attributes that enhance the accessibility of web content and applications for users with disabilities who use assistive technologies like screen readers. 
     ```
         <button role="button" aria-pressed="false" aria-label="Like this portfolio">
         Like this portfolio
