@@ -1,0 +1,164 @@
+/* ---------------------------------------------------------- */
+/*                       Table of Contents                      */
+/* ---------------------------------------------------------- */
+
+/*  1. General Styles
+    2. Typography
+    3. Navbar
+    4. Hero Section
+    5. Featured Work Section
+    6. Footer
+    7. Side Menu Filters
+    8. Portfolio Cards
+    9. Responsive Design
+*/
+
+/* ---------------------------------------------------------- */
+/*                    1. General Styles                         */
+/* ---------------------------------------------------------- */
+
+:root {
+    /* Primary Color Palette */
+    --dark-blue: #2c3e50;
+    --green: #27ae60;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --less-gray: #d3d3d3;
+    --gray: #7f8c8d;
+    --red: #E74C3C;
+
+    /* Font Family */
+    --base-font: sans-serif;
+    --heading-font: monospace;
+}
+
+body {
+    font-family: var(--base-font);
+    line-height: 1.6;
+    color: var(--gray);
+}
+
+/* ---------------------------------------------------------- */
+/*                    1. Text Animation Styles                         */
+/* ---------------------------------------------------------- */
+
+
+/* Animation for the upper text */
+.animated-heading {
+    font-size: 40px;
+    color: #2c3e50;
+}
+
+/* Animation for the lower text */
+.animated-subheading {
+    font-size: 20px;
+    color: #27ae60;
+    /* Start with green */
+}
+
+h1 span {
+    transition: 0.5s ease-out;
+}
+
+h1:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+h1:hover span:nth-child(2) {
+    margin-left: 20px;
+}
+
+h1:hover span {
+    color: #0ca014;
+    text-shadow: 0 0 5px #fffdfd, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+h4 span {
+    transition: 0.5s ease-out;
+}
+
+h4:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+h4:hover span:nth-child(2) {
+    margin-left: 20px;
+}
+
+h4:hover span {
+    color: #27ae60;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+h5 span {
+    transition: 0.5s ease-out;
+}
+
+h5:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+h5:hover span:nth-child(2) {
+    margin-left: 20px;
+}
+
+h5:hover span {
+    color: #fdfdfd;
+    text-shadow: 0 0 5px #1b05e6, 0 0 10px #0a0a0a, 0 0 20px #080808;
+}
+
+/* ---------------------------------------------------------- */
+/*                    2. Typography                            */
+/* ---------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Animated Heading Styles */
+.animated-heading {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+
+.animated-subheading {
+    font-size: 1.25rem;
+    color: var(--green);
+}
