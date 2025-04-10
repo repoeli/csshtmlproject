@@ -78,9 +78,6 @@ Our mission is to:
     -Fallback for older browsers
 
 ## Accessibility Features
-    
-    -WCAG AA contrast compliance for text readability (Verified by AI)
-        WCAG AA is a level of the Web Content Accessibility Guidelines (WCAG) that represents a high standard of accessibility, going beyond the basic requirements of Level A. It's considered a recommended level of compliance for many organizations and is often legally required for public sector websites in the UK. 
 
     -Semantic HTML structure (header, section, article)
 
@@ -125,6 +122,13 @@ No build process required - pure HTML/CSS implementation.
 ## Future Enhancements:**
 
   Continue Building other Features of the Website Project
+      
+    - **WCAG AA Contrast Compliance for Text Readability:**
+        - I will ensure that all text elements on the website meet the Web Content Accessibility  
+          Guideline 
+            (WCAG) 2.1 Level AA contrast requirements. This means that the contrast ratio between text and background colors is at least 4.5:1 for normal text and 3:1 for large text (14pt bold or 18pt regular).
+        - This is verified using automated tools and manual checks to ensure readability for users with 
+            low vision or color blindness.
 
 ## License
 
