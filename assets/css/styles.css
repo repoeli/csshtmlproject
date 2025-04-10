@@ -245,3 +245,20 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: var(--green);
 }
+
+/* ---------------------------------------------------------- */
+/*                    4. Hero Section                           */
+/* ---------------------------------------------------------- */
+
+.hero-section {
+    background-color: var(--light-gray);
+    padding: 7.5rem 0 3.75rem;
+    text-align: center;
+}
+
+.icon {
+    font-size: 1.875rem;
+    color: #035723;
+    display: inline-block;
+}
+
