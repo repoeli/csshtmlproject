@@ -210,3 +210,38 @@ p {
     height: 50px;
     width: auto;
 }
+
+/* ---------------------------------------------------------- */
+/*                    6. Footer                               */
+/* ---------------------------------------------------------- */
+
+footer {
+    background-color: #1a3652;
+    color: var(--less-gray); /* Lighter text color */
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--green);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #1e8449;
+}
+
+footer .social-icons {
+    margin-top: 1.25rem;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.625rem;
+    color: var(--white);
+}
+
+footer .social-icons a:hover {
+    color: var(--green);
+}
