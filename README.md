@@ -1,45 +1,130 @@
-# CSS HTML Project
+# VerifiedFolio
 
-This repository contains a web project that demonstrates the use of HTML and CSS to create visually appealing and responsive web pages.
+[Project Overview](#project-overview)
+[Key Features](#key-features)
+[Technical Implementation](#technical-implementation)
+[Accessibility Features](#accessibility-features)
+[Responsive Design](#responsive-design)
+[Installation and Usage](#installation-and-usage)
+[Contributing](#contributing)
+[Future Enhancements](#future-enhancements)
+[License](#license)
 
-## Overview
+![Verified Folio Logo](assets/images/logo/verified_folio_navbar_logo_wide.png)
 
-The project serves as a practical example of modern web development practices, showcasing various HTML structures and CSS styling techniques.
+## Project Overview
 
-## Features
+VerifiedFolio is an innovative platform that bridges the trust gap between professionals and recruiters/clients by showcasing pre-verified portfolios authenticated by industry experts.
 
-- Responsive design that works on desktop and mobile devices
-- Clean, semantic HTML structure
-- CSS styling with modern practices
-- Cross-browser compatibility
+Our mission is to:
 
-## Getting Started
+- Reduce verification costs and time for all parties
+- Provide credible proof of work through expert validation
+- Eliminate resource waste in portfolio verification processes
+- Build trust in professional accomplishments
 
-1. Clone this repository:
+## Key Features
+
+### Hero Section
+
+- Clear mission statement communicating our value proposition
+- Engaging call-to-action for both portfolio owners and verifiers
+- Clean, professional design establishing immediate credibility
+
+### Verification Process Infographic
+
+- Visual representation of our 3-step verification workflow:
+  1. Portfolio Submission
+  2. Expert Review
+  3. Verification Badging
+- Designed for quick comprehension of our trust-building process
+
+### Featured Work Section
+
+- Showcases top-vetted portfolios with:
+  - Responsive project images
+  - Verification details (expert name, verification date)
+  - Interactive elements (like/bookmark buttons)
+- Designed as a "trust gallery" highlighting exemplary work
+
+## Technical Implementation
+
+### HTML Structure
+
+- Semantic HTML5 elements for improved SEO and accessibility
+- Bootstrap 5 grid system for responsive layout
+- Modular card components for portfolio displays
+
+### CSS Features
+
+- Mobile-first responsive design approach
+- Flexible image containers with `object-fit: cover`
+- CSS variables for consistent theming
+- Optimized media queries for breakpoints at 576px and 768px
+
+### Image Optimization
+
     ```
-    git clone https://github.com/yourusername/csshtmlproject.git
+        <picture>
+        <source media="(max-width: 576px)" srcset="assets/images/small.jpg">
+        <source media="(max-width: 768px)" srcset="assets/images/medium.jpg">
+        <img src="assets/images/large.jpg" alt="Project example" class="img-fluid">
+        </picture>
+    ```
+    -Responsive image delivery based on viewport size
+
+    -Properly sized assets to reduce bandwidth usage
+
+    -Fallback for older browsers
+
+## Accessibility Features
+    
+    -WCAG AA contrast compliance for text readability
+
+    -Semantic HTML structure (header, section, article)
+
+    -ARIA attributes for interactive elements:
+
+    ```
+        <button role="button" aria-pressed="false" aria-label="Like this portfolio">
+        Like this portfolio
+        </button>
+    ```
+     -Keyboard navigable interface
+
+     -Descriptive alt text for all images
+
+## Responsive Design
+
+| Breakpoint | Layout Adaptation |
+|---|---|
+| <576px | Single column, optimized touch targets |
+| 576-768px | 2-column grid, adjusted typography |
+| >768px | 3-column grid, full feature display |
+
+### All components fluidly adapt to screen size while maintaining:
+
+  -Readable text sizes
+  -Appropriate touch targets
+  -Visual hierarchy
+
+## Installation and Usage
+
+ #To run locally:
+    1. Clone repository:
+    ```
+        https://github.com/repoeli/csshtmlproject.git
     ```
 
-2. Open the project in your favorite code editor
+    2. After Installing Python and Run Python3 -m http.server on VS Code Terminal
+    3. Open index.html in your browser 
 
-3. Launch the HTML files in a web browser to view the pages
+No build process required - pure HTML/CSS implementation.
 
-## Project Structure
+## Future Enhancements:**
 
-```
-csshtmlproject/
-├── index.html
-├── styles/
-│   ├── main.css
-│   └── responsive.css
-├── images/
-└── README.md
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+  Continue Building other Features of the Website Project
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+  Any one is free to use this work
