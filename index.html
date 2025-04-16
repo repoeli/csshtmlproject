@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerifiedFolio - Home</title>
+    <title>Verified Portfolios</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Favicons -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!-- Standard Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16-1.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32-1.png">
@@ -24,36 +28,35 @@
 <body>
     <header>
         <!-- Fixed Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container">
-                <!-- Logo/Brand -->
-                <a href="index.html" class="navbar-logo-link">
-                    <img class="img-logo" src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
-                        alt="Verified Folio Logo" />
-                </a>
-
-                <!-- Toggle Button (Mobile) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Nav Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolios.html">Portfolios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Apply Now</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navbar (Consistent Structure) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand me-auto">
+                <img class="img-logo align-middle" src="assets/images/logo/verified_folio_navbar_logo_wide.png"
+                    alt="Verified Folio Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolios.html">Portfolios</a> <!-- Link to portfolios page -->
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
+                        <!-- Set Apply link as active -->
+                        <a class="btn btn-primary btn-nav-cta active" aria-current="page"
+                            href="apply.html#application-form-section">Apply for
+                            Verification</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <!-- Hero Section -->
     <section class="hero-section">
