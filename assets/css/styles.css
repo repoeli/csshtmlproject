@@ -207,7 +207,7 @@ section {
 
 /* Process Section */
 .process-section {
-    background-color: var(--color-soft-gray);
+    background-color: white
 }
 
 .process-timeline {
@@ -336,7 +336,7 @@ section {
 
 /* ============== Featured Section Styles ================= */
 .featured-section {
-    background-color: #fff;
+    background-color: var(--color-very-light-purple);
     padding: 5rem 0;
 }
 
@@ -507,3 +507,94 @@ section {
 }
 
 /* ============== Testimonials Section Styles ================= */
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--color-very-light-purple);
+    padding: 5rem 0;
+}
+
+.testimonials-section h2 {
+    margin-bottom: 1rem;
+}
+
+.testimonials-section h5 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.testimonials-section .text-muted {
+    font-size: 0.9rem;
+    color: var(--color-neutral-gray) !important;
+}
+
+.testimonials-section p:not(.text-muted) {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    color: var(--color-dark-purple);
+}
+
+.testimonials-section .bg-white {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-section .bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.call-to-action-section {
+    background-color: var(--color-primary-purple);
+    background-image: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-secondary-purple) 100%);
+    padding: 5rem 0;
+    color: #fff;
+}
+
+.call-to-action-section .cta-icon {
+    width: 64px;
+    height: 64px;
+    stroke: #fff;
+    stroke-width: 1.5;
+    fill: none;
+    margin-bottom: 1.5rem;
+}
+
+.call-to-action-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.call-to-action-section p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.call-to-action-section .btn-cta {
+    background-color: #fff;
+    color: var(--color-dark-purple);
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.call-to-action-section .btn-cta:hover {
+    background-color: #f8f9fa;
+    color: var(--color-secondary-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

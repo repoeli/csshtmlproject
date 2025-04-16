@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" role="banner" aria-label="Main Navigation">
         <!-- Fixed Navbar -->
         <!-- Navbar (Consistent Structure) -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -61,7 +61,7 @@
 
     <main>
         <!-- Hero Section started -->
-        <section class="hero-section">
+        <section class="hero-section" aria-labelledby="hero-heading">
             <div class="container">
                 <div class="row align-items-lg-center">
                     <div class="col-lg-7 col-xl-6">
@@ -87,7 +87,7 @@
         </section>
 
         <!-- Statistics Section started-->
-        <section class="stats-section">
+        <section class="stats-section" aria-labelledby="stats-heading">
             <div class="container">
                 <div class="row justify-content-around">
                     <!-- Content unchanged -->
@@ -309,7 +309,7 @@
         </section>
 
         <!-- Verification Process Section -->
-        <section id="process" class="process-section">
+        <section id="process" class="process-section" aria-labelledby="process-heading">
             <div class="container">
                 <div class="row text-center mb-4">
                     <div class="col-12">
@@ -389,6 +389,95 @@
                                     class="btn purple-button btn-lg d-inline-flex align-items-center justify-content-center">Apply
                                     For Verification <i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section with Accessibility & Performance Improvements -->
+        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 id="testimonials-heading">What Our Users Say</h2>
+                        <p class="section-subtitle">Feedback from professionals who have used our verification service
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="bg-white p-4 h-100 shadow-sm">
+                            <!-- Add accessible rating with proper aria-attributes -->
+                            <div class="mb-3" role="img" aria-label="5 out of 5 star rating">
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                            </div>
+
+                            <!-- Use blockquote for testimonial text -->
+                            <blockquote>
+                                <p>"Getting my portfolio verified gave me a competitive edge in the job market.
+                                    Recruiters were impressed by the verification badge, and I received multiple
+                                    interview invites within days."</p>
+                                <footer>
+                                    <h5>Sarah Johnson</h5>
+                                    <p class="text-muted">UX Designer at Adobe <span aria-hidden="true">•</span> <time
+                                            datetime="2023-06-15">Verified June 2023</time></p>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="bg-white p-4 h-100 shadow-sm">
+                            <div class="mb-3" role="img" aria-label="5 out of 5 star rating">
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                            </div>
+
+                            <blockquote>
+                                <p>"The verification process was thorough yet straightforward. The expert feedback I
+                                    received helped me improve my portfolio even before getting verified. Truly valuable
+                                    experience."</p>
+                                <footer>
+                                    <h5>Michael Chen</h5>
+                                    <p class="text-muted">Full Stack Developer <span aria-hidden="true">•</span> <time
+                                            datetime="2023-08-22">Verified August 2023</time></p>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="bg-white p-4 h-100 shadow-sm">
+                            <div class="mb-3" role="img" aria-label="4 out of 5 star rating">
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="fas fa-star text-warning" aria-hidden="true"></i>
+                                <i class="far fa-star text-warning" aria-hidden="true"></i>
+                            </div>
+
+                            <blockquote>
+                                <p>"As a freelancer, having a verified portfolio has increased client trust
+                                    significantly. Clients now approach me with more confidence, and I've been able to
+                                    increase my rates."</p>
+                                <footer>
+                                    <h5>Elena Rodriguez</h5>
+                                    <p class="text-muted">Graphic Designer <span aria-hidden="true">•</span> <time
+                                            datetime="2023-07-10">Verified July 2023</time></p>
+                                </footer>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
