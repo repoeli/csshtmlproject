@@ -204,3 +204,306 @@ section {
     color: var(--color-dark-purple);
     font-size: 1rem;
 }
+
+/* Process Section */
+.process-section {
+    background-color: var(--color-soft-gray);
+}
+
+.process-timeline {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+}
+
+.process-connector {
+    position: absolute;
+    top: 30px;
+    right: -50%;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-soft-purple);
+    z-index: 0; /* Lower z-index to keep it behind circles */
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.process-circle:hover, 
+.process-step:hover .process-circle {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px var(--color-soft-purple);
+    z-index: 3; /* Maintain z-index on hover */
+}
+
+.process-step:last-child .process-connector {
+    display: none;
+}
+
+/* Ensure process-circle always stays above connectors */
+.process-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-primary-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    z-index: 2; /* Ensure circles are always above connectors */
+    box-shadow: 0 0 0 8px var(--color-soft-purple);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Simple focus styles for keyboard navigation */
+.process-circle:focus {
+    outline: 2px solid var(--color-secondary-purple);
+    outline-offset: 2px;
+}
+
+.purple-button {
+    background-color: var(--color-primary-purple);
+    color: white;
+  }
+
+.process-circle span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.process-content {
+    padding: 0 1rem;
+}
+
+.process-content h4 {
+    margin-bottom: 0.75rem;
+}
+
+.process-note {
+    background-color: var(--color-soft-purple);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.note-icon {
+    font-size: 2rem;
+    color: var(--color-primary-purple);
+    flex-shrink: 0;
+}
+
+.note-content h5 {
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .verification-step:not(:last-child):after {
+        width: 2px;
+        height: 100%;
+        top: 3rem;
+        left: 2.5rem;
+    }
+
+    .process-step {
+        margin-bottom: 3rem;
+    }
+    
+    .process-connector {
+        position: absolute;
+        top: 60px;
+        right: auto;
+        left: 50%;
+        width: 4px;
+        height: calc(100% - 30px);
+        transform: translateX(-50%);
+        z-index: 0; /* Keep connector behind on mobile too */
+    }
+    
+    .process-step:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* ============== Featured Section Styles ================= */
+.featured-section {
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+.featured-section .section-subtitle {
+    font-family: var(--font-body);
+    color: var(--color-neutral-gray);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    background-color: #fff;
+    position: relative;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.portfolio-card .card-img-container {
+    position: relative;
+    background-color: var(--color-soft-gray);
+}
+
+.portfolio-card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card .verified-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
+    color: white;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card .verified-badge .badge-icon {
+    font-size: 0.75em;
+}
+
+.portfolio-card .card-title {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-purple);
+}
+
+.portfolio-card .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-card .author-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card .author-info span {
+    font-size: 0.85rem;
+    color: var(--color-neutral-gray);
+}
+
+/* Portfolio Rating Styles */
+.portfolio-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Stars from right to left for proper highlighting */
+    justify-content: flex-end;
+}
+
+.rating label {
+    font-size: 1rem;
+    /* Smaller stars to fit portfolio cards */
+    color: #ddd;
+    /* Light gray for inactive stars */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-right: 0.1rem;
+    user-select: none;
+}
+
+.rating input:checked~label {
+    color: var(--color-primary-purple);
+    /* Match your site's color scheme */
+}
+
+/* Only show color when checked - static display */
+.rating label:hover,
+.rating label:hover~label {
+    color: var(--color-primary-purple);
+    /* Match hover to checked state */
+}
+
+/* Read-only styling for display purposes */
+.rating.readonly label {
+    cursor: default;
+}
+
+.rating-count {
+    font-size: 0.8rem;
+    color: var(--color-neutral-gray);
+}
+
+.portfolio-card .card-text {
+    font-size: 0.9rem;
+    color: var(--color-neutral-gray);
+    line-height: 1.5;
+}
+
+.portfolio-card .card-footer {
+    background-color: var(--color-soft-gray);
+    border-top: 1px solid #e2e8f0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+.portfolio-card .category-tag {
+    color: var(--color-secondary-purple);
+    font-weight: 500;
+}
+
+.portfolio-card .verification-date {
+    color: var(--color-neutral-gray);
+}
+
+.featured-section .btn-explore-all {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.featured-section .btn-explore-all:hover {
+    background-color: var(--color-secondary-purple);
+    border-color: var(--color-secondary-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============== Testimonials Section Styles ================= */
