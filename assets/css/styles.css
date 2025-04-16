@@ -119,3 +119,88 @@ section {
 #container{
     padding: 2rem 0;
 }
+
+/* Hero Section */
+/* Hero Section Styles */
+.hero-section {
+    background-color: var(--color-soft-purple);
+    padding: 5rem 0;
+    margin-top: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(155, 135, 245, 0.1) 0%, rgba(155, 135, 245, 0.05) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero-section .btn-primary {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: white;
+    font-weight: 600;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: var(--color-secondary-purple);
+    border-color: var(--color-secondary-purple);
+}
+
+.hero-section .btn-light {
+    background-color: #ffffff;
+    color: var(--color-dark-purple);
+    border-color: #e2e8f0;
+    font-weight: 600;
+}
+
+.hero-section .btn-light:hover {
+    background-color: #f8f9fa;
+    color: var(--color-secondary-purple);
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.stat-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stat-number {
+    font-family: var(--font-body);
+    font-size: 2.5rem;
+    color: var(--color-secondary-purple);
+    font-weight: 700;
+}
+
+.stat-label {
+    font-family: var(--font-body);
+    color: var(--color-dark-purple);
+    font-size: 1rem;
+}
