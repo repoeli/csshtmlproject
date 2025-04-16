@@ -424,10 +424,16 @@
                                 <p>"Getting my portfolio verified gave me a competitive edge in the job market.
                                     Recruiters were impressed by the verification badge, and I received multiple
                                     interview invites within days."</p>
-                                <footer>
-                                    <h5>Sarah Johnson</h5>
-                                    <p class="text-muted">UX Designer at Adobe <span aria-hidden="true">•</span> <time
-                                            datetime="2023-06-15">Verified June 2023</time></p>
+                                <footer class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+                                        alt="Sarah Johnson" class="author-img me-3 rounded-circle"
+                                        style="width: 50px; height: 50px; object-fit: cover;" loading="lazy">
+                                    <div>
+                                        <h5 class="mb-0">Sarah Johnson</h5>
+                                        <p class="text-muted mb-0">UX Designer at Adobe <span
+                                                aria-hidden="true">•</span> <time datetime="2023-06-15">Verified June
+                                                2023</time></p>
+                                    </div>
                                 </footer>
                             </blockquote>
                         </div>
@@ -448,10 +454,16 @@
                                 <p>"The verification process was thorough yet straightforward. The expert feedback I
                                     received helped me improve my portfolio even before getting verified. Truly valuable
                                     experience."</p>
-                                <footer>
-                                    <h5>Michael Chen</h5>
-                                    <p class="text-muted">Full Stack Developer <span aria-hidden="true">•</span> <time
-                                            datetime="2023-08-22">Verified August 2023</time></p>
+                                <footer class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+                                        alt="Michael Chen" class="author-img me-3 rounded-circle"
+                                        style="width: 50px; height: 50px; object-fit: cover;" loading="lazy">
+                                    <div>
+                                        <h5 class="mb-0">Michael Chen</h5>
+                                        <p class="text-muted mb-0">Full Stack Developer <span
+                                                aria-hidden="true">•</span> <time datetime="2023-08-22">Verified August
+                                                2023</time></p>
+                                    </div>
                                 </footer>
                             </blockquote>
                         </div>
@@ -472,10 +484,16 @@
                                 <p>"As a freelancer, having a verified portfolio has increased client trust
                                     significantly. Clients now approach me with more confidence, and I've been able to
                                     increase my rates."</p>
-                                <footer>
-                                    <h5>Elena Rodriguez</h5>
-                                    <p class="text-muted">Graphic Designer <span aria-hidden="true">•</span> <time
-                                            datetime="2023-07-10">Verified July 2023</time></p>
+                                <footer class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
+                                        alt="Elena Rodriguez" class="author-img me-3 rounded-circle"
+                                        style="width: 50px; height: 50px; object-fit: cover;" loading="lazy">
+                                    <div>
+                                        <h5 class="mb-0">Elena Rodriguez</h5>
+                                        <p class="text-muted mb-0">Graphic Designer <span aria-hidden="true">•</span>
+                                            <time datetime="2023-07-10">Verified July 2023</time>
+                                        </p>
+                                    </div>
                                 </footer>
                             </blockquote>
                         </div>
@@ -485,24 +503,93 @@
         </section>
 
     </main>
-    <!-- Footer -->
-    <footer>
+
+    <!-- Footer Section with Accessibility and Performance Improvements -->
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
         <div class="container">
-            <p>&copy; 2025 VerifiedFolio. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <a href="index.html" class="navbar-brand me-auto">
+                            <!-- Improved image attributes for performance -->
+                            <img class="img-logo align-middle"
+                                src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
+                                alt="Verified Folio Logo" width="180" height="40" loading="lazy">
+                        </a>
+                    </div>
+                    <p>Elevating professional portfolios through our trusted verification process.</p>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="bi bi-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter" rel="noopener noreferrer"><i class="bi bi-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="bi bi-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="company-links">Company</h5>
+                    <ul class="footer-links" aria-labelledby="company-links">
+                        <li><a href="#" aria-label="About Verified Portfolios">About Us</a></li>
+                        <li><a href="#" aria-label="Meet our team">Our Team</a></li>
+                        <li><a href="#" aria-label="Career opportunities">Careers</a></li>
+                        <li><a href="#" aria-label="Contact us">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="resource-links">Resources</h5>
+                    <ul class="footer-links" aria-labelledby="resource-links">
+                        <li><a href="#" aria-label="Read our blog posts">Blog</a></li>
+                        <li><a href="#" aria-label="Portfolio verification guides">Guides</a></li>
+                        <li><a href="#" aria-label="Frequently asked questions">FAQ</a></li>
+                        <li><a href="#" aria-label="Get support">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5 id="newsletter-signup">Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates and features.</p>
+                    <form class="footer-subscribe" novalidate aria-labelledby="newsletter-signup">
+                        <div class="input-group has-validation">
+                            <label for="emailAddress" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                                placeholder="Enter your email address"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                aria-describedby="emailAddressError" required>
+                            <button class="btn btn-primary" type="submit"
+                                aria-label="Subscribe to newsletter">Subscribe</button>
+                            <div class="invalid-feedback" id="emailAddressError">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <p><small>&copy; <time datetime="2023">2023</time> Verified Portfolios. All rights
+                                reserved.</small></p>
+                        <nav class="footer-legal" aria-label="Legal links">
+                            <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+                            <a href="#" aria-label="Terms of Service">Terms of Service</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <!-- Font Awesome Icons -->
 
     <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
