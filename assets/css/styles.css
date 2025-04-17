@@ -207,7 +207,9 @@ section {
 
 /* Process Section */
 .process-section {
-    background-color: white
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1px;
 }
 
 .process-timeline {
@@ -337,7 +339,8 @@ section {
 /* ============== Featured Section Styles ================= */
 .featured-section {
     background-color: var(--color-very-light-purple);
-    padding: 5rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .featured-section .section-subtitle {
@@ -511,7 +514,8 @@ section {
 /* Testimonials Section */
 .testimonials-section {
     background-color: var(--color-very-light-purple);
-    padding: 5rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1px;
 }
 
 .testimonials-section h2 {
