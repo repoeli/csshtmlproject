@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Portfolios</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Standard Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16-1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32-1.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/favicon-192x192-1.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon-180x180-1.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/favicon-512x512-1.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header" role="banner" aria-label="Main Navigation">
+        <!-- Fixed Navbar -->
+        <!-- Navbar (Consistent Structure) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand me-auto">
+                    <img class="img-logo align-middle" src="assets/images/logo/verified_folio_navbar_logo_wide.png"
+                        alt="Verified Folio Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-lg-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolios.html">Portfolios</a> <!-- Link to portfolios page -->
+                        </li>
+                        <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
+                            <!-- Set Apply link as active -->
+                            <a class="btn btn-primary btn-nav-cta active" aria-current="page"
+                                href="apply.html#application-form-section">Apply for
+                                Verification</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <!-- Footer Section with Accessibility and Performance Improvements -->
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <a href="index.html" class="navbar-brand me-auto">
+                            <!-- Improved image attributes for performance -->
+                            <img class="img-logo align-middle"
+                                src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
+                                alt="Verified Folio Logo" width="180" height="40" loading="lazy">
+                        </a>
+                    </div>
+                    <p>Elevating professional portfolios through our trusted verification process.</p>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="bi bi-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter" rel="noopener noreferrer"><i class="bi bi-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="bi bi-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="company-links">Company</h5>
+                    <ul class="footer-links" aria-labelledby="company-links">
+                        <li><a href="#" aria-label="About Verified Portfolios">About Us</a></li>
+                        <li><a href="#" aria-label="Meet our team">Our Team</a></li>
+                        <li><a href="#" aria-label="Career opportunities">Careers</a></li>
+                        <li><a href="#" aria-label="Contact us">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="resource-links">Resources</h5>
+                    <ul class="footer-links" aria-labelledby="resource-links">
+                        <li><a href="#" aria-label="Read our blog posts">Blog</a></li>
+                        <li><a href="#" aria-label="Portfolio verification guides">Guides</a></li>
+                        <li><a href="#" aria-label="Frequently asked questions">FAQ</a></li>
+                        <li><a href="#" aria-label="Get support">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5 id="newsletter-signup">Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates and features.</p>
+                    <form class="footer-subscribe" novalidate aria-labelledby="newsletter-signup">
+                        <div class="input-group has-validation">
+                            <label for="emailAddress" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                                placeholder="Enter your email address"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                aria-describedby="emailAddressError" required>
+                            <button class="btn btn-primary" type="submit"
+                                aria-label="Subscribe to newsletter">Subscribe</button>
+                            <div class="invalid-feedback" id="emailAddressError">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <p><small>&copy; <time datetime="2023">2023</time> Verified Portfolios. All rights
+                                reserved.</small></p>
+                        <nav class="footer-legal" aria-label="Legal links">
+                            <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+                            <a href="#" aria-label="Terms of Service">Terms of Service</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+    <!-- Font Awesome Icons -->
+
+    <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
