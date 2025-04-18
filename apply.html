@@ -59,7 +59,111 @@
         </nav>
     </header>
     <main>
+        <!-- Page Header -->
+        <section class="container pt-5 pb-0"> <!-- Added padding -->
+            <div class="text-center apply-page-header">
+                <h1>Apply for Portfolio Verification</h1>
+                <p>Submit your professional work for review by our industry experts and gain a trust badge that opens
+                    doors.</p>
+            </div>
+        </section>
 
+        <!-- Application Form Section -->
+        <section id="application-form-section" class="container pt-5">
+            <div class="application-form-section">
+                <h2 class="text-center mb-4">Submit Your Application</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="application-form-wrapper">
+                            <form action="success.html" method="GET" class="application-form">
+                                <!-- Full Name -->
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName"
+                                        placeholder="Enter your full name" required>
+                                </div>
+
+                                <!-- Email Address -->
+                                <div class="mb-3">
+                                    <label for="emailAddress" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="emailAddress"
+                                        placeholder="Enter your email address" required>
+                                </div>
+
+                                <!-- Portfolio Type -->
+                                <div class="mb-3">
+                                    <label for="portfolioType" class="form-label">Portfolio Type</label>
+                                    <select class="form-select" id="portfolioType" required>
+                                        <option selected disabled value="">Select portfolio category</option>
+                                        <option value="web_dev">Web Development</option>
+                                        <option value="graphic_design">Graphic Design</option>
+                                        <option value="data_science">Data Science</option>
+                                        <option value="mobile_dev">Mobile Development</option>
+                                        <option value="ux_ui">UX/UI Design</option>
+                                        <option value="cybersecurity">Cybersecurity</option>
+                                        <option value="digital_marketing">Digital Marketing</option>
+                                        <option value="3d_design">3D Design</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <!-- Portfolio URL -->
+                                <div class="mb-3">
+                                    <label for="portfolioURL" class="form-label">Portfolio URL (if available)</label>
+                                    <input type="url" class="form-control" id="portfolioURL"
+                                        placeholder="https://your-portfolio-site.com">
+                                </div>
+
+                                <!-- Project Description -->
+                                <div class="mb-3">
+                                    <label for="projectDescription" class="form-label">Project Description</label>
+                                    <textarea class="form-control" id="projectDescription" rows="4"
+                                        placeholder="Tell us about your portfolio and what makes it unique..."
+                                        required></textarea>
+                                </div>
+
+                                <!-- File Upload -->
+                                <div class="mb-4">
+                                    <label for="file-upload-input" class="form-label">Upload Portfolio Files (PDF, ZIP,
+                                        etc.)</label>
+                                    <!-- Visually hidden actual file input -->
+                                    <input type="file" id="file-upload-input" class="d-none" required>
+                                    <!-- Custom styled dropzone area -->
+                                    <div class="file-upload-area text-center"
+                                        onclick="document.getElementById('file-upload-input').click()">
+                                        <div class="upload-icon mb-3">
+                                            <img src="assets/images/upload-icon.svg" alt="Upload" width="40" height="40"
+                                                onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTZWOE0xMiA4TDguNSAxMS41TTEyIDhMMTUuNSAxMS41TTIwIDIwSDRDMi44OTU0MyAyMCAyIDE5LjEwNDYgMiAxOFY2QzIgNC44OTU0MyAyLjg5NTQzIDQgNCA0SDIwQzIxLjEwNDYgNCAyMiA0Ljg5NTQzIDIyIDZWMThDMjIgMTkuMTA0NiAyMS4xMDQ2IDIwIDIwIDIwWiIgc3Ryb2tlPSIjOUI4N0Y1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==';">
+                                        </div>
+                                        <p class="upload-text"><a href="#" class="text-purple">Click to upload</a> or
+                                            drag and drop</p>
+                                        <p class="text-muted small">Max file size 50MB</p>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-submit-verification w-100">Submit for
+                                    Verification</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Become an Expert Section -->
+        <section class="become-expert-section text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2>Become a Verification Expert</h2>
+                        <p>Are you an experienced professional interested in joining our team of volunteer verifiers?
+                            Help maintain quality standards while connecting with emerging talent in your field.</p>
+                        <a href="#">Learn more about becoming a verification expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer Section with Accessibility and Performance Improvements -->
     <footer class="footer" role="contentinfo" aria-label="Site footer">

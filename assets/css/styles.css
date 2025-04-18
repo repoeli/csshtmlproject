@@ -338,26 +338,24 @@ section {
         margin-bottom: 0;
     }
 
-    /* Adjust the portfolio search bar */
-    #portfolios-search {
-        margin-top: 0rem;
-        margin-bottom: 0.5rem;
-        padding: 0.5rem 1rem;
-    }
-
     /* Adjust the search bar responsive */
     .search-bar-wrapper .form-control {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        padding-left: 35px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
+        padding-left: 35px;
+        /* Adjust padding for smaller screens */
     }
 
     .portfolios-page-header h1 {
-        font-size: 2rem; /* Adjust heading size for smaller screens */
+        font-size: 2rem;
+        /* Adjust heading size for smaller screens */
     }
 
     .portfolios-page-header p {
-        font-size: 1rem; /* Adjust subtitle size for smaller screens */
+        font-size: 1rem;
+        /* Adjust subtitle size for smaller screens */
     }
+
     /* The main container padding */
     #container-main {
         padding-top: 4rem;
@@ -792,53 +790,77 @@ section {
 
 .portfolios-page-header h1 {
     margin-bottom: 0.5rem;
-    font-size: 2.5rem; /* Ensure the heading is prominent */
-    font-weight: 700; /* Bold font for emphasis */
-    color: #343a40; /* High-contrast color for better readability */
+    font-size: 2.5rem;
+    /* Ensure the heading is prominent */
+    font-weight: 700;
+    /* Bold font for emphasis */
+    color: #343a40;
+    /* High-contrast color for better readability */
 }
 
 .portfolios-page-header p {
-    font-size: 1.25rem; /* Slightly larger text for better readability */
-    color: #6c757d; /* Muted color for the subtitle */
+    font-size: 1.25rem;
+    /* Slightly larger text for better readability */
+    color: #6c757d;
+    /* Muted color for the subtitle */
     margin-bottom: 0;
 }
 
 /* Search Bar Section Enhancements */
 .search-bar-wrapper {
-    position: relative; /* Ensure proper positioning for the icon */
+    position: relative;
+    /* Ensure proper positioning for the icon */
     display: flex;
     align-items: center;
-    margin-top: 20px; /* Add spacing for better visual hierarchy */
+    margin-top: 20px;
+    /* Add spacing for better visual hierarchy */
 }
 
 .search-bar-wrapper .form-control {
-    padding-left: 40px; /* Add padding to avoid overlapping with the icon */
-    border-radius: 25px; /* Rounded corners for a modern look */
-    border: 1px solid #ced4da; /* Subtle border for better visibility */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effect */
-    font-size: 1rem; /* Ensure readable font size */
-    line-height: 1.5; /* Improve readability */
-    color: #212529; /* Use a high-contrast text color */
+    padding-left: 40px;
+    /* Add padding to avoid overlapping with the icon */
+    border-radius: 25px;
+    /* Rounded corners for a modern look */
+    border: 1px solid #ced4da;
+    /* Subtle border for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a slight shadow for depth */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth focus effect */
+    font-size: 1rem;
+    /* Ensure readable font size */
+    line-height: 1.5;
+    /* Improve readability */
+    color: #212529;
+    /* Use a high-contrast text color */
 }
 
 .search-bar-wrapper .form-control:focus {
-    border-color: #007bff; /* Highlight border on focus */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Add focus shadow */
-    outline: none; /* Remove default outline */
+    border-color: #007bff;
+    /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    /* Add focus shadow */
+    outline: none;
+    /* Remove default outline */
 }
 
 .search-bar-wrapper .form-control::placeholder {
-    color: #6c757d; /* Muted placeholder text for better contrast */
-    opacity: 1; /* Ensure placeholder is visible */
+    color: #6c757d;
+    /* Muted placeholder text for better contrast */
+    opacity: 1;
+    /* Ensure placeholder is visible */
 }
 
 .search-bar-wrapper .search-icon {
     position: absolute;
-    left: 15px; /* Position the icon inside the input field */
-    color: #6c757d; /* Use a muted color for better contrast */
-    font-size: 1.2rem; /* Ensure the icon is visually balanced */
-    pointer-events: none; /* Prevent interaction with the icon */
+    left: 15px;
+    /* Position the icon inside the input field */
+    color: #6c757d;
+    /* Use a muted color for better contrast */
+    font-size: 1.2rem;
+    /* Ensure the icon is visually balanced */
+    pointer-events: none;
+    /* Prevent interaction with the icon */
 }
 
 .filter-buttons-wrapper {
@@ -846,7 +868,7 @@ section {
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-bottom: 0rem;
-    
+
     justify-content: center;
 }
 
@@ -878,52 +900,206 @@ section {
 /* Category Section Enhancements */
 .filter-buttons-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    justify-content: center; /* Center-align buttons */
-    gap: 15px; /* Add spacing between buttons */
-    margin-top: 20px; /* Add spacing above the section */
-    padding: 10px; /* Add padding for better spacing */
-    background-color: #f8f9fa; /* Subtle background to distinguish the section */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    flex-wrap: wrap;
+    /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    /* Center-align buttons */
+    gap: 15px;
+    /* Add spacing between buttons */
+    margin-top: 20px;
+    /* Add spacing above the section */
+    padding: 10px;
+    /* Add padding for better spacing */
+    background-color: #f8f9fa;
+    /* Subtle background to distinguish the section */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a slight shadow for depth */
 }
 
 .filter-buttons-wrapper .btn-filter {
-    padding: 10px 20px; /* Add padding for better clickability */
-    font-size: 1rem; /* Ensure readable font size */
-    font-weight: 500; /* Slightly bold for emphasis */
-    color: #495057; /* Neutral text color */
-    background-color: var(--color-soft-gray); /* Soft background for buttons */
-    border: 1px solid #ced4da; /* Subtle border for definition */
-    border-radius: 25px; /* Rounded buttons for a modern look */
-    transition: all 0.3s ease; /* Smooth hover and focus effects */
+    padding: 10px 20px;
+    /* Add padding for better clickability */
+    font-size: 1rem;
+    /* Ensure readable font size */
+    font-weight: 500;
+    /* Slightly bold for emphasis */
+    color: #495057;
+    /* Neutral text color */
+    background-color: var(--color-soft-gray);
+    /* Soft background for buttons */
+    border: 1px solid #ced4da;
+    /* Subtle border for definition */
+    border-radius: 25px;
+    /* Rounded buttons for a modern look */
+    transition: all 0.3s ease;
+    /* Smooth hover and focus effects */
 }
 
 .filter-buttons-wrapper .btn-filter:hover,
 .filter-buttons-wrapper .btn-filter:focus {
     background-color: rgba(155, 135, 245, 0.1);
     color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple); /* Highlight border on hover */
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Add focus shadow */
+    border-color: var(--color-primary-purple);
+    /* Highlight border on hover */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    /* Add focus shadow */
 }
 
 .filter-buttons-wrapper .btn-filter.active {
     background-color: var(--color-primary-purple);
     color: #fff;
     border-color: var(--color-primary-purple);
-    font-weight: 600; /* Slightly bolder for emphasis */
+    font-weight: 600;
+    /* Slightly bolder for emphasis */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .filter-buttons-wrapper {
-        gap: 10px; /* Reduce spacing between buttons on smaller screens */
-        padding: 5px; /* Adjust padding for smaller screens */
+        gap: 10px;
+        /* Reduce spacing between buttons on smaller screens */
+        padding: 5px;
+        /* Adjust padding for smaller screens */
     }
 
     .filter-buttons-wrapper .btn-filter {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        padding: 8px 15px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
+        padding: 8px 15px;
+        /* Adjust padding for smaller screens */
     }
+}
+
+/*==================================================== Apply Page Specific Styles ========================================*/
+.apply-page-header {
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.apply-page-header h1 {
+    font-size: 2.5rem;
+    color: var(--color-dark-purple);
+    margin-bottom: 1rem;
+}
+
+.apply-page-header p {
+    font-size: 1.1rem;
+    color: var(--color-neutral-gray);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/*================================================================ Application Form Section =================================== */
+.application-form-section {
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 70vh;
+}
+
+.application-form-wrapper {
+    background-color: #fff;
+    padding: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-dark-purple);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primary-purple);
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+}
+
+.file-upload-area {
+    border: 1px dashed var(--color-light-purple);
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    text-align: center;
+    background-color: var(--color-soft-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.file-upload-area:hover {
+    background-color: var(--color-soft-purple);
+}
+
+.file-upload-area .upload-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary-purple);
+    margin-bottom: 0rem;
+}
+
+.file-upload-area .upload-text {
+    font-weight: 600;
+    color: var(--color-primary-purple);
+    margin-bottom: 0rem;
+}
+
+.file-upload-area .upload-hint {
+    font-size: 0.85rem;
+    color: var(--color-neutral-gray);
+    margin-bottom: 0rem;
+}
+
+.btn-submit-verification {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 0rem;
+    transition: all 0.2s ease;
+}
+
+/* ============================= Become an Expert Section ========================= */
+
+.become-expert-section {
+    padding: 4rem 0;
+    background-color: var(--color-soft-gray);
+}
+
+.become-expert-section h2 {
+    margin-bottom: 1rem;
+}
+
+.become-expert-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-neutral-gray);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.become-expert-section a {
+    font-weight: 600;
+    color: var(--color-primary-purple);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.become-expert-section a:hover {
+    color: var(--color-secondary-purple);
 }
