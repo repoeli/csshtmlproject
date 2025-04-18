@@ -1,15 +1,15 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
+/* Adjusting contrast for better accessibility */
 :root {
-    /* Color Palette */
-    --color-primary-purple: #9b87f5;
-    --color-secondary-purple: #7E69AB;
+    --color-primary-purple: #5346B1; /* Darkened for better contrast */
+    --color-secondary-purple: #4A3E96; /* Darkened for better contrast */
     --color-dark-purple: #1A1F2C;
     --color-light-purple: #D6BCFA;
-    --color-neutral-gray: #8E9196;
-    --color-soft-purple: #E5DEFF;
-    --color-soft-gray: #F1F0FB;
+    --color-neutral-gray: #555555; /* Darkened for better contrast */
+    --color-soft-purple: #D8D8FF;
+    --color-soft-gray: #E9ECEF;
     --color-very-light-purple: #ede9f6;
 
     /* Typography */
@@ -98,8 +98,8 @@ a:hover {
 .navbar .btn-nav-cta {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
-    color: #fff;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 700; /* Increased from 600 for better visibility */
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-size: 0.9rem;
@@ -109,15 +109,6 @@ a:hover {
 .navbar .btn-nav-cta:hover {
     background-color: var(--color-secondary-purple);
     border-color: var(--color-secondary-purple);
-    color: #fff;
-}
-
-section {
-    padding: 1rem;
-}
-
-#container {
-    padding: 2rem 0;
 }
 
 /* Hero Section Styles */
@@ -273,8 +264,13 @@ section {
 }
 
 .purple-button {
-    background-color: var(--color-primary-purple);
-    color: white;
+    background-color: #403687; /* Darkened background */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.purple-button:hover {
+    background-color: #332b70; /* Darker on hover */
 }
 
 .process-circle span {
@@ -371,8 +367,9 @@ section {
 
 .featured-section .section-subtitle {
     font-family: var(--font-body);
-    color: var(--color-neutral-gray);
+    color: #4B4B4B; /* Darkened from var(--color-neutral-gray) for better contrast */
     font-size: 1.1rem;
+    font-weight: 500; /* Added weight for better contrast */
     margin-bottom: 3rem;
 }
 
@@ -415,7 +412,7 @@ section {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
+    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%);
     color: white;
     padding: 0.3rem 0.75rem;
     border-radius: 50rem;
@@ -503,13 +500,15 @@ section {
 
 .rating-count {
     font-size: 0.8rem;
-    color: var(--color-neutral-gray);
+    color: #4B4B4B; /* Darkened for better contrast */
+    font-weight: 500; /* Added weight for better visibility */
 }
 
 .portfolio-card .card-text {
-    font-size: 0.9rem;
-    color: var(--color-neutral-gray);
+    color: #333333; /* Darkened even further for better contrast */
+    font-weight: 500;
     line-height: 1.5;
+    font-weight: 500; /* Added weight for better visibility */
 }
 
 .portfolio-card .card-footer {
@@ -520,29 +519,28 @@ section {
 }
 
 .portfolio-card .category-tag {
-    color: var(--color-secondary-purple);
-    font-weight: 500;
+    color: #403687; /* Darkened purple for better contrast */
+    font-weight: 600; /* Increased from 500 for better visibility */
 }
 
-.portfolio-card .verification-date {
-    color: var(--color-neutral-gray);
+.portfolio-card .verification-date,
+.portfolio-card time {
+    color: #333333; /* Darkened for better contrast */
+    font-weight: 500; /* Added weight for better visibility */
 }
 
 .featured-section .btn-explore-all {
-    background-color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-    color: #fff;
+    background-color: #403687; /* Darkened background */
+    border-color: #403687;
+    color: #ffffff;
     padding: 0.6rem 1.5rem;
-    font-weight: 600;
+    font-weight: 700; /* Increased from 600 for better visibility */
     border-radius: 0.375rem;
     transition: all 0.2s ease;
 }
 
 .featured-section .btn-explore-all:hover {
-    background-color: var(--color-secondary-purple);
-    border-color: var(--color-secondary-purple);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #332b70; /* Darker on hover */
 }
 
 /* ============== Testimonials Section Styles ================= */
@@ -567,7 +565,8 @@ section {
 
 .testimonials-section .text-muted {
     font-size: 0.9rem;
-    color: var(--color-neutral-gray) !important;
+    color: #333333 !important; /* Override Bootstrap with much darker color */
+    font-weight: 500; /* Added weight for better visibility */
 }
 
 .testimonials-section p:not(.text-muted) {
@@ -585,6 +584,11 @@ section {
 .testimonials-section .bg-white:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section time {
+    color: #333333;
+    font-weight: 500;
 }
 
 /* CTA Section */
@@ -984,9 +988,9 @@ section {
 
 .featured-section .section-subtitle {
     font-family: var(--font-body);
-    color: var(--color-neutral-gray);
+    color: #4B4B4B; /* Darkened from var(--color-neutral-gray) for better contrast */
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    font-weight: 500; /* Added weight for better contrast */
 }
 
 
@@ -1385,4 +1389,40 @@ section {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Additional contrast fixes for specific elements */
+
+/* Text muted improvements */
+.text-muted,
+p.text-muted.mb-0 {
+    color: #333333 !important; /* Override Bootstrap with much darker color */
+    font-weight: 500;
+}
+
+/* Testimonial time elements */
+.bg-white time,
+.testimonials-section time {
+    color: #333333;
+    font-weight: 500;
+}
+
+/* Bootstrap primary button overrides for better contrast */
+.btn-primary {
+    background-color: #403687;
+    border-color: #403687;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #332b70;
+    border-color: #332b70;
+}
+
+/* Override bootstrap muted text classes */
+.text-muted,
+.small,
+.text-muted small {
+    color: #333333 !important;
 }
