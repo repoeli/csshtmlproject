@@ -683,7 +683,7 @@ section {
 .footer h5 {
     margin-bottom: 1.25rem;
     font-size: 1.1rem;
-    color: var(--color-neutral-gray);
+    color: white;
 }
 
 .footer-links {
@@ -974,6 +974,22 @@ section {
     }
 }
 
+/* ======================== Featured Section Styles ======================= */
+.featured-section {
+    background-color: var(--color-soft-gray);
+    padding: 5rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+    margin-bottom: 0rem;
+}
+
+.featured-section .section-subtitle {
+    font-family: var(--font-body);
+    color: var(--color-neutral-gray);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+
 /*==================================================== Apply Page Specific Styles ========================================*/
 .apply-page-header {
     padding-top: 60px;
@@ -1105,6 +1121,7 @@ section {
 .become-expert-section a:hover {
     color: var(--color-secondary-purple);
 }
+
 .btn-submit-verification {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
@@ -1229,13 +1246,29 @@ section {
     font-weight: 600;
 }
 
+/* =====================================Verification Process Section =========================================*/
+.verification-process-section {
+    background-color: var(--color-soft-gray);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+/* Keep your existing process-content styles */
+.process-content {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+}
+
 /* Layout for the verification process - two-column layout */
 @media (min-width: 992px) {
-    
+
     .experts-look-for {
         height: 100%;
     }
-} 
+}
 
 /* Responsive Media Queries */
 @media (max-width: 1399px) and (min-width: 992px) {
@@ -1315,7 +1348,6 @@ section {
 
     .verification-process-section {
         padding: 1.5rem;
-        background-color: var(--color-soft-gray);
     }
 
     .step-number {
