@@ -1,8 +1,81 @@
+/* ===================================================================
+   TABLE OF CONTENTS
+   
+   1. CSS Reset & Base Styles
+   2. Typography
+   3. Variables & Color Definitions
+   4. Layout & Containers
+   5. Components
+      5.1 Buttons
+      5.2 Forms & Inputs
+      5.3 Cards
+      5.4 Navigation & Menus
+      5.5 Badges & Tags
+   6. Section Styles
+      6.1 Header & Hero
+      6.2 Stats Section
+      6.3 Process Section
+      6.4 Featured Section
+      6.5 Portfolio Cards
+      6.6 Testimonials Section
+      6.7 Call to Action
+      6.8 Footer
+   7. Page-Specific Styles
+      7.1 Portfolios Page
+      7.2 Apply Page
+   8. Utilities & Helpers
+   9. Accessibility Enhancements
+   10. Media Queries
+==================================================================== */
+
+/* -------------------------------------------------------------
+   1. CSS Reset & Base Styles
+-------------------------------------------------------------- */
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* Adjusting contrast for better accessibility */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #fff;
+    color: var(--color-dark-purple);
+}
+
+/* -------------------------------------------------------------
+   2. Typography
+-------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-dark-purple);
+}
+
+.text-white h2,
+.text-white h3 {
+    color: #fff;
+}
+
+.force-sans-serif {
+    font-family: var(--font-body);
+}
+
+a {
+    color: var(--color-primary-purple);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-secondary-purple);
+}
+
+/* -------------------------------------------------------------
+   3. Variables & Color Definitions
+-------------------------------------------------------------- */
 :root {
+    /* Color Variables */
     --color-primary-purple: #5346B1; /* Darkened for better contrast */
     --color-secondary-purple: #4A3E96; /* Darkened for better contrast */
     --color-dark-purple: #1A1F2C;
@@ -17,48 +90,205 @@
     --font-body: 'Inter', sans-serif;
 }
 
-/* General Styles */
-html {
-    scroll-behavior: smooth;
+/* -------------------------------------------------------------
+   4. Layout & Containers
+-------------------------------------------------------------- */
+#container-main {
+    padding: 5rem 0;
 }
 
-body {
-    font-family: var(--font-body);
-    background-color: #fff;
-    color: var(--color-dark-purple);
-}
+/* -------------------------------------------------------------
+   5. Components
+-------------------------------------------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-heading);
+/* 5.1 Buttons */
+.btn-primary {
+    background-color: #403687;
+    border-color: #403687;
+    color: #ffffff;
     font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #332b70;
+    border-color: #332b70;
+}
+
+.purple-button {
+    background-color: #403687; /* Darkened background */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.purple-button:hover {
+    background-color: #332b70; /* Darker on hover */
+}
+
+.btn-submit-verification {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 0rem;
+    transition: all 0.2s ease;
+}
+
+.btn-submit-verification:hover {
+    background-color: var(--color-secondary-purple);
+    border-color: var(--color-secondary-purple);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section .btn-explore-all {
+    background-color: #403687; /* Darkened background */
+    border-color: #403687;
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 700; /* Increased from 600 for better visibility */
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.featured-section .btn-explore-all:hover {
+    background-color: #332b70; /* Darker on hover */
+}
+
+/* 5.2 Forms & Inputs */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primary-purple);
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
     color: var(--color-dark-purple);
 }
 
-.text-white h2,
-.text-white h3 {
-    color: #fff;
+.file-upload-area {
+    border: 1px dashed var(--color-light-purple);
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    text-align: center;
+    background-color: var(--color-soft-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-/* Force sans-serif for specific elements if needed */
-.force-sans-serif {
-    font-family: var(--font-body);
+.file-upload-area:hover {
+    background-color: var(--color-soft-purple);
 }
 
-a {
+.file-upload-area .upload-icon {
+    font-size: 2.5rem;
     color: var(--color-primary-purple);
-    text-decoration: none;
+    margin-bottom: 0rem;
 }
 
-a:hover {
-    color: var(--color-secondary-purple);
+.file-upload-area .upload-text {
+    font-weight: 600;
+    color: var(--color-primary-purple);
+    margin-bottom: 0rem;
 }
 
-/* Navbar Styles */
+.file-upload-area .upload-hint {
+    font-size: 0.85rem;
+    color: var(--color-neutral-gray);
+    margin-bottom: 0rem;
+}
+
+/* Search bar */
+.search-bar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar-wrapper .form-control {
+    padding-left: 40px;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.search-bar-wrapper .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.search-bar-wrapper .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.search-bar-wrapper .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #6c757d;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+/* 5.3 Cards */
+.feature-info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f0f0f5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.feature-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-info-card .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--color-soft-purple);
+    color: var(--color-primary-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.feature-info-card h5 {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-dark-purple);
+}
+
+.feature-info-card p {
+    font-size: 0.95rem;
+    color: var(--color-neutral-gray);
+    line-height: 1.5;
+}
+
+/* 5.4 Navigation & Menus */
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -99,7 +329,7 @@ a:hover {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
     color: #ffffff;
-    font-weight: 700; /* Increased from 600 for better visibility */
+    font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-size: 0.9rem;
@@ -111,7 +341,126 @@ a:hover {
     border-color: var(--color-secondary-purple);
 }
 
-/* Hero Section Styles */
+/* Filter buttons */
+.filter-buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons-wrapper .btn-filter {
+    border-radius: 50rem;
+    padding: 0.375rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-width: 1px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--color-soft-gray);
+    border-color: #e2e8f0;
+    color: var(--color-dark-purple);
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons-wrapper .btn-filter:hover,
+.filter-buttons-wrapper .btn-filter:focus {
+    background-color: rgba(155, 135, 245, 0.1);
+    color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.filter-buttons-wrapper .btn-filter.active {
+    background-color: var(--color-primary-purple);
+    color: #fff;
+    border-color: var(--color-primary-purple);
+    font-weight: 600;
+}
+
+/* 5.5 Badges & Tags */
+.portfolio-card .verified-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%);
+    color: white;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card .verified-badge .badge-icon {
+    font-size: 0.75em;
+}
+
+.portfolio-card .category-tag {
+    color: #403687; /* Darkened purple for better contrast */
+    font-weight: 600; /* Increased from 500 for better visibility */
+}
+
+/* Portfolio Rating Styles */
+.portfolio-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating label {
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-right: 0.1rem;
+    user-select: none;
+}
+
+.rating input:checked~label {
+    color: var(--color-primary-purple);
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: var(--color-primary-purple);
+}
+
+.rating.readonly label {
+    cursor: default;
+}
+
+.rating-count {
+    font-size: 0.8rem;
+    color: #4B4B4B;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   6. Section Styles
+-------------------------------------------------------------- */
+
+/* 6.1 Header & Hero */
 .hero-section {
     background-color: var(--color-soft-purple);
     padding: 5rem 0;
@@ -171,7 +520,7 @@ a:hover {
     color: var(--color-secondary-purple);
 }
 
-/* Stats Section */
+/* 6.2 Stats Section */
 .stats-section {
     background-color: #fff;
     padding: 3rem 0;
@@ -195,7 +544,7 @@ a:hover {
     font-size: 1rem;
 }
 
-/* Process Section */
+/* 6.3 Process Section */
 .process-section {
     background-color: white;
     padding-top: 1rem;
@@ -220,7 +569,6 @@ a:hover {
     height: 4px;
     background-color: var(--color-soft-purple);
     z-index: 0;
-    /* Lower z-index to keep it behind circles */
 }
 
 .process-step:hover {
@@ -232,14 +580,12 @@ a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 0 10px var(--color-soft-purple);
     z-index: 3;
-    /* Maintain z-index on hover */
 }
 
 .process-step:last-child .process-connector {
     display: none;
 }
 
-/* Ensure process-circle always stays above connectors */
 .process-circle {
     width: 60px;
     height: 60px;
@@ -251,26 +597,14 @@ a:hover {
     margin: 0 auto 1.5rem;
     position: relative;
     z-index: 2;
-    /* Ensure circles are always above connectors */
     box-shadow: 0 0 0 8px var(--color-soft-purple);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-/* Simple focus styles for keyboard navigation */
 .process-circle:focus {
     outline: 2px solid var(--color-secondary-purple);
     outline-offset: 2px;
-}
-
-.purple-button {
-    background-color: #403687; /* Darkened background */
-    color: #ffffff;
-    font-weight: 700;
-}
-
-.purple-button:hover {
-    background-color: #332b70; /* Darker on hover */
 }
 
 .process-circle span {
@@ -306,70 +640,25 @@ a:hover {
     margin-bottom: 0.75rem;
 }
 
-@media (max-width: 768px) {
-    .verification-step:not(:last-child):after {
-        width: 2px;
-        height: 100%;
-        top: 3rem;
-        left: 2.5rem;
-    }
-
-    .process-step {
-        margin-bottom: 3rem;
-    }
-
-    .process-connector {
-        position: absolute;
-        top: 60px;
-        right: auto;
-        left: 50%;
-        width: 4px;
-        height: calc(100% - 30px);
-        transform: translateX(-50%);
-        z-index: 0;
-        /* Keep connector behind on mobile too */
-    }
-
-    .process-step:last-child {
-        margin-bottom: 0;
-    }
-
-    /* Adjust the search bar responsive */
-    .search-bar-wrapper .form-control {
-        font-size: 0.9rem;
-        /* Adjust font size for smaller screens */
-        padding-left: 35px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .portfolios-page-header h1 {
-        font-size: 2rem;
-        /* Adjust heading size for smaller screens */
-    }
-
-    .portfolios-page-header p {
-        font-size: 1rem;
-        /* Adjust subtitle size for smaller screens */
-    }
-
-    /* The main container padding */
-    #container-main {
-        padding-top: 4rem;
-    }
-}
-
-/* ============== Featured Section Styles ================= */
+/* 6.4 Featured Section */
 .featured-section {
     background-color: var(--color-very-light-purple);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
+.featured-section.alternative {
+    background-color: var(--color-soft-gray);
+    padding: 5rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+    margin-bottom: 0rem;
+}
+
 .featured-section .section-subtitle {
     font-family: var(--font-body);
-    color: #4B4B4B; /* Darkened from var(--color-neutral-gray) for better contrast */
+    color: #4B4B4B;
     font-size: 1.1rem;
-    font-weight: 500; /* Added weight for better contrast */
+    font-weight: 500;
     margin-bottom: 3rem;
 }
 
@@ -383,6 +672,7 @@ a:hover {
     justify-content: center;
 }
 
+/* 6.5 Portfolio Cards */
 .portfolio-card {
     border: 1px solid #e2e8f0;
     border-radius: 0.5rem;
@@ -406,27 +696,6 @@ a:hover {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-.portfolio-card .verified-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%);
-    color: white;
-    padding: 0.3rem 0.75rem;
-    border-radius: 50rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-card .verified-badge .badge-icon {
-    font-size: 0.75em;
 }
 
 .portfolio-card .card-title {
@@ -457,58 +726,10 @@ a:hover {
     color: var(--color-neutral-gray);
 }
 
-/* Portfolio Rating Styles */
-.portfolio-rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating {
-    display: flex;
-    flex-direction: row-reverse;
-    /* Stars from right to left for proper highlighting */
-    justify-content: flex-end;
-}
-
-.rating label {
-    font-size: 1rem;
-    /* Smaller stars to fit portfolio cards */
-    color: #ddd;
-    /* Light gray for inactive stars */
-    cursor: pointer;
-    transition: color 0.2s ease;
-    margin-right: 0.1rem;
-    user-select: none;
-}
-
-.rating input:checked~label {
-    color: var(--color-primary-purple);
-    /* Match your site's color scheme */
-}
-
-/* Only show color when checked - static display */
-.rating label:hover,
-.rating label:hover~label {
-    color: var(--color-primary-purple);
-    /* Match hover to checked state */
-}
-
-/* Read-only styling for display purposes */
-.rating.readonly label {
-    cursor: default;
-}
-
-.rating-count {
-    font-size: 0.8rem;
-    color: #4B4B4B; /* Darkened for better contrast */
-    font-weight: 500; /* Added weight for better visibility */
-}
-
 .portfolio-card .card-text {
-    color: #333333; /* Darkened even further for better contrast */
+    color: #333333;
     font-weight: 500;
     line-height: 1.5;
-    font-weight: 500; /* Added weight for better visibility */
 }
 
 .portfolio-card .card-footer {
@@ -518,34 +739,13 @@ a:hover {
     font-size: 0.85rem;
 }
 
-.portfolio-card .category-tag {
-    color: #403687; /* Darkened purple for better contrast */
-    font-weight: 600; /* Increased from 500 for better visibility */
-}
-
 .portfolio-card .verification-date,
 .portfolio-card time {
-    color: #333333; /* Darkened for better contrast */
-    font-weight: 500; /* Added weight for better visibility */
+    color: #333333;
+    font-weight: 500;
 }
 
-.featured-section .btn-explore-all {
-    background-color: #403687; /* Darkened background */
-    border-color: #403687;
-    color: #ffffff;
-    padding: 0.6rem 1.5rem;
-    font-weight: 700; /* Increased from 600 for better visibility */
-    border-radius: 0.375rem;
-    transition: all 0.2s ease;
-}
-
-.featured-section .btn-explore-all:hover {
-    background-color: #332b70; /* Darker on hover */
-}
-
-/* ============== Testimonials Section Styles ================= */
-
-/* Testimonials Section */
+/* 6.6 Testimonials Section */
 .testimonials-section {
     background-color: var(--color-very-light-purple);
     padding-top: 1rem;
@@ -565,8 +765,8 @@ a:hover {
 
 .testimonials-section .text-muted {
     font-size: 0.9rem;
-    color: #333333 !important; /* Override Bootstrap with much darker color */
-    font-weight: 500; /* Added weight for better visibility */
+    color: #333333 !important;
+    font-weight: 500;
 }
 
 .testimonials-section p:not(.text-muted) {
@@ -591,7 +791,7 @@ a:hover {
     font-weight: 500;
 }
 
-/* CTA Section */
+/* 6.7 Call to Action */
 .call-to-action-section {
     background-color: var(--color-primary-purple);
     background-image: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-secondary-purple) 100%);
@@ -643,7 +843,7 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* 6.8 Footer */
 .footer {
     background-color: var(--color-dark-purple);
     color: white;
@@ -711,6 +911,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.footer-subscribe {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
 .footer-subscribe .form-control {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
@@ -750,11 +955,6 @@ a:hover {
     top: 100%;
 }
 
-.footer-subscribe {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 2rem;
@@ -781,12 +981,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/*========================================= Portfolios Page Specific Styles ==================================== */
+/* -------------------------------------------------------------
+   7. Page-Specific Styles
+-------------------------------------------------------------- */
 
-#container-main {
-    padding: 5rem 0;
-}
-
+/* 7.1 Portfolios Page */
 .portfolios-page-header {
     margin-bottom: 30px;
     padding-top: 40px;
@@ -795,206 +994,17 @@ a:hover {
 .portfolios-page-header h1 {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
-    /* Ensure the heading is prominent */
     font-weight: 700;
-    /* Bold font for emphasis */
     color: #343a40;
-    /* High-contrast color for better readability */
 }
 
 .portfolios-page-header p {
     font-size: 1.25rem;
-    /* Slightly larger text for better readability */
     color: #6c757d;
-    /* Muted color for the subtitle */
     margin-bottom: 0;
 }
 
-/* Search Bar Section Enhancements */
-.search-bar-wrapper {
-    position: relative;
-    /* Ensure proper positioning for the icon */
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    /* Add spacing for better visual hierarchy */
-}
-
-.search-bar-wrapper .form-control {
-    padding-left: 40px;
-    /* Add padding to avoid overlapping with the icon */
-    border-radius: 25px;
-    /* Rounded corners for a modern look */
-    border: 1px solid #ced4da;
-    /* Subtle border for better visibility */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a slight shadow for depth */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth focus effect */
-    font-size: 1rem;
-    /* Ensure readable font size */
-    line-height: 1.5;
-    /* Improve readability */
-    color: #212529;
-    /* Use a high-contrast text color */
-}
-
-.search-bar-wrapper .form-control:focus {
-    border-color: #007bff;
-    /* Highlight border on focus */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
-    /* Add focus shadow */
-    outline: none;
-    /* Remove default outline */
-}
-
-.search-bar-wrapper .form-control::placeholder {
-    color: #6c757d;
-    /* Muted placeholder text for better contrast */
-    opacity: 1;
-    /* Ensure placeholder is visible */
-}
-
-.search-bar-wrapper .search-icon {
-    position: absolute;
-    left: 15px;
-    /* Position the icon inside the input field */
-    color: #6c757d;
-    /* Use a muted color for better contrast */
-    font-size: 1.2rem;
-    /* Ensure the icon is visually balanced */
-    pointer-events: none;
-    /* Prevent interaction with the icon */
-}
-
-.filter-buttons-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 0rem;
-
-    justify-content: center;
-}
-
-.filter-buttons-wrapper .btn-filter {
-    border-radius: 50rem;
-    padding: 0.375rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-width: 1px;
-    transition: all 0.2s ease-in-out;
-    background-color: var(--color-soft-gray);
-    border-color: #e2e8f0;
-    color: var(--color-dark-purple);
-}
-
-.filter-buttons-wrapper .btn-filter:hover {
-    background-color: rgba(155, 135, 245, 0.1);
-    color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-}
-
-.filter-buttons-wrapper .btn-filter.active {
-    background-color: var(--color-primary-purple);
-    color: #fff;
-    border-color: var(--color-primary-purple);
-}
-
-
-/* Category Section Enhancements */
-.filter-buttons-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow buttons to wrap on smaller screens */
-    justify-content: center;
-    /* Center-align buttons */
-    gap: 15px;
-    /* Add spacing between buttons */
-    margin-top: 20px;
-    /* Add spacing above the section */
-    padding: 10px;
-    /* Add padding for better spacing */
-    background-color: #f8f9fa;
-    /* Subtle background to distinguish the section */
-    border-radius: 10px;
-    /* Rounded corners for a modern look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a slight shadow for depth */
-}
-
-.filter-buttons-wrapper .btn-filter {
-    padding: 10px 20px;
-    /* Add padding for better clickability */
-    font-size: 1rem;
-    /* Ensure readable font size */
-    font-weight: 500;
-    /* Slightly bold for emphasis */
-    color: #495057;
-    /* Neutral text color */
-    background-color: var(--color-soft-gray);
-    /* Soft background for buttons */
-    border: 1px solid #ced4da;
-    /* Subtle border for definition */
-    border-radius: 25px;
-    /* Rounded buttons for a modern look */
-    transition: all 0.3s ease;
-    /* Smooth hover and focus effects */
-}
-
-.filter-buttons-wrapper .btn-filter:hover,
-.filter-buttons-wrapper .btn-filter:focus {
-    background-color: rgba(155, 135, 245, 0.1);
-    color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-    /* Highlight border on hover */
-    outline: none;
-    /* Remove default outline */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
-    /* Add focus shadow */
-}
-
-.filter-buttons-wrapper .btn-filter.active {
-    background-color: var(--color-primary-purple);
-    color: #fff;
-    border-color: var(--color-primary-purple);
-    font-weight: 600;
-    /* Slightly bolder for emphasis */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .filter-buttons-wrapper {
-        gap: 10px;
-        /* Reduce spacing between buttons on smaller screens */
-        padding: 5px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .filter-buttons-wrapper .btn-filter {
-        font-size: 0.9rem;
-        /* Adjust font size for smaller screens */
-        padding: 8px 15px;
-        /* Adjust padding for smaller screens */
-    }
-}
-
-/* ======================== Featured Section Styles ======================= */
-.featured-section {
-    background-color: var(--color-soft-gray);
-    padding: 5rem 0;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
-    margin-bottom: 0rem;
-}
-
-.featured-section .section-subtitle {
-    font-family: var(--font-body);
-    color: #4B4B4B; /* Darkened from var(--color-neutral-gray) for better contrast */
-    font-size: 1.1rem;
-    font-weight: 500; /* Added weight for better contrast */
-}
-
-
-/*==================================================== Apply Page Specific Styles ========================================*/
+/* 7.2 Apply Page */
 .apply-page-header {
     padding-top: 60px;
     padding-bottom: 0;
@@ -1016,7 +1026,6 @@ a:hover {
     line-height: 1.6;
 }
 
-/*================================================================ Application Form Section =================================== */
 .application-form-section {
     padding: 0rem 2rem;
     margin-top: 2rem;
@@ -1034,65 +1043,19 @@ a:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
 }
 
-.form-label {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-    color: var(--color-dark-purple);
-}
-
-.form-control:focus,
-.form-select:focus {
-    border-color: var(--color-primary-purple);
-    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
-}
-
-.file-upload-area {
-    border: 1px dashed var(--color-light-purple);
-    border-radius: 0rem;
-    padding: 0rem 0rem;
-    margin: 0rem 0rem 1.5rem 0rem;
-    text-align: center;
+.verification-process-section {
     background-color: var(--color-soft-gray);
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.file-upload-area:hover {
-    background-color: var(--color-soft-purple);
-}
-
-.file-upload-area .upload-icon {
-    font-size: 2.5rem;
-    color: var(--color-primary-purple);
+    padding: 2rem 0;
+    margin-top: 2rem;
     margin-bottom: 0rem;
 }
 
-.file-upload-area .upload-text {
-    font-weight: 600;
-    color: var(--color-primary-purple);
-    margin-bottom: 0rem;
+.process-content {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
 }
-
-.file-upload-area .upload-hint {
-    font-size: 0.85rem;
-    color: var(--color-neutral-gray);
-    margin-bottom: 0rem;
-}
-
-.btn-submit-verification {
-    background-color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-    color: #fff;
-    padding: 0.75rem 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
-    margin-top: 0rem;
-    transition: all 0.2s ease;
-}
-
-/* ============================= Become an Expert Section ========================= */
 
 .become-expert-section {
     padding: 4rem 0;
@@ -1126,72 +1089,7 @@ a:hover {
     color: var(--color-secondary-purple);
 }
 
-.btn-submit-verification {
-    background-color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-    color: #fff;
-    padding: 0.75rem 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
-    margin-top: 0rem;
-    transition: all 0.2s ease;
-}
-
-.btn-submit-verification:hover {
-    background-color: var(--color-secondary-purple);
-    border-color: var(--color-secondary-purple);
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ======================================== Become an Expert Section ================================= */
-.feature-info-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem;
-    height: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #f0f0f5;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.feature-info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-
-.feature-info-card .icon-wrapper {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background-color: var(--color-soft-purple);
-    color: var(--color-primary-purple);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 1.5rem;
-}
-
-.feature-info-card h5 {
-    font-family: var(--font-body);
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--color-dark-purple);
-}
-
-.feature-info-card p {
-    font-size: 0.95rem;
-    color: var(--color-neutral-gray);
-    line-height: 1.5;
-}
-
-/* Experts look for section  */
+/* Experts look for section */
 .experts-look-for {
     background-color: #f9f9fd;
     border-radius: 8px;
@@ -1231,8 +1129,6 @@ a:hover {
     font-weight: bold;
 }
 
-/* =====================================Verification Notes Section =========================================*/
-
 .verification-note {
     background-color: white;
     border-radius: 8px;
@@ -1250,31 +1146,50 @@ a:hover {
     font-weight: 600;
 }
 
-/* =====================================Verification Process Section =========================================*/
-.verification-process-section {
-    background-color: var(--color-soft-gray);
-    padding: 2rem 0;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+/* -------------------------------------------------------------
+   8. Utilities & Helpers
+-------------------------------------------------------------- */
+/* Text muted improvements */
+.text-muted,
+p.text-muted.mb-0 {
+    color: #333333 !important; /* Override Bootstrap with much darker color */
+    font-weight: 500;
 }
 
-/* Keep your existing process-content styles */
-.process-content {
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+/* Testimonial time elements */
+.bg-white time,
+.testimonials-section time {
+    color: #333333;
+    font-weight: 500;
 }
 
-/* Layout for the verification process - two-column layout */
+/* Override bootstrap muted text classes */
+.text-muted,
+.small,
+.text-muted small {
+    color: #333333 !important;
+}
+
+/* -------------------------------------------------------------
+   9. Accessibility Enhancements
+-------------------------------------------------------------- */
+/* Simple focus styles for keyboard navigation */
+.process-circle:focus {
+    outline: 2px solid var(--color-secondary-purple);
+    outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------
+   10. Media Queries
+-------------------------------------------------------------- */
+/* Larger screens */
 @media (min-width: 992px) {
-
     .experts-look-for {
         height: 100%;
     }
 }
 
-/* Responsive Media Queries */
+/* Medium to large screens */
 @media (max-width: 1399px) and (min-width: 992px) {
     .hero-section h1 {
         font-size: 2.5rem;
@@ -1295,6 +1210,19 @@ a:hover {
     }
 }
 
+/* Medium screens */
+@media (max-width: 991px) {
+    .experts-look-for {
+        margin-top: 3rem;
+    }
+
+    .process-connector {
+        width: 50%;
+        right: 0;
+    }
+}
+
+/* Small screens */
 @media (max-width: 767px) {
     section {
         padding: 4rem 0;
@@ -1318,17 +1246,7 @@ a:hover {
     }
 }
 
-@media (max-width: 991px) {
-    .experts-look-for {
-        margin-top: 3rem;
-    }
-
-    .process-connector {
-        width: 50%;
-        right: 0;
-    }
-}
-
+/* Very small screens */
 @media (max-width: 328px) {
     .hero-section h1 {
         font-size: 1.8rem;
@@ -1369,6 +1287,7 @@ a:hover {
     }
 }
 
+/* Extremely small screens */
 @media (max-width: 228px) {
     .hero-section h1 {
         font-size: 1.5rem;
@@ -1391,38 +1310,61 @@ a:hover {
     }
 }
 
-/* Additional contrast fixes for specific elements */
+/* Small-to-Medium screens process adjustment */
+@media (max-width: 768px) {
+    .verification-step:not(:last-child):after {
+        width: 2px;
+        height: 100%;
+        top: 3rem;
+        left: 2.5rem;
+    }
 
-/* Text muted improvements */
-.text-muted,
-p.text-muted.mb-0 {
-    color: #333333 !important; /* Override Bootstrap with much darker color */
-    font-weight: 500;
-}
+    .process-step {
+        margin-bottom: 3rem;
+    }
 
-/* Testimonial time elements */
-.bg-white time,
-.testimonials-section time {
-    color: #333333;
-    font-weight: 500;
-}
+    .process-connector {
+        position: absolute;
+        top: 60px;
+        right: auto;
+        left: 50%;
+        width: 4px;
+        height: calc(100% - 30px);
+        transform: translateX(-50%);
+        z-index: 0;
+    }
 
-/* Bootstrap primary button overrides for better contrast */
-.btn-primary {
-    background-color: #403687;
-    border-color: #403687;
-    color: #ffffff;
-    font-weight: 700;
-}
+    .process-step:last-child {
+        margin-bottom: 0;
+    }
 
-.btn-primary:hover {
-    background-color: #332b70;
-    border-color: #332b70;
-}
+    /* Adjust the search bar responsive */
+    .search-bar-wrapper .form-control {
+        font-size: 0.9rem;
+        padding-left: 35px;
+    }
 
-/* Override bootstrap muted text classes */
-.text-muted,
-.small,
-.text-muted small {
-    color: #333333 !important;
+    .portfolios-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .portfolios-page-header p {
+        font-size: 1rem;
+    }
+
+    /* The main container padding */
+    #container-main {
+        padding-top: 4rem;
+    }
+    
+    /* Filter buttons */
+    .filter-buttons-wrapper {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .filter-buttons-wrapper .btn-filter {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }

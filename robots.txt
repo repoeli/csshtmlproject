@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://repoeli.github.io/csshtmlproject/sitemap.xml
+
+# Allow all bots to access the entire site
+# Update the domain to match your actual website URL when deployed

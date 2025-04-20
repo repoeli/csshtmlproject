@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verified Portfolios</title>
+    <title>Browse Verified Portfolios | Professional Work Verified by Industry Experts</title>
+    <meta name="description" content="Browse a curated collection of professional portfolios verified by industry experts across web development, design, data science and more.">
+    <meta name="keywords" content="verified portfolios, professional portfolios, expert-verified work, portfolio gallery, portfolio examples">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Verified Portfolios">
+    <link rel="canonical" href="https://yourdomainhere.com/portfolios.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomainhere.com/portfolios.html">
+    <meta property="og:title" content="Browse Verified Portfolios by Industry Experts">
+    <meta property="og:description" content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines.">
+    <meta property="og:image" content="https://yourdomainhere.com/assets/images/logo/verified_folio_navbar_logo_wide.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomainhere.com/portfolios.html">
+    <meta property="twitter:title" content="Browse Verified Portfolios by Industry Experts">
+    <meta property="twitter:description" content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines.">
+    <meta property="twitter:image" content="https://yourdomainhere.com/assets/images/logo/verified_folio_navbar_logo_wide.png">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -441,8 +461,59 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
         </script>
     <!-- Font Awesome Icons -->
-
     <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
+    
+    <!-- Structured Data / JSON-LD for Portfolio Gallery Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Verified Professional Portfolios",
+        "description": "Browse a curated collection of professional portfolios verified by industry experts across web development, design, data science and more.",
+        "url": "https://yourdomainhere.com/portfolios.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "Modern Web Application Suite",
+                        "creator": "Alex Johnson",
+                        "description": "A collection of responsive web applications showcasing modern frontend frameworks and accessibility compliance.",
+                        "datePublished": "2023-11-15",
+                        "genre": "Web Development"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "Corporate Brand Identity",
+                        "creator": "Maya Williams",
+                        "description": "Complete brand identity system for a financial technology startup, including logo, typography, color palette, and collateral.",
+                        "datePublished": "2023-09-21",
+                        "genre": "Graphic Design"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "AI-Powered Data Analytics Platform",
+                        "creator": "Raj Patel",
+                        "description": "End-to-end data analytics solution with machine learning capabilities for business intelligence and predictive analytics.",
+                        "datePublished": "2023-10-30",
+                        "genre": "Data Science"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </body>
 
 </html>
