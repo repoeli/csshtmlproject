@@ -74,7 +74,7 @@ The website consists of three main pages:
 ### Performance Optimization
 - Optimized images with appropriate sizing and formats
 - Lazy loading for below-the-fold content
-- Efficient CSS and JavaScript implementation
+- Efficient CSS implementation
 - Quick loading times across all devices
 
 ## Accessibility Features
