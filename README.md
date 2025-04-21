@@ -175,7 +175,7 @@ We welcome contributions to improve VerifiedFolio:
 ## Contact
 
 For questions, feedback, or support:
-- Email: contact@verifiedfolio.com
+- Email: 525587@waes.ac.uk
 - Twitter: [@VerifiedFolio](https://twitter.com/verifiedfolio)
 - LinkedIn: [VerifiedFolio](https://linkedin.com/company/verifiedfolio)
 
