@@ -74,7 +74,8 @@ The website consists of three main pages:
 ### Performance Optimization
 - Optimized images with appropriate sizing and formats
 - Lazy loading for below-the-fold content
-- Efficient CSS and JavaScript implementation
+   - is a technique that delays the loading of non-critical resources (like images) until they're needed, which helps improve page load performance. (loading="lazy") 
+- Efficient CSS implementation
 - Quick loading times across all devices
 
 ## Accessibility Features
@@ -175,7 +176,7 @@ We welcome contributions to improve VerifiedFolio:
 ## Contact
 
 For questions, feedback, or support:
-- Email: contact@verifiedfolio.com
+- Email: 525587@waes.ac.uk
 - Twitter: [@VerifiedFolio](https://twitter.com/verifiedfolio)
 - LinkedIn: [VerifiedFolio](https://linkedin.com/company/verifiedfolio)
 
