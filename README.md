@@ -192,6 +192,57 @@ To deploy your own version:
 3. Select the main branch as source
 4. The site will be published at https://[your-username].github.io/csshtmlproject/
 
+## Testing
+
+### Manual Testing
+
+The VerifiedFolio project has undergone comprehensive manual testing to ensure quality and functionality:
+
+- **Cross-browser Compatibility**: Verified on Chrome, Firefox, Safari, and Edge
+  - Checked for consistent rendering of layouts, fonts, and colors
+  - Confirmed all interactive elements function as expected across browsers
+
+- **Responsive Design Testing**:
+  - Mobile devices (320px - 480px)
+  - Tablets (481px - 768px) 
+  - Small laptops (769px - 1024px)
+  - Larger desktops (1025px+)
+  - Tested using browser developer tools(Google Chrome) and real devices (my Sumsung mobile)
+
+- **Functionality Testing**:
+  - Navigation links direct to correct pages
+  - Internal page links (hash links) scroll to appropriate sections
+  - Form validation works as expected
+  - Interactive elements (buttons, form controls) function correctly
+
+### Accessibility Testing
+
+- **Keyboard Navigation**:
+  - Verified all interactive elements are reachable via keyboard
+  - Focus states are clearly visible
+  - Tab order follows a logical sequence
+
+### Code Validation
+
+- **HTML**: Validated using the W3C Markup Validation Service
+  - All pages pass with no errors
+  
+- **CSS**: Validated using the W3C CSS Validation Service
+  - Stylesheet passes with no errors
+
+### Performance Testing
+
+- **Google Lighthouse Metrics**:
+
+### Home Page
+![Home Page](assets/tests/homepagetest.png)
+
+### Portfolios Gallery
+![Portfolios Page](assets/tests/portfoliotest.png)
+
+### Application Form
+![Apply Page](assets/tests/applytest.png)
+
 ## Credits and Acknowledgments
 
 - Bootstrap framework: [getbootstrap.com](https://getbootstrap.com/)
