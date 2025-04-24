@@ -16,6 +16,16 @@ Our mission is to:
 ## Live Website
 
 Visit our website: [VerifiedFolio](https://repoeli.github.io/csshtmlproject/)
+## Screenshots
+
+### Home Page
+![Home Page](assets/portfolios/homepage.png)
+
+### Portfolios Gallery
+![Portfolios Page](assets/portfolios/portfolio.png)
+
+### Application Form
+![Apply Page](assets/portfolios/apply.png)
 
 ## Website Structure
 
