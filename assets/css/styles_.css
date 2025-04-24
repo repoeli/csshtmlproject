@@ -31,15 +31,13 @@
 /* -------------------------------------------------------------
    1. CSS Reset & Base Styles
 -------------------------------------------------------------- */
-/* Google Fonts Import - Loads Inter for body text and Playfair Display for headings */
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* Enable smooth scrolling for better user experience when clicking anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Base body styling establishing the primary font and colors */
 body {
     font-family: var(--font-body);
     background-color: #fff;
@@ -49,31 +47,26 @@ body {
 /* -------------------------------------------------------------
    2. Typography
 -------------------------------------------------------------- */
-/* Consistent heading styles across the site with bold weight for hierarchy */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--color-dark-purple);
 }
 
-/* Ensure headings in light sections maintain readability with white color */
 .text-white h2,
 .text-white h3 {
     color: #fff;
 }
 
-/* Utility class to force sans-serif on elements that would otherwise use serif */
 .force-sans-serif {
     font-family: var(--font-body);
 }
 
-/* Base link styling with branding colors */
 a {
     color: var(--color-primary-purple);
     text-decoration: none;
 }
 
-/* Hover state for all links - slightly darker purple for obvious interaction */
 a:hover {
     color: var(--color-secondary-purple);
 }
@@ -81,27 +74,25 @@ a:hover {
 /* -------------------------------------------------------------
    3. Variables & Color Definitions
 -------------------------------------------------------------- */
-/* CSS custom properties (variables) for consistent theming across the site */
 :root {
-    /* Color Variables - Organized by color function */
-    --color-primary-purple: #5346B1; /* Primary brand color, darkened for better contrast */
-    --color-secondary-purple: #4A3E96; /* Secondary brand color for hover states */
-    --color-dark-purple: #1A1F2C; /* Used for text and dark backgrounds */
-    --color-light-purple: #D6BCFA; /* Used for subtle accents and highlights */
-    --color-neutral-gray: #555555; /* Used for secondary text, darkened for better contrast */
-    --color-soft-purple: #D8D8FF; /* Used for backgrounds and hover states */
-    --color-soft-gray: #E9ECEF; /* Used for section backgrounds and subtle elements */
-    --color-very-light-purple: #ede9f6; /* Lightest purple for section backgrounds */
+    /* Color Variables */
+    --color-primary-purple: #5346B1; /* Darkened for better contrast */
+    --color-secondary-purple: #4A3E96; /* Darkened for better contrast */
+    --color-dark-purple: #1A1F2C;
+    --color-light-purple: #D6BCFA;
+    --color-neutral-gray: #555555; /* Darkened for better contrast */
+    --color-soft-purple: #D8D8FF;
+    --color-soft-gray: #E9ECEF;
+    --color-very-light-purple: #ede9f6;
 
-    /* Typography Variables - For consistent font usage */
-    --font-heading: 'Playfair Display', serif; /* Serif font adds elegance to headings */
-    --font-body: 'Inter', sans-serif; /* Clean sans-serif for body text and UI elements */
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
 /* -------------------------------------------------------------
    4. Layout & Containers
 -------------------------------------------------------------- */
-/* Main container padding provides consistent spacing for main page content */
 #container-main {
     padding: 5rem 0;
 }
@@ -110,126 +101,111 @@ a:hover {
    5. Components
 -------------------------------------------------------------- */
 
-/* 5.1 Buttons - Styled for clear user interaction and brand consistency */
-/* Primary button style with brand colors */
+/* 5.1 Buttons */
 .btn-primary {
-    background-color: #403687; /* Brand purple */
+    background-color: #403687;
     border-color: #403687;
-    color: #ffffff; /* White text for contrast */
-    font-weight: 700; /* Bold text for emphasis */
-}
-
-/* Hover state for primary buttons adds depth with a darker shade */
-.btn-primary:hover {
-    background-color: #332b70; /* Darkened purple on hover */
-    border-color: #332b70;
-}
-
-/* Alternative purple button style for use in different contexts */
-.purple-button {
-    background-color: #403687; /* Matches primary button color */
     color: #ffffff;
     font-weight: 700;
 }
 
-/* Hover state for alternative purple buttons */
-.purple-button:hover {
-    background-color: #332b70; /* Consistent hover color */
+.btn-primary:hover {
+    background-color: #332b70;
+    border-color: #332b70;
 }
 
-/* Verification submission button with larger padding and hover animation */
+.purple-button {
+    background-color: #403687; /* Darkened background */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.purple-button:hover {
+    background-color: #332b70; /* Darker on hover */
+}
+
 .btn-submit-verification {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
     color: #fff;
-    padding: 0.75rem 0.5rem; /* Taller button for better touch targets */
+    padding: 0.75rem 0.5rem;
     font-size: 1rem;
     font-weight: 600;
-    width: 100%; /* Full width button */
+    width: 100%;
     margin-top: 0rem;
-    transition: all 0.2s ease; /* Smooth transition for hover effects */
+    transition: all 0.2s ease;
 }
 
-/* Interactive hover effects add depth with shadow and slight lift */
 .btn-submit-verification:hover {
     background-color: var(--color-secondary-purple);
     border-color: var(--color-secondary-purple);
     color: #fff;
-    transform: translateY(-2px); /* Button lifts slightly on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow adds depth */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Explore all button in featured section with unique styling */
 .featured-section .btn-explore-all {
-    background-color: #403687;
+    background-color: #403687; /* Darkened background */
     border-color: #403687;
     color: #ffffff;
-    padding: 0.6rem 1.5rem; /* Wider padding for emphasis */
-    font-weight: 700; /* Bold text */
+    padding: 0.6rem 1.5rem;
+    font-weight: 700; /* Increased from 600 for better visibility */
     border-radius: 0.375rem;
     transition: all 0.2s ease;
 }
 
-/* Hover state for explore button */
 .featured-section .btn-explore-all:hover {
-    background-color: #332b70; /* Consistent hover color */
+    background-color: #332b70; /* Darker on hover */
 }
 
-/* 5.2 Forms & Inputs - Styled for clear user interaction and validation states */
-/* Focus state for form controls with brand color highlight */
+/* 5.2 Forms & Inputs */
 .form-control:focus,
 .form-select:focus {
-    border-color: var(--color-primary-purple); /* Brand color border when focused */
-    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25); /* Subtle glow effect */
+    border-color: var(--color-primary-purple);
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
 }
 
-/* Form labels with consistent styling */
 .form-label {
-    font-weight: 500; /* Semi-bold for better readability */
+    font-weight: 500;
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
     color: var(--color-dark-purple);
 }
 
-/* Custom file upload area styling to match design system */
 .file-upload-area {
-    border: 1px dashed var(--color-light-purple); /* Dashed border indicates droppable area */
+    border: 1px dashed var(--color-light-purple);
     border-radius: 0rem;
     padding: 0rem 0rem;
     margin: 0rem 0rem 1.5rem 0rem;
     text-align: center;
     background-color: var(--color-soft-gray);
-    cursor: pointer; /* Pointer cursor indicates clickable area */
+    cursor: pointer;
     transition: all 0.2s ease;
 }
 
-/* Hover state for file upload area */
 .file-upload-area:hover {
-    background-color: var(--color-soft-purple); /* Color change provides feedback */
+    background-color: var(--color-soft-purple);
 }
 
-/* Upload icon styling within file upload area */
 .file-upload-area .upload-icon {
     font-size: 2.5rem;
     color: var(--color-primary-purple);
     margin-bottom: 0rem;
 }
 
-/* Primary text within file upload area */
 .file-upload-area .upload-text {
     font-weight: 600;
     color: var(--color-primary-purple);
     margin-bottom: 0rem;
 }
 
-/* Secondary hint text within file upload area */
 .file-upload-area .upload-hint {
     font-size: 0.85rem;
     color: var(--color-neutral-gray);
     margin-bottom: 0rem;
 }
 
-/* Custom search bar styling with icon and rounded appearance */
+/* Search bar */
 .search-bar-wrapper {
     position: relative;
     display: flex;
@@ -237,10 +213,9 @@ a:hover {
     margin-top: 20px;
 }
 
-/* Search input with left padding to accommodate the search icon */
 .search-bar-wrapper .form-control {
-    padding-left: 40px; /* Space for the icon */
-    border-radius: 25px; /* Fully rounded corners */
+    padding-left: 40px;
+    border-radius: 25px;
     border: 1px solid #ced4da;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -249,35 +224,31 @@ a:hover {
     color: #212529;
 }
 
-/* Focus state for search input */
 .search-bar-wrapper .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
     outline: none;
 }
 
-/* Placeholder text styling for search input */
 .search-bar-wrapper .form-control::placeholder {
     color: #6c757d;
     opacity: 1;
 }
 
-/* Search icon positioned within the input */
 .search-bar-wrapper .search-icon {
     position: absolute;
     left: 15px;
     color: #6c757d;
     font-size: 1.2rem;
-    pointer-events: none; /* Allows clicks to pass through to the input */
+    pointer-events: none;
 }
 
-/* 5.3 Cards - Various card components used throughout the site */
-/* Feature information card used to display key platform features */
+/* 5.3 Cards */
 .feature-info-card {
     background-color: #fff;
     border-radius: 8px;
     padding: 2rem;
-    height: 100%; /* Full height for equal card sizing in a row */
+    height: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #f0f0f5;
@@ -285,17 +256,15 @@ a:hover {
     text-align: center;
 }
 
-/* Interactive hover effect for feature cards */
 .feature-info-card:hover {
-    transform: translateY(-5px); /* Card lifts on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Enhanced shadow depth */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Icon wrapper within feature cards for consistent sizing */
 .feature-info-card .icon-wrapper {
     width: 64px;
     height: 64px;
-    border-radius: 50%; /* Circular background */
+    border-radius: 50%;
     background-color: var(--color-soft-purple);
     color: var(--color-primary-purple);
     display: flex;
@@ -305,42 +274,36 @@ a:hover {
     font-size: 1.5rem;
 }
 
-/* Heading style within feature cards */
 .feature-info-card h5 {
-    font-family: var(--font-body); /* Sans-serif for better readability */
+    font-family: var(--font-body);
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--color-dark-purple);
 }
 
-/* Paragraph text within feature cards */
 .feature-info-card p {
     font-size: 0.95rem;
     color: var(--color-neutral-gray);
     line-height: 1.5;
 }
 
-/* 5.4 Navigation & Menus - Site navigation components */
-/* Main navbar styling with subtle shadow */
+/* 5.4 Navigation & Menus */
 .navbar {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Brand/logo text styling */
 .navbar-brand {
     font-weight: bold;
 }
 
-/* Logo image sizing within navbar */
 .navbar-brand .img-logo {
     height: 40px;
     width: auto;
-    flex-shrink: 0; /* Prevents logo from shrinking */
+    flex-shrink: 0;
 }
 
-/* Navigation links in the navbar */
 .navbar .navbar-nav .nav-link {
     color: var(--color-dark-purple);
     font-weight: 500;
@@ -350,21 +313,18 @@ a:hover {
     font-family: var(--font-body);
 }
 
-/* Active, hover, and focus states for nav links */
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-    background-color: var(--color-soft-purple); /* Background highlights active/hovered link */
+    background-color: var(--color-soft-purple);
     color: var(--color-primary-purple);
     font-weight: 600;
 }
 
-/* Custom burger menu icon for mobile navigation */
 .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(26,31,44,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* CTA button in the navbar with brand styling */
 .navbar .btn-nav-cta {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
@@ -376,17 +336,16 @@ a:hover {
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Hover state for navbar CTA button */
 .navbar .btn-nav-cta:hover {
     background-color: var(--color-secondary-purple);
     border-color: var(--color-secondary-purple);
 }
 
-/* Filter buttons container for portfolio filtering */
+/* Filter buttons */
 .filter-buttons-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
-    gap: 0.75rem; /* Consistent spacing between buttons */
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin-bottom: 0rem;
     justify-content: center;
     margin-top: 20px;
@@ -396,9 +355,8 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual filter button styling */
 .filter-buttons-wrapper .btn-filter {
-    border-radius: 50rem; /* Pill-shaped buttons */
+    border-radius: 50rem;
     padding: 0.375rem 1rem;
     font-size: 0.9rem;
     font-weight: 500;
@@ -415,17 +373,15 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-/* Hover and focus states for filter buttons */
 .filter-buttons-wrapper .btn-filter:hover,
 .filter-buttons-wrapper .btn-filter:focus {
-    background-color: rgba(155, 135, 245, 0.1); /* Subtle purple background */
+    background-color: rgba(155, 135, 245, 0.1);
     color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
     outline: none;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
 }
 
-/* Active state for the currently selected filter */
 .filter-buttons-wrapper .btn-filter.active {
     background-color: var(--color-primary-purple);
     color: #fff;
@@ -433,70 +389,67 @@ a:hover {
     font-weight: 600;
 }
 
-/* 5.5 Badges & Tags - Visual indicators and labels */
-/* Verification badge for portfolio cards */
+/* 5.5 Badges & Tags */
 .portfolio-card .verified-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%); /* Gradient background */
+    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%);
     color: white;
     padding: 0.3rem 0.75rem;
-    border-radius: 50rem; /* Pill shape */
+    border-radius: 50rem;
     font-size: 0.8rem;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    z-index: 10; /* Ensures badge appears above other elements */
+    z-index: 10;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon within verification badge */
 .portfolio-card .verified-badge .badge-icon {
-    font-size: 0.75em; /* Smaller than text */
+    font-size: 0.75em;
 }
 
-/* Category tag styling within portfolio cards */
 .portfolio-card .category-tag {
     color: #403687; /* Darkened purple for better contrast */
-    font-weight: 600; /* Bold for emphasis */
+    font-weight: 600; /* Increased from 500 for better visibility */
 }
 
-/* Portfolio rating component styling */
+/* Portfolio Rating Styles */
 .portfolio-rating {
     display: flex;
     align-items: center;
 }
 
-/* Star rating container */
 .rating {
     display: flex;
-    flex-direction: row-reverse; /* Stars displayed from right to left */
+    flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-/* Individual rating star styling */
 .rating label {
     font-size: 1rem;
-    color: #ddd; /* Default color for empty stars */
+    color: #ddd;
     cursor: pointer;
     transition: color 0.2s ease;
     margin-right: 0.1rem;
-    user-select: none; /* Prevents text selection */
+    user-select: none;
 }
 
-/* Filled stars up to the checked input */
 .rating input:checked~label {
-    color: var(--color-primary-purple); /* Brand color for filled stars */
+    color: var(--color-primary-purple);
 }
 
-/* Readonly rating display (no interaction) */
+.rating label:hover,
+.rating label:hover~label {
+    color: var(--color-primary-purple);
+}
+
 .rating.readonly label {
-    cursor: default; /* No pointer cursor when not interactive */
+    cursor: default;
 }
 
-/* Rating count display next to stars */
 .rating-count {
     font-size: 0.8rem;
     color: #4B4B4B;
@@ -507,17 +460,15 @@ a:hover {
    6. Section Styles
 -------------------------------------------------------------- */
 
-/* 6.1 Header & Hero - Main landing section styling */
-/* Hero section with background styling */
+/* 6.1 Header & Hero */
 .hero-section {
     background-color: var(--color-soft-purple);
     padding: 5rem 0;
-    margin-top: 56px; /* Space for fixed navbar */
+    margin-top: 56px;
     position: relative;
     overflow: hidden;
 }
 
-/* Subtle gradient overlay for the hero background */
 .hero-section:before {
     content: "";
     position: absolute;
@@ -525,30 +476,26 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(155, 135, 245, 0.1) 0%, rgba(155, 135, 245, 0.05) 100%); /* Soft purple gradient */
+    background: linear-gradient(135deg, rgba(155, 135, 245, 0.1) 0%, rgba(155, 135, 245, 0.05) 100%);
     z-index: 1;
-    pointer-events: none; /* Allows clicks to pass through to elements below */
+    pointer-events: none;
 }
 
-/* Container within hero to position content above the gradient */
 .hero-section .container {
     position: relative;
     z-index: 2;
 }
 
-/* Main heading in hero section */
 .hero-section h1 {
     font-size: 2.5rem;
     line-height: 1.2;
 }
 
-/* Paragraph text in hero section */
 .hero-section p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-/* Primary CTA button in hero section */
 .hero-section .btn-primary {
     background-color: var(--color-primary-purple);
     border-color: var(--color-primary-purple);
@@ -556,13 +503,11 @@ a:hover {
     font-weight: 600;
 }
 
-/* Hover state for primary hero button */
 .hero-section .btn-primary:hover {
     background-color: var(--color-secondary-purple);
     border-color: var(--color-secondary-purple);
 }
 
-/* Secondary button (light) in hero section */
 .hero-section .btn-light {
     background-color: #ffffff;
     color: var(--color-dark-purple);
@@ -570,26 +515,22 @@ a:hover {
     font-weight: 600;
 }
 
-/* Hover state for secondary hero button */
 .hero-section .btn-light:hover {
     background-color: #f8f9fa;
     color: var(--color-secondary-purple);
 }
 
-/* 6.2 Stats Section - Key metrics display */
-/* Stats section container */
+/* 6.2 Stats Section */
 .stats-section {
     background-color: #fff;
     padding: 3rem 0;
 }
 
-/* Individual stat item container */
 .stat-item {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-/* Large number display for statistics */
 .stat-number {
     font-family: var(--font-body);
     font-size: 2.5rem;
@@ -597,34 +538,29 @@ a:hover {
     font-weight: 700;
 }
 
-/* Label below each statistic */
 .stat-label {
     font-family: var(--font-body);
     color: var(--color-dark-purple);
     font-size: 1rem;
 }
 
-/* 6.3 Process Section - Step-by-step flow explanation */
-/* Process section container */
+/* 6.3 Process Section */
 .process-section {
     background-color: white;
     padding-top: 1rem;
     padding-bottom: 1px;
 }
 
-/* Timeline container for the process steps */
 .process-timeline {
     margin-top: 4rem;
     position: relative;
 }
 
-/* Individual process step container */
 .process-step {
     text-align: center;
     position: relative;
 }
 
-/* Horizontal connector between process steps */
 .process-connector {
     position: absolute;
     top: 30px;
@@ -635,25 +571,21 @@ a:hover {
     z-index: 0;
 }
 
-/* Hover animation for process steps */
 .process-step:hover {
     transform: translateY(-5px);
 }
 
-/* Hover animations for the circular step indicators */
 .process-circle:hover,
 .process-step:hover .process-circle {
-    transform: scale(1.1); /* Circle grows slightly on hover */
-    box-shadow: 0 0 0 10px var(--color-soft-purple); /* Expanded highlight */
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px var(--color-soft-purple);
     z-index: 3;
 }
 
-/* Hides connector after the last step */
 .process-step:last-child .process-connector {
     display: none;
 }
 
-/* Circular numbered indicator for each process step */
 .process-circle {
     width: 60px;
     height: 60px;
@@ -665,35 +597,30 @@ a:hover {
     margin: 0 auto 1.5rem;
     position: relative;
     z-index: 2;
-    box-shadow: 0 0 0 8px var(--color-soft-purple); /* Default highlight */
+    box-shadow: 0 0 0 8px var(--color-soft-purple);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-/* Focus state for keyboard navigation */
 .process-circle:focus {
     outline: 2px solid var(--color-secondary-purple);
     outline-offset: 2px;
 }
 
-/* Number inside process circle */
 .process-circle span {
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
-/* Content area for each process step */
 .process-content {
     padding: 0 1rem;
 }
 
-/* Heading within process content */
 .process-content h4 {
     margin-bottom: 0.75rem;
 }
 
-/* Note/callout within process section */
 .process-note {
     background-color: var(--color-soft-purple);
     border-radius: 12px;
@@ -703,27 +630,23 @@ a:hover {
     gap: 1.5rem;
 }
 
-/* Icon within process note */
 .note-icon {
     font-size: 2rem;
     color: var(--color-primary-purple);
     flex-shrink: 0;
 }
 
-/* Heading within note content */
 .note-content h5 {
     margin-bottom: 0.75rem;
 }
 
-/* 6.4 Featured Section - Highlighted content display */
-/* Featured section container */
+/* 6.4 Featured Section */
 .featured-section {
     background-color: var(--color-very-light-purple);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-/* Alternative styling for featured section */
 .featured-section.alternative {
     background-color: var(--color-soft-gray);
     padding: 5rem 0;
@@ -731,7 +654,6 @@ a:hover {
     margin-bottom: 0rem;
 }
 
-/* Subtitle text within featured section */
 .featured-section .section-subtitle {
     font-family: var(--font-body);
     color: #4B4B4B;
@@ -740,7 +662,6 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-/* Wrapper for portfolio cards in grid layout */
 #portfolio-cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -751,8 +672,7 @@ a:hover {
     justify-content: center;
 }
 
-/* 6.5 Portfolio Cards - Showcasing verified work */
-/* Base portfolio card styling */
+/* 6.5 Portfolio Cards */
 .portfolio-card {
     border: 1px solid #e2e8f0;
     border-radius: 0.5rem;
@@ -762,26 +682,22 @@ a:hover {
     position: relative;
 }
 
-/* Hover effect for portfolio cards */
 .portfolio-card:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px); /* Card lifts slightly */
+    transform: translateY(-4px);
 }
 
-/* Image container within card */
 .portfolio-card .card-img-container {
     position: relative;
     background-color: var(--color-soft-gray);
 }
 
-/* Featured image styling */
 .portfolio-card .card-img-top {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Ensures images maintain aspect ratio */
+    object-fit: cover;
 }
 
-/* Card title styling */
 .portfolio-card .card-title {
     font-family: var(--font-body);
     font-size: 1.1rem;
@@ -790,14 +706,12 @@ a:hover {
     color: var(--color-dark-purple);
 }
 
-/* Author information display */
 .portfolio-card .author-info {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
 }
 
-/* Author avatar image */
 .portfolio-card .author-info img {
     width: 24px;
     height: 24px;
@@ -807,20 +721,17 @@ a:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Author name text */
 .portfolio-card .author-info span {
     font-size: 0.85rem;
     color: var(--color-neutral-gray);
 }
 
-/* Description text within portfolio card */
 .portfolio-card .card-text {
     color: #333333;
     font-weight: 500;
     line-height: 1.5;
 }
 
-/* Footer area of portfolio card */
 .portfolio-card .card-footer {
     background-color: var(--color-soft-gray);
     border-top: 1px solid #e2e8f0;
@@ -828,27 +739,23 @@ a:hover {
     font-size: 0.85rem;
 }
 
-/* Verification date display */
 .portfolio-card .verification-date,
 .portfolio-card time {
     color: #333333;
     font-weight: 500;
 }
 
-/* 6.6 Testimonials Section - Client feedback display */
-/* Testimonials section container */
+/* 6.6 Testimonials Section */
 .testimonials-section {
     background-color: var(--color-very-light-purple);
     padding-top: 1rem;
     padding-bottom: 1px;
 }
 
-/* Section heading */
 .testimonials-section h2 {
     margin-bottom: 1rem;
 }
 
-/* Testimonial author name */
 .testimonials-section h5 {
     font-family: var(--font-body);
     font-weight: 700;
@@ -856,14 +763,12 @@ a:hover {
     margin-bottom: 0.1rem;
 }
 
-/* Subtitle text (e.g., job title) */
 .testimonials-section .text-muted {
     font-size: 0.9rem;
     color: #333333 !important;
     font-weight: 500;
 }
 
-/* Testimonial quote text */
 .testimonials-section p:not(.text-muted) {
     font-size: 1rem;
     line-height: 1.6;
@@ -871,26 +776,22 @@ a:hover {
     color: var(--color-dark-purple);
 }
 
-/* Individual testimonial card */
 .testimonials-section .bg-white {
     border-radius: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for testimonial cards */
 .testimonials-section .bg-white:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* Timestamp styling */
 .testimonials-section time {
     color: #333333;
     font-weight: 500;
 }
 
-/* 6.7 Call to Action - Prompt for user engagement */
-/* Call to action section with gradient background */
+/* 6.7 Call to Action */
 .call-to-action-section {
     background-color: var(--color-primary-purple);
     background-image: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-secondary-purple) 100%);
@@ -898,7 +799,6 @@ a:hover {
     color: #fff;
 }
 
-/* Icon in CTA section */
 .call-to-action-section .cta-icon {
     width: 64px;
     height: 64px;
@@ -908,14 +808,12 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* CTA section heading */
 .call-to-action-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
 }
 
-/* CTA description text */
 .call-to-action-section p {
     font-family: var(--font-body);
     font-size: 1.1rem;
@@ -927,7 +825,6 @@ a:hover {
     color: #fff;
 }
 
-/* CTA button styling */
 .call-to-action-section .btn-cta {
     background-color: #fff;
     color: var(--color-dark-purple);
@@ -939,7 +836,6 @@ a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-/* Hover effect for CTA button */
 .call-to-action-section .btn-cta:hover {
     background-color: #f8f9fa;
     color: var(--color-secondary-purple);
@@ -947,34 +843,29 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 6.8 Footer - Site footer and information */
-/* Footer section with dark background */
+/* 6.8 Footer */
 .footer {
     background-color: var(--color-dark-purple);
     color: white;
     padding: 5rem 0 2rem;
 }
 
-/* Brand display in footer */
 .footer-brand {
     display: flex;
     align-items: center;
     margin-bottom: 1.25rem;
 }
 
-/* Heading in footer brand area */
 .footer-brand h4 {
     margin-bottom: 0;
 }
 
-/* Social media links container */
 .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
 }
 
-/* Individual social media icon link */
 .social-links a {
     display: flex;
     align-items: center;
@@ -988,40 +879,104 @@ a:hover {
     transition: var(--transition);
 }
 
-/* Hover effect for social links */
 .social-links a:hover {
     background-color: var(--primary-purple);
     transform: translateY(-3px);
 }
 
-/* Column headings in footer */
 .footer h5 {
     margin-bottom: 1.25rem;
     font-size: 1.1rem;
     color: white;
 }
 
-/* Footer link lists */
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Individual footer link list items */
 .footer-links li {
     margin-bottom: 0.75rem;
 }
 
-/* Footer link styling */
 .footer-links a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: var(--transition);
 }
 
-/* Hover effect for footer links */
 .footer-links a:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+.footer-subscribe {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.footer-subscribe .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 0.75rem 1rem;
+}
+
+.footer-subscribe .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-subscribe .form-control:focus {
+    box-shadow: none;
+}
+
+/* Email validation styles */
+.footer-subscribe .form-control:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.footer-subscribe .form-control:invalid:focus:not(:placeholder-shown) {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.footer-subscribe .form-control:invalid:not(:placeholder-shown)~.invalid-feedback {
+    display: block;
+}
+
+.footer-subscribe .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #dc3545;
+    position: absolute;
+    top: 100%;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
     color: var(--primary-purple);
     text-decoration: underline;
 }
@@ -1030,14 +985,12 @@ a:hover {
    7. Page-Specific Styles
 -------------------------------------------------------------- */
 
-/* 7.1 Portfolios Page - Gallery display of verified work */
-/* Header for portfolios page */
+/* 7.1 Portfolios Page */
 .portfolios-page-header {
     margin-bottom: 30px;
     padding-top: 40px;
 }
 
-/* Main heading on portfolios page */
 .portfolios-page-header h1 {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
@@ -1045,29 +998,25 @@ a:hover {
     color: #343a40;
 }
 
-/* Description text on portfolios page */
 .portfolios-page-header p {
     font-size: 1.25rem;
     color: #6c757d;
     margin-bottom: 0;
 }
 
-/* 7.2 Apply Page - Portfolio submission form */
-/* Header for application page */
+/* 7.2 Apply Page */
 .apply-page-header {
     padding-top: 60px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-/* Main heading on apply page */
 .apply-page-header h1 {
     font-size: 2.5rem;
     color: var(--color-dark-purple);
     margin-bottom: 1rem;
 }
 
-/* Description text on apply page */
 .apply-page-header p {
     font-size: 1.1rem;
     color: var(--color-neutral-gray);
@@ -1077,15 +1026,13 @@ a:hover {
     line-height: 1.6;
 }
 
-/* Application form section container */
 .application-form-section {
     padding: 0rem 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    min-height: 70vh; /* Ensures minimum height for visual balance */
+    min-height: 70vh;
 }
 
-/* Box containing the application form */
 .application-form-wrapper {
     background-color: #fff;
     padding: 2.5rem;
@@ -1096,7 +1043,6 @@ a:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
 }
 
-/* Verification process explanation section */
 .verification-process-section {
     background-color: var(--color-soft-gray);
     padding: 2rem 0;
@@ -1104,7 +1050,6 @@ a:hover {
     margin-bottom: 0rem;
 }
 
-/* Content in process explanation */
 .process-content {
     padding: 2rem;
     background-color: #fff;
@@ -1112,7 +1057,6 @@ a:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
 }
 
-/* Section for becoming an expert verifier */
 .become-expert-section {
     padding: 4rem 0;
     margin-bottom: 2rem;
@@ -1120,12 +1064,10 @@ a:hover {
     background-color: var(--color-soft-gray);
 }
 
-/* Heading in expert section */
 .become-expert-section h2 {
     margin-bottom: 1rem;
 }
 
-/* Description text in expert section */
 .become-expert-section p {
     max-width: 700px;
     margin-left: auto;
@@ -1136,7 +1078,6 @@ a:hover {
     line-height: 1.7;
 }
 
-/* Links within expert section */
 .become-expert-section a {
     font-weight: 600;
     color: var(--color-primary-purple);
@@ -1144,12 +1085,11 @@ a:hover {
     text-underline-offset: 3px;
 }
 
-/* Hover state for expert section links */
 .become-expert-section a:hover {
     color: var(--color-secondary-purple);
 }
 
-/* Expert expectations box */
+/* Experts look for section */
 .experts-look-for {
     background-color: #f9f9fd;
     border-radius: 8px;
@@ -1158,7 +1098,6 @@ a:hover {
     border: 1px solid #f0f0f5;
 }
 
-/* Heading in experts box */
 .experts-look-for h4 {
     font-family: var(--font-body);
     font-weight: 600;
@@ -1167,14 +1106,12 @@ a:hover {
     color: var(--color-dark-purple);
 }
 
-/* List of expert criteria */
 .experts-look-list {
     list-style: none;
     padding-left: 0;
     margin-bottom: 1.5rem;
 }
 
-/* Individual criteria list item */
 .experts-look-list li {
     position: relative;
     padding-left: 1.5rem;
@@ -1184,7 +1121,6 @@ a:hover {
     line-height: 1.5;
 }
 
-/* Bullet point for list items */
 .experts-look-list li:before {
     content: "•";
     position: absolute;
@@ -1193,7 +1129,6 @@ a:hover {
     font-weight: bold;
 }
 
-/* Note box on verification page */
 .verification-note {
     background-color: white;
     border-radius: 8px;
@@ -1203,12 +1138,10 @@ a:hover {
     border: 1px solid #f0f0f5;
 }
 
-/* Paragraph within verification note */
 .verification-note p {
     margin-bottom: 0;
 }
 
-/* Emphasis within verification note */
 .verification-note strong {
     font-weight: 600;
 }
@@ -1216,21 +1149,21 @@ a:hover {
 /* -------------------------------------------------------------
    8. Utilities & Helpers
 -------------------------------------------------------------- */
-/* Improved Bootstrap muted text for better contrast */
+/* Text muted improvements */
 .text-muted,
 p.text-muted.mb-0 {
     color: #333333 !important; /* Override Bootstrap with much darker color */
     font-weight: 500;
 }
 
-/* Consistent styling for time elements */
+/* Testimonial time elements */
 .bg-white time,
 .testimonials-section time {
     color: #333333;
     font-weight: 500;
 }
 
-/* Comprehensive override for all Bootstrap muted text classes */
+/* Override bootstrap muted text classes */
 .text-muted,
 .small,
 .text-muted small {
@@ -1240,7 +1173,7 @@ p.text-muted.mb-0 {
 /* -------------------------------------------------------------
    9. Accessibility Enhancements
 -------------------------------------------------------------- */
-/* Focus indicators for keyboard navigation */
+/* Simple focus styles for keyboard navigation */
 .process-circle:focus {
     outline: 2px solid var(--color-secondary-purple);
     outline-offset: 2px;
@@ -1249,9 +1182,8 @@ p.text-muted.mb-0 {
 /* -------------------------------------------------------------
    10. Media Queries
 -------------------------------------------------------------- */
-/* Larger screens - Desktop optimization */
+/* Larger screens */
 @media (min-width: 992px) {
-    /* Full height experts box on larger screens */
     .experts-look-for {
         height: 100%;
     }
@@ -1259,7 +1191,6 @@ p.text-muted.mb-0 {
 
 /* Medium to large screens */
 @media (max-width: 1399px) and (min-width: 992px) {
-    /* Hero text adjustments for medium-large screens */
     .hero-section h1 {
         font-size: 2.5rem;
     }
@@ -1279,38 +1210,32 @@ p.text-muted.mb-0 {
     }
 }
 
-/* Medium screens - Tablet optimization */
+/* Medium screens */
 @media (max-width: 991px) {
-    /* Adjustments for expert box on medium screens */
     .experts-look-for {
         margin-top: 3rem;
     }
 
-    /* Connector adjustments for process steps */
     .process-connector {
         width: 50%;
         right: 0;
     }
 }
 
-/* Small screens - Mobile optimization */
+/* Small screens */
 @media (max-width: 767px) {
-    /* General section padding adjustment */
     section {
         padding: 4rem 0;
     }
 
-    /* Process step spacing on mobile */
     .process-step {
         margin-bottom: 2rem;
     }
 
-    /* Hide horizontal connectors on mobile */
     .process-connector {
         display: none;
     }
 
-    /* Footer layout adjustments for mobile */
     .footer-bottom {
         flex-direction: column;
         text-align: center;
@@ -1321,9 +1246,8 @@ p.text-muted.mb-0 {
     }
 }
 
-/* Very small screens - Small mobile optimization */
+/* Very small screens */
 @media (max-width: 328px) {
-    /* Hero text size adjustments for very small screens */
     .hero-section h1 {
         font-size: 1.8rem;
         line-height: 1.2;
@@ -1344,19 +1268,16 @@ p.text-muted.mb-0 {
         height: auto;
     }
 
-    /* Verification process section adjustments */
     .verification-process-section {
         padding: 1.5rem;
     }
 
-    /* Step number sizing for very small screens */
     .step-number {
         width: 32px;
         height: 32px;
         font-size: 0.9rem;
     }
 
-    /* Content text adjustments for very small screens */
     .step-content h4 {
         font-size: 1rem;
     }
@@ -1366,9 +1287,31 @@ p.text-muted.mb-0 {
     }
 }
 
+/* Extremely small screens */
+@media (max-width: 228px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .hero-section p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .hero-section .btn {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 /* Small-to-Medium screens process adjustment */
 @media (max-width: 768px) {
-    /* Vertical connector for verification steps on mobile */
     .verification-step:not(:last-child):after {
         width: 2px;
         height: 100%;
@@ -1376,12 +1319,10 @@ p.text-muted.mb-0 {
         left: 2.5rem;
     }
 
-    /* Process step spacing for small-medium screens */
     .process-step {
         margin-bottom: 3rem;
     }
 
-    /* Transform horizontal connector to vertical for mobile */
     .process-connector {
         position: absolute;
         top: 60px;
@@ -1393,18 +1334,16 @@ p.text-muted.mb-0 {
         z-index: 0;
     }
 
-    /* Last process step spacing */
     .process-step:last-child {
         margin-bottom: 0;
     }
 
-    /* Adjust the search bar for responsive sizes */
+    /* Adjust the search bar responsive */
     .search-bar-wrapper .form-control {
         font-size: 0.9rem;
         padding-left: 35px;
     }
 
-    /* Header text adjustments for portfolios page */
     .portfolios-page-header h1 {
         font-size: 2rem;
     }
@@ -1413,18 +1352,17 @@ p.text-muted.mb-0 {
         font-size: 1rem;
     }
 
-    /* Main container padding adjustment */
+    /* The main container padding */
     #container-main {
         padding-top: 4rem;
     }
     
-    /* Filter buttons adjustments for mobile */
+    /* Filter buttons */
     .filter-buttons-wrapper {
         gap: 10px;
         padding: 5px;
     }
 
-    /* Smaller filter buttons on mobile */
     .filter-buttons-wrapper .btn-filter {
         font-size: 0.9rem;
         padding: 8px 15px;
