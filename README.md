@@ -114,12 +114,12 @@ To run this project locally:
 
 1. Clone the repository:
    ```
-   git clone https://repoeli.github.io/csshtmlproject/verifiedfolio.git
+   git clone https://github.com/repoeli/csshtmlproject.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd verifiedfolio
+   cd csshtmlproject
    ```
 
 3. Open with a local server:
@@ -138,18 +138,57 @@ To run this project locally:
 ## Project Structure
 
 ```
-├── index.html              # Home page
-├── portfolios.html         # Portfolios gallery page
-├── apply.html              # Application page
-├── robots.txt              # Instructions for search engine crawlers
-├── sitemap.xml             # Website structure for search engines
+├── index.html                  # Home page
+├── portfolios.html             # Portfolios gallery page
+├── apply.html                  # Application page
+├── robots.txt                  # Instructions for search engine crawlers
+├── sitemap.xml                 # Website structure for search engines
 ├── assets/
 │   ├── css/
-│   │   └── styles.css      # Main stylesheet
-│   └── images/             # Image assets
-│       ├── favicon/        # Favicon files in various sizes
-│       └── logo/           # Logo variations
+│   │   ├── styles.css          # Main stylesheet
+│   │   └── bootstrap.min.css   # Bootstrap framework
+│   ├── js/
+│   │   ├── main.js             # Custom JavaScript functionality
+│   │   └── bootstrap.bundle.min.js  # Bootstrap JavaScript
+│   ├── images/                 # Image assets
+│   │   ├── favicon/            # Favicon files in various sizes
+│   │   ├── logo/               # Logo variations
+│   │   ├── portfolios/         # Portfolio showcase images
+│   │   ├── team/               # Team member photos
+│   │   ├── testimonials/       # Testimonial author images
+│   │   └── icons/              # UI icons and graphics
+│   └── fonts/                  # Custom web fonts (if applicable)
+└── docs/                       # Additional documentation
 ```
+
+## Development Tools & Technologies
+
+- **HTML5**: Semantic markup structure
+- **CSS3**: Advanced styling with flexbox and grid layouts
+- **Bootstrap 5**: Front-end framework for responsive design
+- **JavaScript**: For interactive elements and form validation
+- **Git/GitHub**: Version control and project hosting
+- **GitHub Pages**: Deployment platform
+- **Google Fonts**: Typography enhancement
+- **Font Awesome**: Icon library
+
+## Deployment
+
+This website is deployed using GitHub Pages from the main branch. When changes are pushed to the main branch, the site is automatically updated.
+
+To deploy your own version:
+1. Fork this repository
+2. Go to repository Settings → Pages
+3. Select the main branch as source
+4. The site will be published at https://[your-username].github.io/csshtmlproject/
+
+## Credits and Acknowledgments
+
+- Bootstrap framework: [getbootstrap.com](https://getbootstrap.com/)
+- Icons: [Font Awesome](https://fontawesome.com/)
+- Fonts: [Google Fonts](https://fonts.google.com/)
+- Stock images: [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
+- Special thanks to all contributors and beta testers
 
 ## Future Enhancements
 
