@@ -1,0 +1,118 @@
+/* ==========================================================================
+   VerifiedFolio Portfolios Page Styles
+   --------------------------------------------------------------------------
+   Styles specific to the portfolios gallery and filtering functionality
+   Version: 1.0
+   Last updated: 2025-05-02
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. Page Header Components
+-------------------------------------------------------------- */
+/* Main Header Section */
+.portfolios-page-header {
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.portfolios-page-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.portfolios-page-header p {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------
+   2. Search Components
+-------------------------------------------------------------- */
+/* Search Bar Container */
+.search-bar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Search Input Field */
+.search-bar-wrapper .form-control {
+    padding-left: 40px;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.search-bar-wrapper .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.search-bar-wrapper .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+/* Search Icon */
+.search-bar-wrapper .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #6c757d;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+/* -------------------------------------------------------------
+   3. Filter Components
+-------------------------------------------------------------- */
+/* Filter Button Container */
+.filter-buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Buttons */
+.filter-buttons-wrapper .btn-filter {
+    border-radius: 50rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    background-color: var(--color-soft-gray);
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+/* Button States */
+.filter-buttons-wrapper .btn-filter:hover,
+.filter-buttons-wrapper .btn-filter:focus {
+    background-color: rgba(155, 135, 245, 0.1);
+    color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.filter-buttons-wrapper .btn-filter.active {
+    background-color: var(--color-primary-purple);
+    color: #fff;
+    border-color: var(--color-primary-purple);
+    font-weight: 600;
+}

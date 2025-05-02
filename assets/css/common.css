@@ -1,0 +1,783 @@
+/* ==========================================================================
+   VerifiedFolio Common Styles
+   --------------------------------------------------------------------------
+   This is the main stylesheet containing common styles shared across pages.
+   Version: 1.0
+   Last updated: 2025-05-02
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. CSS Reset & Base Configuration
+-------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Core Settings */
+:root {
+    /* Brand Colors */
+    --color-primary-purple: #5346B1;
+    /* Primary actions, links */
+    --color-secondary-purple: #4A3E96;
+    /* Hover states, secondary elements */
+    --color-dark-purple: #1A1F2C;
+    /* Text, dark backgrounds */
+    --color-light-purple: #D6BCFA;
+    /* Accents, highlights */
+    --color-soft-purple: #D8D8FF;
+    /* Backgrounds, hover states */
+    --color-very-light-purple: #ede9f6;
+    /* Section backgrounds */
+
+    /* Neutral Colors */
+    --color-neutral-gray: #555555;
+    /* Secondary text */
+    --color-soft-gray: #E9ECEF;
+    /* Subtle backgrounds */
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Base Elements */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #fff;
+    color: var(--color-dark-purple);
+}
+
+/* -------------------------------------------------------------
+   2. Typography System
+-------------------------------------------------------------- */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-dark-purple);
+}
+
+.text-white h2,
+.text-white h3 {
+    color: #fff;
+}
+
+/* Text Utilities */
+.force-sans-serif {
+    font-family: var(--font-body);
+}
+
+/* Links */
+a {
+    color: var(--color-primary-purple);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-secondary-purple);
+}
+
+/* -------------------------------------------------------------
+   3. Layout & Container System
+-------------------------------------------------------------- */
+#container-main {
+    padding: 5rem 0;
+}
+
+/* -------------------------------------------------------------
+   4. Component Library
+-------------------------------------------------------------- */
+/* 4.1 Buttons */
+/* Primary button style with brand colors */
+.btn-primary {
+    background-color: #403687;
+    /* Brand purple */
+    border-color: #403687;
+    color: #ffffff;
+    /* White text for contrast */
+    font-weight: 700;
+    /* Bold text for emphasis */
+}
+
+/* Hover state for primary buttons adds depth with a darker shade */
+.btn-primary:hover {
+    background-color: #332b70;
+    /* Darkened purple on hover */
+    border-color: #332b70;
+}
+
+/* Alternative purple button style for use in different contexts */
+.purple-button {
+    background-color: #403687;
+    /* Matches primary button color */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hover state for alternative purple buttons */
+.purple-button:hover {
+    background-color: #332b70;
+    /* Consistent hover color */
+}
+
+/* Verification submission button with larger padding and hover animation */
+.btn-submit-verification {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+    /* Taller button for better touch targets */
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    /* Full width button */
+    margin-top: 0rem;
+    transition: all 0.2s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Interactive hover effects add depth with shadow and slight lift */
+.btn-submit-verification:hover {
+    background-color: var(--color-secondary-purple);
+    border-color: var(--color-secondary-purple);
+    color: #fff;
+    transform: translateY(-2px);
+    /* Button lifts slightly on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow adds depth */
+}
+
+/* Explore all button in featured section with unique styling */
+.featured-section .btn-explore-all {
+    background-color: #403687;
+    border-color: #403687;
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    /* Wider padding for emphasis */
+    font-weight: 700;
+    /* Bold text */
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+/* Hover state for explore button */
+.featured-section .btn-explore-all:hover {
+    background-color: #332b70;
+    /* Consistent hover color */
+}
+
+/* 4.2 Forms & Inputs */
+/* Focus state for form controls with brand color highlight */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primary-purple);
+    /* Brand color border when focused */
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+    /* Subtle glow effect */
+}
+
+/* Form labels with consistent styling */
+.form-label {
+    font-weight: 500;
+    /* Semi-bold for better readability */
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-dark-purple);
+}
+
+/* 4.3 Cards */
+/* Feature information card used to display key platform features */
+.feature-info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    /* Full height for equal card sizing in a row */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f0f0f5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Interactive hover effect for feature cards */
+.feature-info-card:hover {
+    transform: translateY(-5px);
+    /* Card lifts on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* Enhanced shadow depth */
+}
+
+/* Icon wrapper within feature cards for consistent sizing */
+.feature-info-card .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    /* Circular background */
+    background-color: var(--color-soft-purple);
+    color: var(--color-primary-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Heading style within feature cards */
+.feature-info-card h5 {
+    font-family: var(--font-body);
+    /* Sans-serif for better readability */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-dark-purple);
+}
+
+/* Paragraph text within feature cards */
+.feature-info-card p {
+    font-size: 0.95rem;
+    color: var(--color-neutral-gray);
+    line-height: 1.5;
+}
+
+/* 4.4 Navigation */
+/* Main navbar styling with subtle shadow */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Brand/logo text styling */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Logo image sizing within navbar */
+.navbar-brand .img-logo {
+    height: 40px;
+    width: auto;
+    flex-shrink: 0;
+    /* Prevents logo from shrinking */
+}
+
+/* Navigation links in the navbar */
+.navbar .navbar-nav .nav-link {
+    color: var(--color-dark-purple);
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    font-family: var(--font-body);
+}
+
+/* Active, hover, and focus states for nav links */
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    background-color: var(--color-soft-purple);
+    /* Background highlights active/hovered link */
+    color: var(--color-primary-purple);
+    font-weight: 600;
+}
+
+/* Custom burger menu icon for mobile navigation */
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(26,31,44,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* button in the navbar with brand styling */
+.navbar .btn-nav-cta {
+    background-color: var(--color-primary-purple);
+    border-color: var(--color-primary-purple);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover state for navbar CTA button */
+.navbar .btn-nav-cta:hover {
+    background-color: var(--color-secondary-purple);
+    border-color: var(--color-secondary-purple);
+}
+
+/* 4.5 Badges & Tags */
+/* Verification badge for portfolio cards */
+.portfolio-card .verified-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #5346B1 0%, #4A3E96 100%);
+    /*   Gradient background */
+    color: white;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50rem;
+    /* Pill shape */
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    z-index: 10;
+    /* Ensures badge appears above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon within verification badge */
+.portfolio-card .verified-badge .badge-icon {
+    font-size: 0.75em;
+    /* Smaller than text */
+}
+
+/* Category tag styling within portfolio cards */
+.portfolio-card .category-tag {
+    color: #403687;
+    /* Darkened purple for better contrast */
+    font-weight: 600;
+    /* Bold for emphasis */
+}
+
+/* Portfolio rating component styling */
+.portfolio-rating {
+    display: flex;
+    align-items: center;
+}
+
+/* Star rating container */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Stars displayed from right to left */
+    justify-content: flex-end;
+}
+
+/* Individual rating star styling */
+.rating label {
+    font-size: 1rem;
+    color: #ddd;
+    /* Default color for empty stars */
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-right: 0.1rem;
+    user-select: none;
+    /* Prevents text selection */
+}
+
+/* Filled stars up to the checked input */
+.rating input:checked~label {
+    color: var(--color-primary-purple);
+    /* Brand color for filled stars */
+}
+
+/* Readonly rating display (no interaction) */
+.rating.readonly label {
+    cursor: default;
+    /* No pointer cursor when not interactive */
+}
+
+/* Rating count display next to stars */
+.rating-count {
+    font-size: 0.8rem;
+    color: #4B4B4B;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   5. Section-Specific Styles
+-------------------------------------------------------------- */
+/* 5.1 Portfolio Cards */
+/* Wrapper for portfolio cards in grid layout */
+#portfolio-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    justify-content: center;
+}
+
+/* Base portfolio card styling */
+.portfolio-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Hover effect for portfolio cards */
+.portfolio-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    /* Card lifts slightly */
+}
+
+/* Image container within card */
+.portfolio-card .card-img-container {
+    position: relative;
+    background-color: var(--color-soft-gray);
+}
+
+/* Featured image styling */
+.portfolio-card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures images maintain aspect ratio */
+}
+
+/* Card title styling */
+.portfolio-card .card-title {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-purple);
+}
+
+/* Author information display */
+.portfolio-card .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+/* Author avatar image */
+.portfolio-card .author-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Author name text */
+.portfolio-card .author-info span {
+    font-size: 0.85rem;
+    color: var(--color-neutral-gray);
+}
+
+/* Description text within portfolio card */
+.portfolio-card .card-text {
+    color: #333333;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Footer area of portfolio card */
+.portfolio-card .card-footer {
+    background-color: var(--color-soft-gray);
+    border-top: 1px solid #e2e8f0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+/* Verification date display */
+.portfolio-card .verification-date,
+.portfolio-card time {
+    color: #333333;
+    font-weight: 500;
+}
+
+/* 5.2 Footer */
+/* Footer section with dark background */
+.footer {
+    background-color: var(--color-dark-purple);
+    color: white;
+    padding: 5rem 0 2rem;
+}
+
+/* Brand display in footer */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+/* Heading in footer brand area */
+.footer-brand h4 {
+    margin-bottom: 0;
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Individual social media icon link */
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    background-color: var(--primary-purple);
+    transform: translateY(-3px);
+}
+
+/* Column headings in footer */
+.footer h5 {
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Footer link lists */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual footer link list items */
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+/* Footer link styling */
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------
+   6. Utility Classes
+-------------------------------------------------------------- */
+/* Text Utilities */
+.text-muted,
+p.text-muted.mb-0,
+.small,
+.text-muted small {
+    color: #333333 !important;
+    font-weight: 500;
+}
+
+/* Time Elements */
+.bg-white time,
+.testimonials-section time {
+    color: #333333;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   7. Accessibility Enhancements
+-------------------------------------------------------------- */
+.process-circle:focus {
+    outline: 2px solid var(--color-secondary-purple);
+    outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------
+   8. Responsive Design
+-------------------------------------------------------------- */
+
+/* Desktop (Medium to Large) */
+@media (max-width: 1399px) and (min-width: 992px) {
+
+    /* Hero text adjustments for medium-large screens */
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-section img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    /* Adjustments for expert box on medium screens */
+    .experts-look-for {
+        margin-top: 3rem;
+    }
+
+    /* Connector adjustments for process steps */
+    .process-connector {
+        width: 50%;
+        right: 0;
+    }
+
+    /* Full height experts box on larger screens */
+    .experts-look-for {
+        height: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    
+    /* Vertical connector for verification steps on mobile */
+    .verification-step:not(:last-child):after {
+        width: 2px;
+        height: 100%;
+        top: 3rem;
+        left: 2.5rem;
+    }
+
+    /* Process step spacing for small-medium screens */
+    .process-step {
+        margin-bottom: 3rem;
+    }
+
+    /* Transform horizontal connector to vertical for mobile */
+    .process-connector {
+        position: absolute;
+        top: 60px;
+        right: auto;
+        left: 50%;
+        width: 4px;
+        height: calc(100% - 30px);
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    /* Last process step spacing */
+    .process-step:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Adjust the search bar for responsive sizes */
+    .search-bar-wrapper .form-control {
+        font-size: 0.9rem;
+        padding-left: 35px;
+    }
+
+    /* Header text adjustments for portfolios page */
+    .portfolios-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .portfolios-page-header p {
+        font-size: 1rem;
+    }
+
+    /* Main container padding adjustment */
+    #container-main {
+        padding-top: 4rem;
+    }
+
+    /* Filter buttons adjustments for mobile */
+    .filter-buttons-wrapper {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    /* Smaller filter buttons on mobile */
+    .filter-buttons-wrapper .btn-filter {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* General section padding adjustment */
+    section {
+        padding: 4rem 0;
+    }
+
+    /* Process step spacing on mobile */
+    .process-step {
+        margin-bottom: 2rem;
+    }
+
+    /* Hide horizontal connectors on mobile */
+    .process-connector {
+        display: none;
+    }
+
+    /* Footer layout adjustments for mobile */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 328px) {
+
+    /* Hero text size adjustments for very small screens */
+    .hero-section h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .hero-section .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Verification process section adjustments */
+    .verification-process-section {
+        padding: 1.5rem;
+    }
+
+    /* Step number sizing for very small screens */
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    /* Content text adjustments for very small screens */
+    .step-content h4 {
+        font-size: 1rem;
+    }
+
+    .step-content p {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,245 @@
+/* ==========================================================================
+   VerifiedFolio Apply Page Styles
+   --------------------------------------------------------------------------
+   Styles specific to the portfolio application and verification process pages
+   Version: 1.0
+   Last updated: 2025-05-02
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. Form Components
+-------------------------------------------------------------- */
+/* File Upload Area */
+.file-upload-area {
+    border: 1px dashed var(--color-light-purple);
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    text-align: center;
+    background-color: var(--color-soft-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.file-upload-area:hover {
+    background-color: var(--color-soft-purple);
+}
+
+.file-upload-area .upload-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary-purple);
+    margin-bottom: 0rem;
+}
+
+.file-upload-area .upload-text {
+    font-weight: 600;
+    color: var(--color-primary-purple);
+    margin-bottom: 0rem;
+}
+
+.file-upload-area .upload-hint {
+    font-size: 0.85rem;
+    color: var(--color-neutral-gray);
+    margin-bottom: 0rem;
+}
+
+/* -------------------------------------------------------------
+   2. Page Layout Components
+-------------------------------------------------------------- */
+/* Header Section */
+.apply-page-header {
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.apply-page-header h1 {
+    font-size: 2.5rem;
+    color: var(--color-dark-purple);
+    margin-bottom: 1rem;
+}
+
+.apply-page-header p {
+    font-size: 1.1rem;
+    color: var(--color-neutral-gray);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Application Form Container */
+.application-form-section {
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 70vh;
+}
+
+.application-form-wrapper {
+    background-color: #fff;
+    padding: 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+}
+
+/* -------------------------------------------------------------
+   3. Verification Process Components
+-------------------------------------------------------------- */
+/* Process Section */
+.verification-process-section {
+    background-color: var(--color-soft-gray);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.process-content {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+}
+
+/* Step Layout */
+.verification-step-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.verification-step-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Step Numbers */
+.step-number-container {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+}
+
+.step-number {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-purple);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Step Content */
+.step-content {
+    flex: 1;
+}
+
+.step-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark-purple);
+}
+
+.step-content p {
+    color: var(--color-neutral-gray);
+    line-height: 1.5;
+}
+
+/* -------------------------------------------------------------
+   4. Expert Verifier Section
+-------------------------------------------------------------- */
+/* Main Section */
+.become-expert-section {
+    background-color: var(--color-soft-gray);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.become-expert-section h2 {
+    font-size: 2rem;
+    color: var(--color-dark-purple);
+    margin-bottom: 1rem;
+}
+
+.become-expert-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-neutral-gray);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.become-expert-section a {
+    font-weight: 600;
+    color: var(--color-primary-purple);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.become-expert-section a:hover {
+    color: var(--color-secondary-purple);
+}
+
+/* Expert Requirements Box */
+.experts-look-for {
+    background-color: #f9f9fd;
+    border-radius: 8px;
+    padding: 1.75rem;
+    border: 1px solid #f0f0f5;
+}
+
+.experts-look-for h4 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark-purple);
+}
+
+.experts-look-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.experts-look-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--color-dark-purple);
+    line-height: 1.5;
+}
+
+.experts-look-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0.5rem;
+    color: var(--color-primary-purple);
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------
+   5. Informational Components
+-------------------------------------------------------------- */
+/* Verification Notes */
+.verification-note {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--color-neutral-gray);
+    border: 1px solid #f0f0f5;
+}
+
+.verification-note p {
+    margin-bottom: 0;
+}
+
+.verification-note strong {
+    font-weight: 600;
+}
