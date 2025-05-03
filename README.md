@@ -43,23 +43,41 @@ The website consists of three main pages:
 - Intuitive navigation with clear user pathways
 
 ### Home Page Highlights
-- Engaging hero section with value proposition
-- Featured portfolios showcase with verification badges
-- Visual verification process explanation
-- Testimonials from verified professionals
-- Key statistics highlighting platform benefits
+ -Captivating Welcome – A bold hero section that instantly conveys our platform’s value and sets the 
+  tone.
+
+ -Showcasing Excellence – Verified portfolios take center stage, giving users confidence in the 
+  professionals they choose.
+
+ -Trust Made Visible – A clear, visual breakdown of our verification process ensures transparency.
+
+ -Voices That Matter – Testimonials section from verified professionals share real experiences and 
+  success stories.
+
+ -Statistics That Speak – Key stats highlight the benefits of our platform, proving its impact at a 
+  glance.
 
 ### Portfolio Gallery
-- Filterable portfolio cards by category
-- Detailed portfolio information with verification status
-- Rating system showing portfolio credibility
-- Responsive grid layout adapting to all device sizes
+-Tailored Discovery – Easily filter portfolio cards by category to find exactly what you need.
 
-### Application System
-- User-friendly application form
-- Clear guidelines for verification requirements
-- Step-by-step explanation of the verification process
-- Information for experts interested in becoming verifiers
+-Verified Excellence – Each portfolio includes detailed information, clearly displaying its verification 
+ status.
+
+-Credibility at a Glance – A transparent rating system helps showcase trust and quality.
+
+-Seamless Experience – A responsive grid layout adapts effortlessly to any device, ensuring 
+ accessibility anywhere.
+
+### Application Page
+- Simple & Seamless – A user-friendly application form makes the process smooth and hassle-free.
+
+- Transparent Guidelines – Clear verification requirements ensure applicants know exactly what’s needed.
+
+- Step-by-Step Clarity – A clear breakdown of the verification process helps users navigate each 
+  stage with confidence.
+
+- Opportunities for Experts – Informative resources for professionals interested in becoming verifiers 
+  and contributing to the community.
 
 ## Technical Implementation
 
@@ -69,8 +87,9 @@ The website consists of three main pages:
 - Well-structured forms with appropriate validation
 
 ### CSS Features
+    ![CSS Overview on Googlechrome DevTool](assets/tests/css/css_overview.png)
 - Custom styling built on Bootstrap 5 framework
-- Mobile-first responsive design approach
+- Mobile-first responsive design approach  
 - CSS variables for consistent theming
 - Carefully crafted animations and transitions achived by CSS
 
@@ -98,6 +117,7 @@ We're committed to making VerifiedFolio accessible to everyone:
 - Keyboard navigable interface
 - Descriptive alt text for all images
 - Sufficient color contrast ratios
+![Home Page](assets/tests/css/color_contrast.png)
 - Focus indicators for interactive elements
 - Screen reader compatible content structure
 
