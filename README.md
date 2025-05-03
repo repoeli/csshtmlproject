@@ -263,6 +263,8 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 ![Apply Page](assets/tests/applytest.png)
 
 ## Credits and Acknowledgments
+  Thanks to our tutor Munawar Nadeem at WAES for his invaluable mentorship and support, helping me achieve a professional standard.
+  Grateful to Code Institute for equipping me with essential skills and resources, enriching my learning and bringing this project to life.
 
 - Bootstrap framework: [getbootstrap.com](https://getbootstrap.com/)
 - Icons: [Font Awesome](https://fontawesome.com/)
