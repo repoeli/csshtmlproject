@@ -87,7 +87,7 @@ The website consists of three main pages:
 - Well-structured forms with appropriate validation
 
 ### CSS Features
-    ![CSS Overview on Googlechrome DevTool](assets/tests/css/css_overview.png)
+  ![CSS Overview Googlechrome DevTool](assets/tests/css/css_overview.png)
 - Custom styling built on Bootstrap 5 framework
 - Mobile-first responsive design approach  
 - CSS variables for consistent theming
@@ -117,7 +117,6 @@ We're committed to making VerifiedFolio accessible to everyone:
 - Keyboard navigable interface
 - Descriptive alt text for all images
 - Sufficient color contrast ratios
-![Home Page](assets/tests/css/color_contrast.png)
 - Focus indicators for interactive elements
 - Screen reader compatible content structure
 
@@ -223,19 +222,25 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 
 - **Responsive Design Testing**:
   - Mobile devices (320px - 480px)
-    [Mobile Device Index Test](assets/tests/mobile/index_mobile.png)
-    [Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png)
-    [Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png)
+    - [Mobile Device Index Test](assets/tests/mobile/index_mobile.png)
+
+    - [Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png)
+
+    - [Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png)
 
   - Tablets (481px - 768px) 
-    [Tablet Device Test Index](assets/tests/tablet/tablet_index.png)
-    [Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png)
-    [Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png)
+    - [Tablet Device Test Index](assets/tests/tablet/tablet_index.png)
+
+    - [Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png)
+
+    - [Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png)
 
   - Small laptops to Large desktops (769px - 1025px+)
-    [Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg)
-    [Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg)
-    [Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg)
+    - [Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg)
+
+    - [Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg)
+
+    - [Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg)
     
   - Tested using browser developer tools(Google Chrome) and real devices (my Sumsung mobile)
 
