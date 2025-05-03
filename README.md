@@ -72,7 +72,7 @@ The website consists of three main pages:
 - Custom styling built on Bootstrap 5 framework
 - Mobile-first responsive design approach
 - CSS variables for consistent theming
-- Carefully crafted animations and transitions
+- Carefully crafted animations and transitions achived by CSS
 
 ### SEO Optimization
 - Comprehensive meta tags for all pages
@@ -84,8 +84,9 @@ The website consists of three main pages:
 ### Performance Optimization
 - Optimized images with appropriate sizing and formats
 - Lazy loading for below-the-fold content
-   - is a technique that delays the loading of non-critical resources (like images) until they're needed, which helps improve page load performance. (loading="lazy") 
-- Efficient CSS implementation
+   - is a technique that delays the loading of non-critical resources (like images) until they're 
+    needed, which helps improve page load performance. (loading="lazy") 
+- Efficient CSS implementation 
 - Quick loading times across all devices
 
 ## Accessibility Features
@@ -113,10 +114,10 @@ The website is fully responsive and optimized for all device sizes:
 ## Browser Compatibility
 
 Tested and optimized for modern browsers:
-- Google Chrome (latest 2 versions)
-- Mozilla Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Microsoft Edge (latest 2 versions)
+- Google Chrome 
+- Mozilla Firefox 
+- Safari 
+- Microsoft Edge 
 
 ## Local Development
 
@@ -155,18 +156,16 @@ To run this project locally:
 ├── sitemap.xml                 # Website structure for search engines
 ├── assets/
 │   ├── css/
-│   │   ├── styles.css          # Main stylesheet
-│   │   └── bootstrap.min.css   # Bootstrap framework
-│   ├── js/
-│   │   ├── main.js             # Custom JavaScript functionality
-│   │   └── bootstrap.bundle.min.js  # Bootstrap JavaScript
+│   │   ├── common.css          # Common stylesheet
+│   │   ├── index.css           # index 
+|   |   ├── apply.css           # for apply
+|   |   └── portfolio.css       # for portfolio
 │   ├── images/                 # Image assets
 │   │   ├── favicon/            # Favicon files in various sizes
 │   │   ├── logo/               # Logo variations
 │   │   ├── portfolios/         # Portfolio showcase images
 │   │   ├── team/               # Team member photos
-│   │   ├── testimonials/       # Testimonial author images
-│   │   └── icons/              # UI icons and graphics
+│   │   └── favicon/            # UI icons and graphics
 │   └── fonts/                  # Custom web fonts (if applicable)
 └── docs/                       # Additional documentation
 ```
@@ -187,7 +186,7 @@ To run this project locally:
 This website is deployed using GitHub Pages from the main branch. When changes are pushed to the main branch, the site is automatically updated.
 
 To deploy your own version:
-1. Fork this repository
+1. Fork this repository from: https://github.com/repoeli/csshtmlproject
 2. Go to repository Settings → Pages
 3. Select the main branch as source
 4. The site will be published at https://[your-username].github.io/csshtmlproject/
@@ -204,9 +203,20 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 
 - **Responsive Design Testing**:
   - Mobile devices (320px - 480px)
+    [Mobile Device Index Test](assets/tests/mobile/index_mobile.png)
+    [Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png)
+    [Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png)
+
   - Tablets (481px - 768px) 
-  - Small laptops (769px - 1024px)
-  - Larger desktops (1025px+)
+    [Tablet Device Test Index](assets/tests/tablet/tablet_index.png)
+    [Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png)
+    [Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png)
+
+  - Small laptops to Large desktops (769px - 1025px+)
+    [Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg)
+    [Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg)
+    [Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg)
+    
   - Tested using browser developer tools(Google Chrome) and real devices (my Sumsung mobile)
 
 - **Functionality Testing**:
@@ -227,8 +237,17 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 - **HTML**: Validated using the W3C Markup Validation Service
   - All pages pass with no errors
   
+    [Index html test](assets/tests/html/index.jpeg)
+    [Portfolio html test](assets/tests/html/portfolio.jpeg)
+    [apply html test](assets/tests/html/apply.jpeg)
+  
 - **CSS**: Validated using the W3C CSS Validation Service
   - Stylesheet passes with no errors
+
+    [Index css test](assets/tests/css/indexs.jpeg)
+    [Portfolio css test](assets/tests/css/portfolios.jpeg)
+    [apply css test](assets/tests/css/apply.jpeg)
+    [Common css test](assets/tests/css/common.jpeg)
 
 ### Performance Testing
 
@@ -249,11 +268,13 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 - Icons: [Font Awesome](https://fontawesome.com/)
 - Fonts: [Google Fonts](https://fonts.google.com/)
 - Stock images: [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
-- Special thanks to all contributors and beta testers
+- ChatGPT for Text and logo design and generation : [ChatGPT](https://chatgpt.com/)
+- GitHubCopilot for help on codding [GitHubCopilot](https://github.com)
+- Code Institute GitHub [Code Institute](https://github.com/Code-Institute-Solutions)
 
 ## Future Enhancements
 
-We're constantly improving VerifiedFolio with plans to add:
+Improving VerifiedFolio with plans to add:
 
 - User authentication system
 - Personalized dashboards for professionals
@@ -277,8 +298,6 @@ We welcome contributions to improve VerifiedFolio:
 
 For questions, feedback, or support:
 - Email: 525587@waes.ac.uk
-- Twitter: [@VerifiedFolio](https://twitter.com/verifiedfolio)
-- LinkedIn: [VerifiedFolio](https://linkedin.com/company/verifiedfolio)
 
 ## License
 
