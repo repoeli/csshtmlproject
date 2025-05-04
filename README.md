@@ -16,16 +16,10 @@ Our mission is to:
 ## Live Website
 
 Visit our website: [VerifiedFolio](https://repoeli.github.io/csshtmlproject/)
-## Screenshots
+## Wireframe
 
 ### Home Page
-![Home Page](assets/portfolios/homepage.png)
-
-### Portfolios Gallery
-![Portfolios Page](assets/portfolios/portfolio.png)
-
-### Application Form
-![Apply Page](assets/portfolios/apply.png)
+![Home Page](assets/portfolios/Wireframe%20Home.png)
 
 ## Website Structure
 
@@ -220,7 +214,11 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
   - Checked for consistent rendering of layouts, fonts, and colors
   - Confirmed all interactive elements function as expected across browsers
 
-- **Responsive Design Testing**:
+| Mobile devices (320px - 480px) | Tablets (481px - 768px) | Small laptops to Large desktops (769px - 1025px+) |
+|------------------------------|-------------------------|------------------------------------------------------|
+| ![Mobile Device Index Test](assets/tests/mobile/index_mobile.png) | ![Tablet Device Test Index](assets/tests/tablet/tablet_index.png) | ![Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg) |
+| ![Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png) | ![Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png) | ![Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg) |
+| ![Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png) | ![Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png) | ![Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg) |
   - Mobile devices (320px - 480px)
     - [Mobile Device Index Test](assets/tests/mobile/index_mobile.png)
 
