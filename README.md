@@ -261,15 +261,20 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
   - All pages pass with no errors
   
     [Index html test](assets/tests/html/index.jpeg)
+
     [Portfolio html test](assets/tests/html/portfolio.jpeg)
+
     [apply html test](assets/tests/html/apply.jpeg)
   
 - **CSS**: Validated using the W3C CSS Validation Service
   - Stylesheet passes with no errors
 
     [Index css test](assets/tests/css/indexs.jpeg)
+
     [Portfolio css test](assets/tests/css/portfolios.jpeg)
+
     [apply css test](assets/tests/css/apply.jpeg)
+    
     [Common css test](assets/tests/css/common.jpeg)
 
 ### Performance Testing
