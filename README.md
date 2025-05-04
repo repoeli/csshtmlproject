@@ -37,41 +37,24 @@ The website consists of three main pages:
 - Intuitive navigation with clear user pathways
 
 ### Home Page Highlights
- -Captivating Welcome – A bold hero section that instantly conveys our platform’s value and sets the 
-  tone.
-
- -Showcasing Excellence – Verified portfolios take center stage, giving users confidence in the 
-  professionals they choose.
-
- -Trust Made Visible – A clear, visual breakdown of our verification process ensures transparency.
-
- -Voices That Matter – Testimonials section from verified professionals share real experiences and 
-  success stories.
-
- -Statistics That Speak – Key stats highlight the benefits of our platform, proving its impact at a 
-  glance.
+- **Captivating Welcome** – A bold hero section that instantly conveys our platform’s value and sets the tone.
+- **Showcasing Excellence** – Verified portfolios take center stage, giving users confidence in the professionals they choose.
+- **Trust Made Visible** – A clear, visual breakdown of our verification process ensures transparency.
+- **Voices That Matter** – Testimonials section from verified professionals share real experiences and success stories.
+- **Statistics That Speak** – Key stats highlight the benefits of our platform, proving its impact at a glance.
 
 ### Portfolio Gallery
--Tailored Discovery – Easily filter portfolio cards by category to find exactly what you need.
-
--Verified Excellence – Each portfolio includes detailed information, clearly displaying its verification 
- status.
-
--Credibility at a Glance – A transparent rating system helps showcase trust and quality.
-
--Seamless Experience – A responsive grid layout adapts effortlessly to any device, ensuring 
- accessibility anywhere.
+- **Tailored Discovery** – Easily filter portfolio cards by category to find exactly what you need.
+- **Verified Excellence** – Each portfolio includes detailed information, clearly displaying its verification status.
+- **Credibility at a Glance** – A transparent rating system helps showcase trust and quality.
+- **Seamless Experience** – A responsive grid layout adapts effortlessly to any device, ensuring accessibility anywhere.
 
 ### Application Page
-- Simple & Seamless – A user-friendly application form makes the process smooth and hassle-free.
 
-- Transparent Guidelines – Clear verification requirements ensure applicants know exactly what’s needed.
-
-- Step-by-Step Clarity – A clear breakdown of the verification process helps users navigate each 
-  stage with confidence.
-
-- Opportunities for Experts – Informative resources for professionals interested in becoming verifiers 
-  and contributing to the community.
+- **Simple & Seamless** – A user-friendly application form makes the process smooth and hassle-free.
+- **Transparent Guidelines** – Clear verification requirements ensure applicants know exactly what’s needed.
+- **Step-by-Step Clarity** – A clear breakdown of the verification process helps users navigate each stage with confidence.
+- **Opportunities for Experts** – Informative resources for professionals interested in becoming verifiers and contributing to the community.
 
 ## Technical Implementation
 
@@ -299,8 +282,9 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
 - Fonts: [Google Fonts](https://fonts.google.com/)
 - Stock images: [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/)
 - ChatGPT for Text and logo design and generation : [ChatGPT](https://chatgpt.com/)
-- GitHubCopilot for help on codding [GitHubCopilot](https://github.com)
-- Code Institute GitHub [Code Institute](https://github.com/Code-Institute-Solutions)
+- GitHubCopilot for help on codding: [GitHubCopilot](https://github.com)
+- Code Institute GitHub: [Code Institute](https://github.com/Code-Institute-Solutions)
+- Balsamiq: [Balsamiq was used to create the wireframe.](https://balsamiq.cloud/)
 
 ## Future Enhancements
 
