@@ -571,6 +571,21 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer Bottom */
+.footer-bottom {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Footer Legal Links */
+.footer-legal {
+    margin-top: 0;
+}
+
+/* Footer Bottom Margin */
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
 /* -------------------------------------------------------------
    6. Utility Classes
 -------------------------------------------------------------- */
@@ -590,6 +605,36 @@ p.text-muted.mb-0,
     font-weight: 500;
 }
 
+/* Testimonial Images */
+.testimonials-section .author-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.testimonials-section .author-img.me-3.rounded-circle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Footer Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    animation: fadeInUp 1s ease-in-out;
+}
+
 /* -------------------------------------------------------------
    7. Accessibility Enhancements
 -------------------------------------------------------------- */
@@ -601,6 +646,22 @@ p.text-muted.mb-0,
 /* -------------------------------------------------------------
    8. Responsive Design
 -------------------------------------------------------------- */
+
+/* Footer animations */
+.animate-footer {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Desktop (Medium to Large) */
 @media (max-width: 1399px) and (min-width: 992px) {
@@ -779,5 +840,15 @@ p.text-muted.mb-0,
 
     .step-content p {
         font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+    }
+    
+    .footer-bottom p {
+        margin-right: 1rem;
     }
 }

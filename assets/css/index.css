@@ -275,3 +275,18 @@
     color: #333333;
     font-weight: 500;
 }
+
+/* Testimonial Section */
+.testimonials-section .testimonial-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/* Rating Component */
+.stars-display {
+    color: #FFD700;
+    font-size: 1rem;
+}
