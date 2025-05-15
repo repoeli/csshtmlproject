@@ -4,5 +4,5 @@ presentation.md
 presentation.html
 
 # Ignore configuration files containing API keys
-#assets/js/config.js
+assets/js/config.js
 .env.local

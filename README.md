@@ -197,31 +197,9 @@ The VerifiedFolio project has undergone comprehensive manual testing to ensure q
   - Checked for consistent rendering of layouts, fonts, and colors
   - Confirmed all interactive elements function as expected across browsers
 
-| Mobile devices (320px - 480px) | Tablets (481px - 768px) | Small laptops to Large desktops (769px - 1025px+) |
-|------------------------------|-------------------------|------------------------------------------------------|
-| ![Mobile Device Index Test](assets/tests/mobile/index_mobile.png) | ![Tablet Device Test Index](assets/tests/tablet/tablet_index.png) | ![Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg) |
-| ![Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png) | ![Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png) | ![Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg) |
-| ![Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png) | ![Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png) | ![Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg) |
-  - Mobile devices (320px - 480px)
-    - [Mobile Device Index Test](assets/tests/mobile/index_mobile.png)
+ Mobile devices (320px - 480px) - Tablets (481px - 768px) - Small laptops to Large desktops (769px - 1025px+) 
 
-    - [Mobile Device Portfolio Test](assets/tests/mobile/portfolios_mobile.png)
-
-    - [Mobile Device Apply Test](assets/tests/mobile/apply_mobile.png)
-
-  - Tablets (481px - 768px) 
-    - [Tablet Device Test Index](assets/tests/tablet/tablet_index.png)
-
-    - [Tablet Device Test Portfolio](assets/tests/tablet/portfolios_tablet.png)
-
-    - [Tablet Device Test Apply](assets/tests/tablet/apply_tablet.png)
-
-  - Small laptops to Large desktops (769px - 1025px+)
-    - [Index Test](assets/tests/computer/index_small_laptop_to_large_desktop.jpeg)
-
-    - [Portfolio Test](assets/tests/computer/portfolio_small_laptop_to_large_desktop.jpeg)
-
-    - [Apply Test](assets/tests/computer/apply_small_laptop_to_large_desktop.jpeg)
+![Device Responsiveness Test](assets/tests/mobile/homePageMobile.png)
     
   - Tested using browser developer tools(Google Chrome) and real devices (my Sumsung mobile)
 
