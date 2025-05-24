@@ -1,642 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Apply for Portfolio Verification | Get Your Work Certified by Experts
+        Apply for Portfolio Verification | Get Your Work Certified by Experts
     </title>
-    <meta
-      name="description"
-      content="Submit your professional portfolio for expert verification. Our team of industry specialists will review your work and provide a trust badge that builds credibility."
-    />
-    <meta
-      name="keywords"
-      content="portfolio verification, apply for verification, professional portfolio, expert verification, portfolio certification"
-    />
+    <meta name="description"
+        content="Submit your professional portfolio for expert verification. Our team of industry specialists will review your work and provide a trust badge that builds credibility." />
+    <meta name="keywords"
+        content="portfolio verification, apply for verification, professional portfolio, expert verification, portfolio certification" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Verified Portfolios" />
-    <link
-      rel="canonical"
-      href="https://repoeli.github.io/csshtmlproject/apply.html"
-    />
+    <link rel="canonical" href="https://repoeli.github.io/csshtmlproject/apply.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://repoeli.github.io/csshtmlproject/apply.html"
-    />
-    <meta
-      property="og:title"
-      content="Apply for Portfolio Verification | Verified Portfolios"
-    />
-    <meta
-      property="og:description"
-      content="Submit your work for expert verification and gain credibility with clients and recruiters through our trusted verification process."
-    />
-    <meta
-      property="og:image"
-      content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png"
-    />
+    <meta property="og:url" content="https://repoeli.github.io/csshtmlproject/apply.html" />
+    <meta property="og:title" content="Apply for Portfolio Verification | Verified Portfolios" />
+    <meta property="og:description"
+        content="Submit your work for expert verification and gain credibility with clients and recruiters through our trusted verification process." />
+    <meta property="og:image"
+        content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://repoeli.github.io/csshtmlproject/apply.html"
-    />
-    <meta
-      property="twitter:title"
-      content="Apply for Portfolio Verification | Verified Portfolios"
-    />
-    <meta
-      property="twitter:description"
-      content="Submit your work for expert verification and gain credibility with clients and recruiters through our trusted verification process."
-    />
-    <meta
-      property="twitter:image"
-      content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png"
-    />
+    <meta property="twitter:url" content="https://repoeli.github.io/csshtmlproject/apply.html" />
+    <meta property="twitter:title" content="Apply for Portfolio Verification | Verified Portfolios" />
+    <meta property="twitter:description"
+        content="Submit your work for expert verification and gain credibility with clients and recruiters through our trusted verification process." />
+    <meta property="twitter:image"
+        content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png" />
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
     <!-- Standard Favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon/favicon-16x16-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon/favicon-32x32-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/images/favicon/favicon-192x192-1.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/favicon/favicon-180x180-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/images/favicon/favicon-512x512-1.png"
-    />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16-1.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32-1.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/favicon-192x192-1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon-180x180-1.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/favicon-512x512-1.png" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/apply.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <!-- ========================================
+         HEADER SECTION - NAVIGATION BAR
+         ======================================== -->
+    <!-- Fixed navigation header with consistent branding and responsive design -->
+    <!-- Uses Bootstrap navbar component with fixed positioning for persistent access -->
     <header class="header" aria-label="Main Navigation">
-      <!-- Fixed Navbar -->
-      <!-- Navbar (Consistent Structure) -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-          <a href="index.html" class="navbar-brand me-auto">
-            <img
-              class="img-logo align-middle"
-              src="assets/images/logo/verified_folio_navbar_logo_wide.png"
-              alt="Verified Folio Logo"
-              loading="lazy"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav align-items-center gap-lg-2">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolios.html">Portfolios</a>
-                <!-- Link to portfolios page -->
-              </li>
-              <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
-                <!-- Set Apply link as active -->
-                <a
-                  class="btn btn-primary btn-nav-cta active"
-                  aria-current="page"
-                  href="apply.html#application-form-section"
-                  >Apply for Verification</a
-                >
-              </li>
-              <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
-                <!-- Set Apply link as active -->
-                <a
-                  class="btn btn-primary btn-nav-cta active"
-                  aria-current="page"
-                  href="#footer"
-                  >Newsletter</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Page Header -->
-      <section id="apply-page-header" class="container pt-5 pb-0">
-        <!-- Added padding -->
-        <div class="text-center apply-page-header">
-          <h1>Apply for Portfolio Verification</h1>
-          <p>
-            Submit your professional work for review by our industry experts and
-            gain a trust badge that opens doors.
-          </p>
-        </div>
-      </section>
-
-      <!-- Feature Info Cards Section -->
-      <section id="features-section" class="container pb-0">
-        <div class="row g-4 justify-content-center">
-          <!-- Card 1: Portfolio Quality -->
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-info-card">
-              <div class="icon-wrapper">
-                <i class="fas fa-gem"></i>
-                <!-- Example Icon -->
-              </div>
-              <h5>Portfolio Quality</h5>
-              <p>
-                Your portfolio should showcase your best work with clear
-                descriptions of your role and contributions.
-              </p>
-            </div>
-          </div>
-          <!-- Card 2: Documentation -->
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-info-card">
-              <div class="icon-wrapper">
-                <i class="fas fa-file-alt"></i>
-                <!-- Example Icon -->
-              </div>
-              <h5>Documentation</h5>
-              <p>
-                Include process documentation, outcomes, and metrics that
-                demonstrate the success of your work.
-              </p>
-            </div>
-          </div>
-          <!-- Card 3: Experience -->
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-info-card">
-              <div class="icon-wrapper">
-                <i class="fas fa-clock"></i>
-                <!-- Example Icon -->
-              </div>
-              <h5>Experience</h5>
-              <p>
-                We recommend at least 2 years of professional experience in your
-                field to ensure quality verification.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Application Form Section -->
-      <section id="application-form-section" class="container pt-5">
-        <div class="application-form-section">
-          <h2 class="text-center mb-4">Submit Your Application</h2>
-          <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <div class="application-form-wrapper">
-                <form
-                  action="success.html"
-                  method="GET"
-                  class="application-form"
-                >
-                  <!-- Full Name -->
-                  <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fullName"
-                      placeholder="Enter your full name"
-                      required
-                    />
-                  </div>
-
-                  <!-- Email Address -->
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Enter your email address"
-                      required
-                    />
-                  </div>
-
-                  <!-- Portfolio Type -->
-                  <div class="mb-3">
-                    <label for="portfolioType" class="form-label"
-                      >Portfolio Type</label
-                    >
-                    <select class="form-select" id="portfolioType" required>
-                      <option selected disabled value="">
-                        Select portfolio category
-                      </option>
-                      <option value="web_dev">Web Development</option>
-                      <option value="graphic_design">Graphic Design</option>
-                      <option value="data_science">Data Science</option>
-                      <option value="mobile_dev">Mobile Development</option>
-                      <option value="ux_ui">UX/UI Design</option>
-                      <option value="cybersecurity">Cybersecurity</option>
-                      <option value="digital_marketing">
-                        Digital Marketing
-                      </option>
-                      <option value="3d_design">3D Design</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <!-- Portfolio URL -->
-                  <div class="mb-3">
-                    <label for="portfolioURL" class="form-label"
-                      >Portfolio URL (if available)</label
-                    >
-                    <input
-                      type="url"
-                      class="form-control"
-                      id="portfolioURL"
-                      placeholder="https://your-portfolio-site.com"
-                    />
-                  </div>
-
-                  <!-- Project Description -->
-                  <div class="mb-3">
-                    <label for="projectDescription" class="form-label"
-                      >Project Description</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="projectDescription"
-                      rows="4"
-                      placeholder="Tell us about your portfolio and what makes it unique..."
-                      required
-                    ></textarea>
-                  </div>
-
-                  <!-- File Upload -->
-                  <div class="mb-4">
-                    <label for="file-upload-input" class="form-label"
-                      >Upload Portfolio Files (PDF, ZIP, etc.)</label
-                    >
-                    <!-- Visually hidden actual file input -->
-                    <input
-                      type="file"
-                      id="file-upload-input"
-                      class="d-none"
-                      required
-                    />
-                    <!-- Custom styled dropzone area -->
-                    <div
-                      class="file-upload-area text-center"
-                      onclick="document.getElementById('file-upload-input').click()"
-                    >
-                      <div class="upload-icon mb-3">
-                        <img
-                          src="assets/images/upload-icon.svg"
-                          alt="Upload"
-                          width="40"
-                          height="40"
-                          onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTZWOE0xMiA4TDguNSAxMS41TTEyIDhMMTUuNSAxMS41TTIwIDIwSDRDMi44OTU0MyAyMCAyIDE5LjEwNDYgMiAxOFY2QzIgNC44OTU0MyAyLjg5NTQzIDQgNCA0SDIwQzIxLjEwNDYgNCAyMiA0Ljg5NTQzIDIyIDZWMThDMjIgMTkuMTA0NiAyMS4xMDQ2IDIwIDIwIDIwWiIgc3Ryb2tlPSIjOUI4N0Y1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==';"
-                        />
-                      </div>
-                      <p class="upload-text">
-                        <a href="#" class="text-purple">Click to upload</a> or
-                        drag and drop
-                      </p>
-                      <p class="text-muted small">Max file size 50MB</p>
-                    </div>
-                  </div>
-
-                  <!-- Submit Button -->
-                  <button
-                    type="submit"
-                    class="btn btn-submit-verification w-100"
-                  >
-                    Submit for Verification
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Verification Process Section -->
-      <section
-        id="verification-process-section"
-        class="verification-process-section py-3"
-      >
-        <div class="container">
-          <div class="process-content rounded shadow-sm">
-            <h2 class="text-center mb-4">Verification Process</h2>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <!-- Step 1 -->
-                <div class="verification-step-row d-flex mb-5">
-                  <div class="step-number-container me-3">
-                    <div class="step-number">1</div>
-                  </div>
-                  <div class="step-content">
-                    <h4>Submit Your Application</h4>
-                    <p>
-                      Fill out the application form with details about your
-                      portfolio and upload relevant files or links.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="verification-step-row d-flex mb-5">
-                  <div class="step-number-container me-3">
-                    <div class="step-number">2</div>
-                  </div>
-                  <div class="step-content">
-                    <h4>Expert Review</h4>
-                    <p>
-                      Our team of industry experts will review your portfolio
-                      based on quality, authenticity, and industry standards.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="verification-step-row d-flex">
-                  <div class="step-number-container me-3">
-                    <div class="step-number">3</div>
-                  </div>
-                  <div class="step-content">
-                    <h4>Receive Verification</h4>
-                    <p>
-                      Upon approval, your portfolio receives our verification
-                      badge and appears on our platform.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="experts-look-for">
-                  <h4 class="mb-3">What Our Experts Look For:</h4>
-                  <ul class="experts-look-list">
-                    <li>Technical proficiency and quality of execution</li>
-                    <li>Creativity and innovation in approach</li>
-                    <li>Problem-solving skills and solution effectiveness</li>
-                    <li>Documentation quality and process clarity</li>
-                    <li>Impact and results of the work</li>
-                  </ul>
-
-                  <div class="verification-note">
-                    <p class="mb-0">
-                      <strong>Note:</strong> The verification process typically
-                      takes 7-10 business days depending on complexity and
-                      volume of applications.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Become an Expert Section -->
-      <section
-        id="become-expert-section"
-        class="become-expert-section text-center"
-      >
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <h2>Become a Verification Expert</h2>
-              <p>
-                Are you an experienced professional interested in joining our
-                team of volunteer verifiers? Help maintain quality standards
-                while connecting with emerging talent in your field.
-              </p>
-              <a href="#">Learn more about becoming a verification expert</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer Section with Accessibility and Performance Improvements -->
-    <footer id="footer" class="footer" aria-label="Site footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="footer-brand">
-              <a href="index.html" class="navbar-brand me-auto">
-                <!-- Improved image attributes for performance -->
-                <img
-                  class="img-logo align-middle"
-                  src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
-                  alt="Verified Folio Logo"
-                  width="180"
-                  height="40"
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <p>
-              Elevating professional portfolios through our trusted verification
-              process.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook" rel="noopener noreferrer"
-                ><i class="bi bi-facebook" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="Twitter" rel="noopener noreferrer"
-                ><i class="bi bi-twitter" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="Instagram" rel="noopener noreferrer"
-                ><i class="bi bi-instagram" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"
-                ><i class="bi bi-linkedin" aria-hidden="true"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-            <h5 id="company-links">Company</h5>
-            <ul class="footer-links" aria-labelledby="company-links">
-              <li>
-                <a
-                  href="portfolios.html#container-main"
-                  aria-label="Verified Portfolios"
-                  >Verified Portfolios</a
-                >
-              </li>
-              <li>
-                <a href="index.html#stats-section" aria-label="See Statistics"
-                  >See Statistics</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#testimonials-section"
-                  aria-label="See Testimonials"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#featured-section"
-                  aria-label="Featured Portfolios"
-                  >Featured Portfolios</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-            <h5 id="resource-links">Resources</h5>
-            <ul class="footer-links" aria-labelledby="resource-links">
-              <li>
-                <a
-                  href="#verification-process-section"
-                  aria-label="Read Verification Information"
-                  >Verification Information</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#become-expert-section"
-                  aria-label="Become a Portfolio verifier"
-                  >Become Verifier</a
-                >
-              </li>
-              <li>
-                <a href="index.html#process" aria-label="Verification Process"
-                  >Verification Process</a
-                >
-              </li>
-              <li>
-                <a href="#apply-page-header" aria-label="Apply Verification"
-                  >Apply Verification</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <h5 id="newsletter-signup">Stay Updated</h5>
-            <p>
-              Subscribe to our newsletter for the latest updates and features.
-            </p>
-            <form class="footer-subscribe" aria-labelledby="newsletter-signup">
-              <div class="input-group has-validation">
-                <label for="emailAddress" class="visually-hidden"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailAddress"
-                  name="emailAddress"
-                  placeholder="Enter your email address"
-                  pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
-                  aria-describedby="emailAddressError"
-                  required
-                />
-                <button
-                  class="btn btn-primary"
-                  type="submit"
-                  aria-label="Subscribe to newsletter"
-                >
-                  Subscribe
+        <!-- Fixed navigation bar maintaining consistency across all pages -->
+        <!-- Bootstrap navbar with responsive collapse functionality and accessibility features -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <!-- Brand logo linking back to homepage for navigation consistency -->
+                <!-- Optimized with lazy loading and proper alt text for accessibility -->
+                <a href="index.html" class="navbar-brand me-auto">
+                    <img class="img-logo align-middle" src="assets/images/logo/verified_folio_navbar_logo_wide.png"
+                        alt="Verified Folio Logo" loading="lazy" />
+                </a>
+                <!-- Mobile navigation toggle button for responsive design -->
+                <!-- Bootstrap collapse component with proper ARIA labels for screen readers -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="invalid-feedback" id="emailAddressError">
-                  Please enter a valid email address.
+                <!-- Main navigation menu with responsive collapse behavior -->
+                <!-- Justified to end for proper alignment on larger screens -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <!-- Navigation items with consistent spacing and alignment -->
+                    <ul class="navbar-nav align-items-center gap-lg-2">
+                        <!-- Home page navigation link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Portfolio gallery navigation link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolios.html">Portfolios</a>
+                        </li>
+                        <!-- Newsletter section anchor link for footer navigation -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Newsletter</a>
+                        </li>
+                        <!-- Primary call-to-action button for verification application -->
+                        <!-- Current page indicator with active styling -->
+                        <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
+                            <a class="btn btn-primary btn-nav-cta" href="apply.html">Apply for Verification</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12">
-            <div
-              class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center animate-footer"
-            >
-              <p class="mb-2 mb-md-0 me-md-3">
-                <small
-                  >&copy; <time datetime="2025">2025</time> Verified Portfolios.
-                  All rights reserved.</small
-                >
-              </p>
-              <nav class="footer-legal" aria-label="Legal links">
-                <a href="#" aria-label="Privacy Policy" class="me-2"
-                  >Privacy Policy</a
-                >
-                <a href="#" aria-label="Terms of Service">Terms of Service</a>
-              </nav>
             </div>
-          </div>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT AREA
+         ======================================== -->
+    <!-- Main content wrapper containing all application-related sections -->
+    <main>
+        <!-- ========================================
+             PAGE HEADER SECTION
+             ======================================== -->
+        <!-- Application page introduction with clear heading and value proposition -->
+        <!-- Positioned with top padding to account for fixed navigation bar -->
+        <section id="apply-page-header" class="container pt-5 pb-0">
+            <!-- Centered header content explaining the application process and benefits -->
+            <div class="text-center apply-page-header">
+                <!-- Primary page heading for SEO and accessibility -->
+                <h1>Apply for Portfolio Verification</h1>
+                <!-- Compelling description highlighting expert review and trust badge benefits -->
+                <p>
+                    Submit your professional work for review by our industry experts and
+                    gain a trust badge that opens doors.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FEATURES INFO CARDS SECTION
+             ======================================== -->
+        <!-- Three-column grid explaining verification requirements and expectations -->
+        <!-- Provides clear guidance on what makes a successful application -->
+        <section id="features-section" class="container pb-0">
+            <!-- Responsive grid layout with center justification for balanced appearance -->
+            <div class="row g-4 justify-content-center">
+                <!-- CARD 1: Portfolio Quality Requirements -->
+                <!-- Information card explaining quality standards and expectations -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-info-card">
+                        <!-- Icon container with gem icon representing quality and excellence -->
+                        <div class="icon-wrapper">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <!-- Quality standards heading and description -->
+                        <h5>Portfolio Quality</h5>
+                        <p>
+                            Your portfolio should showcase your best work with clear
+                            descriptions of your role and contributions.
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 2: Documentation Requirements -->
+                <!-- Information card explaining documentation and process requirements -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-info-card">
+                        <!-- Icon container with document icon representing comprehensive documentation -->
+                        <div class="icon-wrapper">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <!-- Documentation requirements heading and description -->
+                        <h5>Documentation</h5>
+                        <p>
+                            Include process documentation, outcomes, and metrics that
+                            demonstrate the success of your work.
+                        </p>
+                    </div>
+                </div>
+                <!-- CARD 3: Experience Requirements -->
+                <!-- Information card explaining minimum experience expectations -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-info-card">
+                        <!-- Icon container with clock icon representing time and experience -->
+                        <div class="icon-wrapper">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <!-- Experience requirements heading and description -->
+                        <h5>Experience</h5>
+                        <p>
+                            We recommend at least 2 years of professional experience in your
+                            field to ensure quality verification.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             APPLICATION FORM SECTION
+             ======================================== -->
+        <!-- Main application form allowing users to submit their portfolio for verification -->
+        <!-- Two-column responsive layout with comprehensive input validation -->
+        <section id="application-form-section" class="container pt-5">
+            <div class="application-form-section">
+                <!-- Section heading with clear call-to-action for form submission -->
+                <h2 class="text-center mb-4">Submit Your Application</h2>
+                <!-- Centered form container with responsive width constraints -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Form wrapper providing visual styling and structure -->
+                        <div class="application-form-wrapper">
+                            <!-- Main application form with GET method for demo purposes -->
+                            <!-- In production, this would use POST method with proper backend handling -->
+                            <form action="success.html" method="GET" class="application-form">
+                                <!-- Two-column responsive form layout -->
+                                <div class="row">
+                                    <!-- LEFT COLUMN - Personal and Portfolio Information -->
+                                    <div class="col-md-6">
+                                        <!-- Full Name Input Field -->
+                                        <!-- Required field for applicant identification -->
+                                        <div class="mb-3">
+                                            <label for="fullName" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="fullName"
+                                                placeholder="Enter your full name" required />
+                                        </div>
+
+                                        <!-- Portfolio Category Selection -->
+                                        <!-- Dropdown menu with predefined professional categories -->
+                                        <div class="mb-3">
+                                            <label for="portfolioType" class="form-label">Portfolio Type</label>
+                                            <select class="form-select" id="portfolioType" required>
+                                                <!-- Default placeholder option -->
+                                                <option selected disabled value="">
+                                                    Select portfolio category
+                                                </option>
+                                                <!-- Web Development category for coding portfolios -->
+                                                <option value="web_dev">Web Development</option>
+                                                <!-- Graphic Design category for visual design work -->
+                                                <option value="graphic_design">Graphic Design</option>
+                                                <!-- Data Science category for analytics and ML portfolios -->
+                                                <option value="data_science">Data Science</option>
+                                                <!-- Mobile Development category for app development -->
+                                                <option value="mobile_dev">Mobile Development</option>
+                                                <!-- UX/UI Design category for user experience portfolios -->
+                                                <option value="ux_ui">UX/UI Design</option>
+                                                <!-- Cybersecurity category for security-focused portfolios -->
+                                                <option value="cybersecurity">Cybersecurity</option>
+                                                <!-- Digital Marketing category for marketing portfolios -->
+                                                <option value="digital_marketing">
+                                                    Digital Marketing
+                                                </option>
+                                                <!-- 3D Design category for 3D modeling and animation -->
+                                                <option value="3d_design">3D Design</option>
+                                                <!-- Other category for non-listed specializations -->
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Project Description Text Area -->
+                                        <!-- Multi-line text input for detailed portfolio description -->
+                                        <div class="mb-3">
+                                            <label for="projectDescription" class="form-label">Project Description</label>
+                                            <textarea class="form-control" id="projectDescription" rows="4"
+                                                placeholder="Tell us about your portfolio and what makes it unique..."
+                                                required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- RIGHT COLUMN - Contact and Upload Information -->
+                                    <div class="col-md-6">
+                                        <!-- Email Address Input Field -->
+                                        <!-- Required field for communication and verification updates -->
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Enter your email address" required />
+                                        </div>
+
+                                        <!-- Portfolio URL Input Field -->
+                                        <!-- Optional field for existing online portfolios -->
+                                        <div class="mb-3">
+                                            <label for="portfolioURL" class="form-label">Portfolio URL (if available)</label>
+                                            <input type="url" class="form-control" id="portfolioURL"
+                                                placeholder="https://your-portfolio-site.com" />
+                                        </div>
+
+                                        <!-- File Upload Section -->
+                                        <!-- Custom-styled file upload with drag-and-drop functionality -->
+                                        <div class="mb-4">
+                                            <label for="file-upload-input" class="form-label">Upload Portfolio Files (PDF, ZIP,
+                                                etc.)</label>
+                                            <!-- Hidden native file input for actual file selection -->
+                                            <input type="file" id="file-upload-input" class="d-none" required />
+                                            <!-- Custom-styled dropzone area for better user experience -->
+                                            <div class="file-upload-area text-center"
+                                                onclick="document.getElementById('file-upload-input').click()">
+                                                <!-- Upload icon with fallback SVG for visual feedback -->
+                                                <div class="upload-icon mb-3">
+                                                    <img src="assets/images/upload-icon.svg" alt="Upload" width="40" height="40"
+                                                        onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTZWOE0xMiA4TDguNSAxMS41TTEyIDhMMTUuNSAxMS41TTIwIDIwSDRDMi44OTU0MyAyMCAyIDE5LjEwNDYgMiAxOFY2QzIgNC44OTU0MyAyLjg5NTQzIDQgNCA0SDIwQzIxLjEwNDYgNCAyMiA0Ljg5NTQzIDIyIDZWMThDMjIgMTkuMTA0NiAyMS4xMDQ2IDIwIDIwIDIwWiIgc3Ryb2tlPSIjOUI4N0Y1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==';" />
+                                                </div>
+                                                <!-- Upload instructions with click-to-upload and drag-drop options -->
+                                                <p class="upload-text">
+                                                    <a href="#" class="text-purple">Click to upload</a> or
+                                                    drag and drop
+                                                </p>
+                                                <!-- File size limitation notice for user guidance -->
+                                                <p class="text-muted small">Max file size 50MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SUBMIT BUTTON SECTION -->
+                                <!-- Full-width submit button spanning both columns for prominence -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Primary submission button with clear call-to-action -->
+                                        <button type="submit" class="btn btn-submit-verification w-100">
+                                            Submit for Verification
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             VERIFICATION PROCESS SECTION
+             ======================================== -->
+        <!-- Detailed explanation of the verification workflow and expert criteria -->
+        <!-- Two-column layout showing process steps and evaluation criteria -->
+        <section id="verification-process-section" class="verification-process-section py-3">
+            <div class="container">
+                <!-- Process content container with visual styling for improved readability -->
+                <div class="process-content rounded shadow-sm">
+                    <!-- Section heading explaining the verification workflow -->
+                    <h2 class="text-center mb-4">Verification Process</h2>
+
+                    <!-- Two-column layout: Process steps on left, criteria on right -->
+                    <div class="row">
+                        <!-- LEFT COLUMN: Step-by-step verification process -->
+                        <div class="col-lg-6">
+                            <!-- STEP 1: Application Submission -->
+                            <!-- First step in the verification timeline with numbered indicator -->
+                            <div class="verification-step-row d-flex mb-5">
+                                <!-- Numbered step indicator for visual progress tracking -->
+                                <div class="step-number-container me-3">
+                                    <div class="step-number">1</div>
+                                </div>
+                                <!-- Step content explaining application submission requirements -->
+                                <div class="step-content">
+                                    <h4>Submit Your Application</h4>
+                                    <p>
+                                        Fill out the application form with details about your
+                                        portfolio and upload relevant files or links.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 2: Expert Review Process -->
+                            <!-- Second step explaining the professional review phase -->
+                            <div class="verification-step-row d-flex mb-5">
+                                <!-- Numbered step indicator for process visualization -->
+                                <div class="step-number-container me-3">
+                                    <div class="step-number">2</div>
+                                </div>
+                                <!-- Step content explaining expert evaluation criteria -->
+                                <div class="step-content">
+                                    <h4>Expert Review</h4>
+                                    <p>
+                                        Our team of industry experts will review your portfolio
+                                        based on quality, authenticity, and industry standards.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 3: Verification Badge Award -->
+                            <!-- Final step explaining successful verification outcome -->
+                            <div class="verification-step-row d-flex">
+                                <!-- Numbered step indicator for completion visualization -->
+                                <div class="step-number-container me-3">
+                                    <div class="step-number">3</div>
+                                </div>
+                                <!-- Step content explaining verification badge benefits -->
+                                <div class="step-content">
+                                    <h4>Receive Verification</h4>
+                                    <p>
+                                        Upon approval, your portfolio receives our verification
+                                        badge and appears on our platform.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: Expert evaluation criteria and timeline -->
+                        <div class="col-lg-6">
+                            <!-- Expert evaluation criteria section -->
+                            <div class="experts-look-for">
+                                <!-- Criteria heading for expert review standards -->
+                                <h4 class="mb-3">What Our Experts Look For:</h4>
+                                <!-- Comprehensive list of evaluation criteria for transparency -->
+                                <ul class="experts-look-list">
+                                    <!-- Technical skill assessment criteria -->
+                                    <li>Technical proficiency and quality of execution</li>
+                                    <!-- Creative and innovative approach evaluation -->
+                                    <li>Creativity and innovation in approach</li>
+                                    <!-- Problem-solving capability assessment -->
+                                    <li>Problem-solving skills and solution effectiveness</li>
+                                    <!-- Documentation and process quality review -->
+                                    <li>Documentation quality and process clarity</li>
+                                    <!-- Impact and results measurement criteria -->
+                                    <li>Impact and results of the work</li>
+                                </ul>
+
+                                <!-- Important timeline and process information note -->
+                                <div class="verification-note">
+                                    <!-- Timeline expectations for application processing -->
+                                    <p class="mb-0">
+                                        <strong>Note:</strong> The verification process typically
+                                        takes 7-10 business days depending on complexity and
+                                        volume of applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             BECOME AN EXPERT SECTION
+             ======================================== -->
+        <!-- Call-to-action section for potential expert verifiers -->
+        <!-- Centered content encouraging professional participation -->
+        <section id="become-expert-section" class="become-expert-section text-center">
+            <div class="container">
+                <!-- Centered content with responsive width constraints -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <!-- Section heading inviting professional participation -->
+                        <h2>Become a Verification Expert</h2>
+                        <!-- Compelling description of expert verifier opportunity -->
+                        <!-- Highlights volunteer nature and professional networking benefits -->
+                        <p>
+                            Are you an experienced professional interested in joining our
+                            team of volunteer verifiers? Help maintain quality standards
+                            while connecting with emerging talent in your field.
+                        </p>
+                        <!-- Call-to-action link for more information about expert program -->
+                        <a href="#">Learn more about becoming a verification expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER SECTION
+         ======================================== -->
+    <!-- Comprehensive site footer with accessibility and performance optimizations -->
+    <!-- Four-column responsive layout with brand, navigation, resources, and newsletter -->
+    <footer id="footer" class="footer" aria-label="Site footer">
+        <div class="container">
+            <!-- Main footer content with responsive four-column grid layout -->
+            <div class="row">
+                <!-- COLUMN 1: Brand Identity and Social Media -->
+                <!-- Company branding section with logo, description, and social links -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <!-- Brand logo section with consistent navigation back to home -->
+                    <div class="footer-brand">
+                        <a href="index.html" class="navbar-brand me-auto">
+                            <!-- Optimized footer logo with performance attributes -->
+                            <!-- White text version for dark footer background contrast -->
+                            <img class="img-logo align-middle"
+                                src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
+                                alt="Verified Folio Logo" width="180" height="40" loading="lazy" />
+                        </a>
+                    </div>
+                    <!-- Brand mission statement and value proposition -->
+                    <p>
+                        Elevating professional portfolios through our trusted verification
+                        process.
+                    </p>
+                    <!-- Social media links with accessibility improvements -->
+                    <!-- Each link includes proper ARIA labels and security attributes -->
+                    <div class="social-links">
+                        <!-- Facebook social media link with accessibility features -->
+                        <a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="bi bi-facebook"
+                                aria-hidden="true"></i></a>
+                        <!-- Twitter social media link with accessibility features -->
+                        <a href="#" aria-label="Twitter" rel="noopener noreferrer"><i class="bi bi-twitter"
+                                aria-hidden="true"></i></a>
+                        <!-- Instagram social media link with accessibility features -->
+                        <a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="bi bi-instagram"
+                                aria-hidden="true"></i></a>
+                        <!-- LinkedIn social media link with accessibility features -->
+                        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: Company Navigation Links -->
+                <!-- Primary site navigation and key page links -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <!-- Company section heading with semantic connection -->
+                    <h5 id="company-links">Company</h5>
+                    <!-- Navigation list with accessibility labeling -->
+                    <ul class="footer-links" aria-labelledby="company-links">
+                        <!-- Link to main portfolio gallery with specific anchor -->
+                        <li>
+                            <a href="portfolios.html#container-main" aria-label="Verified Portfolios">Verified
+                                Portfolios</a>
+                        </li>
+                        <!-- Link to homepage statistics section -->
+                        <li>
+                            <a href="index.html#stats-section" aria-label="See Statistics">See Statistics</a>
+                        </li>
+                        <!-- Link to customer testimonials section -->
+                        <li>
+                            <a href="index.html#testimonials-section" aria-label="See Testimonials">Testimonials</a>
+                        </li>
+                        <!-- Link to featured portfolios showcase -->
+                        <li>
+                            <a href="index.html#featured-section" aria-label="Featured Portfolios">Featured
+                                Portfolios</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 3: Resource and Information Links -->
+                <!-- Secondary navigation for resources and process information -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <!-- Resources section heading with semantic connection -->
+                    <h5 id="resource-links">Resources</h5>
+                    <!-- Resource navigation list with accessibility labeling -->
+                    <ul class="footer-links" aria-labelledby="resource-links">
+                        <!-- Link to verification process information on current page -->
+                        <li>
+                            <a href="#verification-process-section"
+                                aria-label="Read Verification Information">Verification Information</a>
+                        </li>
+                        <!-- Link to expert program information section -->
+                        <li>
+                            <a href="#become-expert-section" aria-label="Become a Portfolio verifier">Become
+                                Verifier</a>
+                        </li>
+                        <!-- Link to homepage verification process section -->
+                        <li>
+                            <a href="index.html#process" aria-label="Verification Process">Verification Process</a>
+                        </li>
+                        <!-- Link to application page header (current page) -->
+                        <li>
+                            <a href="#apply-page-header" aria-label="Apply Verification">Apply Verification</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 4: Newsletter Subscription -->
+                <!-- Email newsletter signup with form validation and accessibility -->
+                <div class="col-lg-4 col-md-4">
+                    <!-- Newsletter section heading with semantic connection -->
+                    <h5 id="newsletter-signup">Stay Updated</h5>
+                    <!-- Newsletter value proposition description -->
+                    <p>
+                        Subscribe to our newsletter for the latest updates and features.
+                    </p>
+                    <!-- Newsletter subscription form with accessibility improvements -->
+                    <form class="footer-subscribe" aria-labelledby="newsletter-signup">
+                        <!-- Input group with validation styling and error handling -->
+                        <div class="input-group has-validation">
+                            <!-- Hidden label for screen readers (input has placeholder) -->
+                            <label for="emailAddress" class="visually-hidden">Email address</label>
+                            <!-- Email input with comprehensive validation pattern -->
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                                placeholder="Enter your email address"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                aria-describedby="emailAddressError" required />
+                            <!-- Submit button with clear accessibility label -->
+                            <button class="btn btn-primary" type="submit" aria-label="Subscribe to newsletter">
+                                Subscribe
+                            </button>
+                            <!-- Validation error message container -->
+                            <div class="invalid-feedback" id="emailAddressError">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM SECTION -->
+            <!-- Copyright information and legal links -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <!-- Bottom footer with copyright and legal navigation -->
+                    <!-- Responsive flex layout for centered content alignment -->
+                    <div
+                        class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center animate-footer">
+                        <!-- Copyright notice with semantic time element -->
+                        <p class="mb-2 mb-md-0 me-md-3">
+                            <small>&copy; <time datetime="2025">2025</time> Verified Portfolios.
+                                All rights reserved.</small>
+                        </p>
+                        <!-- Legal links navigation with accessibility labeling -->
+                        <nav class="footer-legal" aria-label="Legal links">
+                            <!-- Privacy policy link with proper spacing -->
+                            <a href="#" aria-label="Privacy Policy" class="me-2">Privacy Policy</a>
+                            <!-- Terms of service link for legal compliance -->
+                            <a href="#" aria-label="Terms of Service">Terms of Service</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/840b494494.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
 
     <!-- Structured Data / JSON-LD for Application Page -->
     <script type="application/ld+json">
@@ -667,18 +647,16 @@
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DCG86GVS9E"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCG86GVS9E"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-      gtag("config", "G-DCG86GVS9E");
+        gtag("config", "G-DCG86GVS9E");
     </script>
-  </body>
+</body>
+
 </html>

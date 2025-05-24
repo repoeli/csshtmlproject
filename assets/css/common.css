@@ -47,6 +47,7 @@ body {
     font-family: var(--font-body);
     background-color: #fff;
     color: var(--color-dark-purple);
+    /* Body padding removed - using section-specific margins instead */
 }
 
 /* -------------------------------------------------------------
@@ -250,14 +251,31 @@ a:hover {
 /* 4.4 Navigation */
 /* Main navbar styling with subtle shadow */
 .navbar {
-    background-color: #fff;
+    background-color: #fff !important;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+    z-index: 1030 !important;
+}
+
+/* Ensure fixed-top navbar is visible */
+.navbar.fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
 }
 
 /* Brand/logo text styling */
 .navbar-brand {
     font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.02);
 }
 
 /* Logo image sizing within navbar */
@@ -265,50 +283,170 @@ a:hover {
     height: 40px;
     width: auto;
     flex-shrink: 0;
-    /* Prevents logo from shrinking */
+}
+
+/* Navigation container */
+.navbar-nav {
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* Navigation links in the navbar */
 .navbar .navbar-nav .nav-link {
-    color: var(--color-dark-purple);
+    color: var(--color-dark-purple) !important;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem !important;
     border-radius: 0.375rem;
-    transition: color 0.2s ease, background-color 0.2s ease;
+    transition: all 0.2s ease;
     font-family: var(--font-body);
+    position: relative;
+    white-space: nowrap;
+    display: block !important;
+    visibility: visible !important;
 }
 
-/* Active, hover, and focus states for nav links */
-.navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
-    background-color: var(--color-soft-purple);
-    /* Background highlights active/hovered link */
-    color: var(--color-primary-purple);
+/* Remove all conflicting active states */
+.navbar .navbar-nav .nav-link.active {
+    background-color: var(--color-soft-purple) !important;
+    color: var(--color-primary-purple) !important;
     font-weight: 600;
 }
 
-/* Custom burger menu icon for mobile navigation */
-.navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(26,31,44,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+/* Hover states for nav links */
+.navbar .navbar-nav .nav-link:hover {
+    background-color: var(--color-soft-purple) !important;
+    color: var(--color-primary-purple) !important;
+    transform: translateY(-1px);
 }
 
-/* button in the navbar with brand styling */
+/* Focus states for accessibility */
+.navbar .navbar-nav .nav-link:focus {
+    background-color: var(--color-soft-purple) !important;
+    color: var(--color-primary-purple) !important;
+    outline: 2px solid var(--color-primary-purple);
+    outline-offset: 2px;
+}
+
+/* Custom burger menu icon for mobile navigation */
+.navbar .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid var(--color-primary-purple);
+    outline-offset: 2px;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(26,31,44,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    transition: transform 0.2s ease;
+}
+
+.navbar .navbar-toggler:hover .navbar-toggler-icon {
+    transform: scale(1.1);
+}
+
+/* CTA button in the navbar with brand styling */
 .navbar .btn-nav-cta {
-    background-color: var(--color-primary-purple);
-    border-color: var(--color-primary-purple);
-    color: #ffffff;
+    background-color: var(--color-primary-purple) !important;
+    border-color: var(--color-primary-purple) !important;
+    color: #ffffff !important;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem !important;
     border-radius: 0.375rem;
     font-size: 0.9rem;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    border: 1px solid var(--color-primary-purple);
 }
 
 /* Hover state for navbar CTA button */
 .navbar .btn-nav-cta:hover {
-    background-color: var(--color-secondary-purple);
-    border-color: var(--color-secondary-purple);
+    background-color: var(--color-secondary-purple) !important;
+    border-color: var(--color-secondary-purple) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(83, 70, 177, 0.3);
+}
+
+/* Focus state for CTA button */
+.navbar .btn-nav-cta:focus {
+    background-color: var(--color-secondary-purple) !important;
+    border-color: var(--color-secondary-purple) !important;
+    color: #ffffff !important;
+    outline: 2px solid var(--color-primary-purple);
+    outline-offset: 2px;
+}
+
+/* Remove active class styling conflicts for CTA buttons */
+.navbar .btn-nav-cta.active {
+    background-color: var(--color-primary-purple) !important;
+    border-color: var(--color-primary-purple) !important;
+    color: #ffffff !important;
+}
+
+/* Responsive navigation collapse */
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+/* Mobile navigation styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 1rem 0;
+        gap: 0.25rem;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        margin: 0.125rem 0;
+        border-radius: 0.5rem;
+    }
+    
+    .navbar .btn-nav-cta {
+        margin: 0.5rem 0 0.25rem 0 !important;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Navigation Animation Prevention */
+.navbar-nav * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Prevent layout shifts */
+.navbar-collapse.collapsing {
+    height: auto !important;
+    transition: opacity 0.3s ease !important;
+}
+
+/* Default desktop state - always visible */
+.navbar-collapse {
+    opacity: 1 !important;
+}
+
+/* Smooth mobile menu animation */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .navbar-collapse.show {
+        opacity: 1 !important;
+    }
+    
+    .navbar-collapse.collapse.show {
+        opacity: 1 !important;
+    }
 }
 
 /* 4.5 Badges & Tags */
@@ -369,6 +507,7 @@ a:hover {
     cursor: pointer;
     transition: color 0.2s ease;
     margin-right: 0.1rem;
+    -webkit-user-select: none;
     user-select: none;
     /* Prevents text selection */
 }

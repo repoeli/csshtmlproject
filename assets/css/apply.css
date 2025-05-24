@@ -243,3 +243,60 @@
 .verification-note strong {
     font-weight: 600;
 }
+
+/* -------------------------------------------------------------
+   6. Responsive Form Layout for Two-Column Design
+-------------------------------------------------------------- */
+/* Two-column form enhancements */
+@media (min-width: 768px) {
+    .application-form .col-md-6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .application-form .col-md-6:first-child {
+        padding-right: 1.5rem;
+        border-right: 1px solid #e2e8f0;
+    }
+    
+    .application-form .col-md-6:last-child {
+        padding-left: 1.5rem;
+    }
+}
+
+/* Mobile responsiveness - stack columns vertically */
+@media (max-width: 767.98px) {
+    .application-form .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    
+    .application-form .col-md-6:first-child {
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Enhanced file upload area for two-column layout */
+.file-upload-area {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+/* Ensure equal column heights on desktop */
+@media (min-width: 768px) {
+    .application-form .row {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .application-form .col-md-6 {
+        display: flex;
+        flex-direction: column;
+    }
+}

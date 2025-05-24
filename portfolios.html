@@ -1,894 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Browse Verified Portfolios | Professional Work Verified by Industry
-      Experts
+        Browse Verified Portfolios | Professional Work Verified by Industry
+        Experts
     </title>
-    <meta
-      name="description"
-      content="Browse a curated collection of professional portfolios verified by industry experts across web development, design, data science and more."
-    />
-    <meta
-      name="keywords"
-      content="verified portfolios, professional portfolios, expert-verified work, portfolio gallery, portfolio examples"
-    />
+    <meta name="description"
+        content="Browse a curated collection of professional portfolios verified by industry experts across web development, design, data science and more." />
+    <meta name="keywords"
+        content="verified portfolios, professional portfolios, expert-verified work, portfolio gallery, portfolio examples" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Verified Portfolios" />
-    <link
-      rel="canonical"
-      href="https://repoeli.github.io/csshtmlproject/portfolios.html"
-    />
+    <link rel="canonical" href="https://repoeli.github.io/csshtmlproject/portfolios.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://repoeli.github.io/csshtmlproject/portfolios.html"
-    />
-    <meta
-      property="og:title"
-      content="Browse Verified Portfolios by Industry Experts"
-    />
-    <meta
-      property="og:description"
-      content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines."
-    />
-    <meta
-      property="og:image"
-      content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png"
-    />
+    <meta property="og:url" content="https://repoeli.github.io/csshtmlproject/portfolios.html" />
+    <meta property="og:title" content="Browse Verified Portfolios by Industry Experts" />
+    <meta property="og:description"
+        content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines." />
+    <meta property="og:image"
+        content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://repoeli.github.io/csshtmlproject/portfolios.html"
-    />
-    <meta
-      property="twitter:title"
-      content="Browse Verified Portfolios by Industry Experts"
-    />
-    <meta
-      property="twitter:description"
-      content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines."
-    />
-    <meta
-      property="twitter:image"
-      content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png"
-    />
+    <meta property="twitter:url" content="https://repoeli.github.io/csshtmlproject/portfolios.html" />
+    <meta property="twitter:title" content="Browse Verified Portfolios by Industry Experts" />
+    <meta property="twitter:description"
+        content="Browse a curated collection of professional portfolios verified by industry experts across multiple disciplines." />
+    <meta property="twitter:image"
+        content="https://repoeli.github.io/csshtmlproject/assets/images/logo/verified_folio_navbar_logo_wide.png" />
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
     <!-- Standard Favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon/favicon-16x16-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon/favicon-32x32-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/images/favicon/favicon-192x192-1.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/favicon/favicon-180x180-1.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/images/favicon/favicon-512x512-1.png"
-    />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16-1.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32-1.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/favicon-192x192-1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon-180x180-1.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/favicon-512x512-1.png" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/portfolios.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/portfolios.css" />
 
     <!-- Add skeleton loading styles -->
     <style>
-      .skeleton {
-        animation: skeleton-loading 1s linear infinite alternate;
-      }
-
-      @keyframes skeleton-loading {
-        0% {
-          background-color: hsl(200, 20%, 80%);
+        .skeleton {
+            animation: skeleton-loading 1s linear infinite alternate;
         }
-        100% {
-          background-color: hsl(200, 20%, 95%);
+
+        @keyframes skeleton-loading {
+            0% {
+                background-color: hsl(200, 20%, 80%);
+            }
+
+            100% {
+                background-color: hsl(200, 20%, 95%);
+            }
         }
-      }
 
-      .portfolio-card.loading .card-img-container {
-        height: 200px;
-        background-color: hsl(200, 20%, 80%);
-      }
+        .portfolio-card.loading .card-img-container {
+            height: 200px;
+            background-color: hsl(200, 20%, 80%);
+        }
 
-      .portfolio-card.loading .card-title,
-      .portfolio-card.loading .author-info,
-      .portfolio-card.loading .portfolio-rating,
-      .portfolio-card.loading .card-text {
-        height: 20px;
-        margin: 10px 0;
-        border-radius: 4px;
-      }
+        .portfolio-card.loading .card-title,
+        .portfolio-card.loading .author-info,
+        .portfolio-card.loading .portfolio-rating,
+        .portfolio-card.loading .card-text {
+            height: 20px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
 
-      .portfolio-card.loading .card-title {
-        width: 85%;
-      }
+        .portfolio-card.loading .card-title {
+            width: 85%;
+        }
 
-      .portfolio-card.loading .author-info {
-        width: 60%;
-      }
+        .portfolio-card.loading .author-info {
+            width: 60%;
+        }
 
-      .portfolio-card.loading .portfolio-rating {
-        width: 40%;
-      }
+        .portfolio-card.loading .portfolio-rating {
+            width: 40%;
+        }
 
-      .portfolio-card.loading .card-text {
-        height: 60px;
-      }
+        .portfolio-card.loading .card-text {
+            height: 60px;
+        }
 
-      .no-results {
-        text-align: center;
-        padding: 2rem;
-        color: var(--color-neutral-gray);
-        width: 100%;
-      }
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: var(--color-neutral-gray);
+            width: 100%;
+        }
 
-      /* Pagination styles */
-      .pagination-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        gap: 0.5rem;
-      }
+        /* Pagination styles */
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 0.5rem;
+        }
 
-      .pagination-btn {
-        padding: 0.5rem 1rem;
-        border: 1px solid var(--color-soft-purple);
-        background-color: white;
-        color: var(--color-primary-purple);
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-soft-purple);
+            background-color: white;
+            color: var(--color-primary-purple);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
 
-      .pagination-btn:hover,
-      .pagination-btn.active {
-        background-color: var(--color-primary-purple);
-        color: white;
-      }
+        .pagination-btn:hover,
+        .pagination-btn.active {
+            background-color: var(--color-primary-purple);
+            color: white;
+        }
 
-      .pagination-btn:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
+    <!-- =================================================================
+         HEADER SECTION
+         - Consistent navigation structure across all pages
+         - Fixed navbar with responsive collapse functionality
+         - Portfolio page active state in navigation
+         ================================================================= -->
     <header class="header" aria-label="Main Navigation">
-      <!-- Fixed Navbar -->
-      <!-- Navbar (Consistent Structure) -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-          <a href="index.html" class="navbar-brand me-auto">
-            <img
-              class="img-logo align-middle"
-              src="assets/images/logo/verified_folio_navbar_logo_wide.png"
-              alt="Verified Folio Logo"
-              loading="lazy"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav align-items-center gap-lg-2">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="portfolios.html"
-                  >Portfolios</a
-                >
-                <!-- Link to portfolios page -->
-              </li>
-              <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
-                <!-- Set Apply link as active -->
-                <a
-                  class="btn btn-primary btn-nav-cta active"
-                  aria-current="page"
-                  href="apply.html#application-form-section"
-                  >Apply for Verification</a
-                >
-              </li>
-              <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
-                <!-- Set Apply link as active -->
-                <a
-                  class="btn btn-primary btn-nav-cta active"
-                  aria-current="page"
-                  href="#footer"
-                  >Newsletter</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <!-- =============================================================
+             FIXED NAVIGATION BAR
+             - Bootstrap responsive navbar component
+             - Consistent branding and navigation across site
+             - Active state highlighting current page (Portfolios)
+             ============================================================= -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <!-- Brand Logo Section -->
+                <!-- Company logo linking to homepage -->
+                <a href="index.html" class="navbar-brand me-auto">
+                    <img class="img-logo align-middle" src="assets/images/logo/verified_folio_navbar_logo_wide.png"
+                        alt="Verified Folio Logo" loading="lazy" />
+                </a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <!-- Bootstrap hamburger menu for responsive design -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Main Navigation Menu -->
+                <!-- Collapsible navigation with portfolio page active state -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-lg-2">
+                        <!-- Home Page Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Portfolios Page Link - Active State -->
+                        <!-- Current page indicator with aria-current for accessibility -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="portfolios.html">Portfolios</a>
+                        </li>
+                        <!-- Newsletter Section Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Newsletter</a>
+                        </li>
+                        <!-- Apply for Verification CTA -->
+                        <!-- Primary call-to-action button in navigation -->
+                        <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
+                            <a class="btn btn-primary btn-nav-cta" href="apply.html">Apply for Verification</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Main Content Area for Portfolios Page -->
+    <!-- =================================================================
+         MAIN CONTENT AREA
+         - Portfolio browsing and discovery interface
+         - Search functionality and category filtering
+         - Dynamic portfolio grid with pagination
+         ================================================================= -->
     <main id="container-main" class="container">
-      <!-- Changed div to main for semantics, adjusted padding -->
-      <section id="portfolios-search" class="pt-0 pb-0">
-        <!-- Page Header -->
-        <div class="text-center portfolios-page-header">
-          <h1>Verified Portfolios</h1>
-          <p>Browse through professional work verified by industry experts</p>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <div class="search-bar-wrapper">
-              <i class="fas fa-search search-icon"></i>
-              <!-- Search Icon -->
-              <input
-                id="search-id"
-                name="search-name"
-                class="form-control"
-                type="search"
-                placeholder="Search portfolios by title, creator, or description..."
-                aria-label="Search"
-              />
+        <!-- =============================================================
+             PORTFOLIO SEARCH SECTION
+             - Page header with title and description
+             - Search input for portfolio discovery
+             - Centered layout with responsive design
+             ============================================================= -->
+        <section id="portfolios-search" class="pt-0 pb-0">
+            <!-- Page Header -->
+            <!-- Title and description for portfolio gallery page -->
+            <div class="text-center portfolios-page-header">
+                <h1>Verified Portfolios</h1>
+                <p>Browse through professional work verified by industry experts</p>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--Category Section-->
-      <!-- Category Filters -->
-      <div class="filter-buttons-wrapper">
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter active">All</a>
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Web Development</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Graphic Design</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Data Science</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Mobile Development</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >UX/UI Design</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Cybersecurity</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter"
-          >Digital Marketing</a
-        >
-        <a href="#portfolio-cards-wrapper" class="btn btn-filter">3D Design</a>
-        <!-- Add more categories as needed -->
-      </div>
 
-      <!-- Portfolio Cards Section -->
-      <section id="portfolio-cards-wrapper" aria-labelledby="portfolio-heading">
-        <h2 id="portfolio-heading" class="visually-hidden">
-          Verified Portfolios Gallery
-        </h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <!-- Portfolio Card 1 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+            <!-- Search Interface -->
+            <!-- Centered search bar for portfolio discovery -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <!-- Search Bar Container -->
+                    <!-- Input group with search icon and text input -->
+                    <div class="search-bar-wrapper">
+                        <!-- Search Icon -->
+                        <!-- Visual indicator for search functionality -->
+                        <i class="fas fa-search search-icon"></i>
+                        <!-- Search Input Field -->
+                        <!-- Text input for searching portfolios by various criteria -->
+                        <input id="search-id" name="search-name" class="form-control" type="search"
+                            placeholder="Search portfolios by title, creator, or description..." aria-label="Search" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============================================================
+             CATEGORY FILTER SECTION
+             - Professional category filtering buttons
+             - JavaScript-driven filter functionality
+             - Responsive horizontal scrolling layout
+             ============================================================= -->
+        <div class="filter-buttons-wrapper">
+            <!-- All Categories Filter (Default Active) -->
+            <!-- Shows all portfolios regardless of category -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter active">All</a>
+            <!-- Web Development Category Filter -->
+            <!-- Filters for frontend, backend, and full-stack projects -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Web Development</a>
+            <!-- Graphic Design Category Filter -->
+            <!-- Filters for visual design and branding projects -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Graphic Design</a>
+            <!-- Data Science Category Filter -->
+            <!-- Filters for analytics, machine learning, and data visualization -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Data Science</a>
+            <!-- Mobile Development Category Filter -->
+            <!-- Filters for iOS, Android, and cross-platform apps -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Mobile Development</a>
+            <!-- UX/UI Design Category Filter -->
+            <!-- Filters for user experience and interface design projects -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">UX/UI Design</a>
+            <!-- Cybersecurity Category Filter -->
+            <!-- Filters for security-focused projects and implementations -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Cybersecurity</a>
+            <!-- Digital Marketing Category Filter -->
+            <!-- Filters for marketing campaigns and digital strategy work -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">Digital Marketing</a>
+            <!-- 3D Design Category Filter -->
+            <!-- Filters for 3D modeling, animation, and visualization projects -->
+            <a href="#portfolio-cards-wrapper" class="btn btn-filter">3D Design</a>
+            <!-- Additional categories can be added as needed -->
+        </div>
+
+        <!-- =============================================================
+             PORTFOLIO GALLERY SECTION
+             - Grid layout of verified portfolio cards
+             - Responsive three-column layout with equal heights
+             - Individual portfolio showcases with verification badges
+             ============================================================= -->
+        <section id="portfolio-cards-wrapper" aria-labelledby="portfolio-heading">
+            <!-- Section Heading (Screen Reader Only) -->
+            <!-- Accessibility heading for portfolio gallery -->
+            <h2 id="portfolio-heading" class="visually-hidden">
+                Verified Portfolios Gallery
+            </h2>
+            
+            <!-- Portfolio Grid Container -->
+            <!-- Bootstrap responsive grid with equal height cards -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- =================================================
+                     PORTFOLIO CARD 1 - WEB DEVELOPMENT
+                     - Modern web application showcase
+                     - 5-star rating with high review count
+                     - Responsive design and accessibility focus
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <!-- Semantic article element for individual portfolio -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <!-- Image wrapper with verification badge overlay -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <!-- Responsive image with srcset for performance -->
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="Modern Web Application Suite"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="Modern Web Application Suite" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <!-- Visual indicator of portfolio verification status -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <!-- Main content area with title, author, rating, and description -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <!-- Main heading for the portfolio project -->
+                            <h3 class="card-title h5">Modern Web Application Suite</h3>
+                            
+                            <!-- Author Information -->
+                            <!-- Creator profile with image and name -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Alex Johnson</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <!-- Star rating display with review count -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display -->
+                                    <!-- 5-star visual rating with accessibility support -->
+                                    <div class="rating me-2" role="img" aria-label="5 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★★</span>
+                                    </div>
+                                    <!-- Review Count -->
+                                    <!-- Number of reviews for social proof -->
+                                    <span class="rating-count text-muted small">(6.1k reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Description -->
+                            <!-- Brief description of the portfolio project -->
+                            <p class="card-text">
+                                A collection of responsive web applications showcasing modern
+                                frontend frameworks and accessibility compliance.
+                            </p>
+                        </div>
+                        
+                        <!-- Portfolio Card Footer -->
+                        <!-- Category classification and verification date -->
+                        <div class="card-footer">
+                            <!-- Category Tag -->
+                            <!-- Professional category classification -->
+                            <span class="category-tag">Web Development</span>
+                            <!-- Verification Date -->
+                            <!-- Semantic time element with machine-readable date -->
+                            <time class="verification-date" datetime="2024-01-15">Verified on 2024-01-15</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Modern Web Application Suite</h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Alex Johnson</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="5 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★★</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(6.1k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  A collection of responsive web applications showcasing modern
-                  frontend frameworks and accessibility compliance.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">Web Development</span>
-                <time class="verification-date" datetime="2024-01-15"
-                  >Verified on 2024-01-15</time
-                >
-              </div>
-            </article>
-          </div>
 
-          <!-- Portfolio Card 2 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+                <!-- =================================================
+                     PORTFOLIO CARD 2 - GRAPHIC DESIGN
+                     - Corporate branding and identity project
+                     - 4-star rating with high engagement
+                     - Complete brand system showcase
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="Corporate Brand Identity"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="Corporate Brand Identity" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <h3 class="card-title h5">Corporate Brand Identity</h3>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Maya Williams</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display (4 stars) -->
+                                    <div class="rating me-2" role="img" aria-label="4 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★☆</span>
+                                    </div>
+                                    <!-- Review Count -->
+                                    <span class="rating-count text-muted small">(10.1k reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Description -->
+                            <p class="card-text">
+                                Complete brand identity system for a financial technology
+                                startup, including logo, typography, color palette, and
+                                collateral.
+                            </p>
+                        </div>
+                        
+                        <!-- Portfolio Card Footer -->
+                        <div class="card-footer">
+                            <!-- Category Tag -->
+                            <span class="category-tag">Graphic Design</span>
+                            <!-- Verification Date -->
+                            <time class="verification-date" datetime="2025-09-21">Verified on 2025-09-21</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Corporate Brand Identity</h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Maya Williams</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="4 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★☆</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(10.1k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  Complete brand identity system for a financial technology
-                  startup, including logo, typography, color palette, and
-                  collateral.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">Graphic Design</span>
-                <time class="verification-date" datetime="2025-09-21"
-                  >Verified on 2025-09-21</time
-                >
-              </div>
-            </article>
-          </div>
 
-          <!-- Portfolio Card 3 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+                <!-- =================================================
+                     PORTFOLIO CARD 3 - DATA SCIENCE
+                     - AI-powered analytics platform project
+                     - Machine learning and business intelligence focus
+                     - High-performance data visualization showcase
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="AI-Powered Data Analytics Platform"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="AI-Powered Data Analytics Platform" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <h3 class="card-title h5">
+                                AI-Powered Data Analytics Platform
+                            </h3>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Raj Patel</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display (5 stars) -->
+                                    <div class="rating me-2" role="img" aria-label="5 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★★</span>
+                                    </div>
+                                    <!-- Review Count -->
+                                    <span class="rating-count text-muted small">(6.3k reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Description -->
+                            <p class="card-text">
+                                End-to-end data analytics solution with machine learning
+                                capabilities for business intelligence and predictive
+                                analytics.
+                            </p>
+                        </div>
+                        
+                        <!-- Portfolio Card Footer -->
+                        <div class="card-footer">
+                            <!-- Category Tag -->
+                            <span class="category-tag">Data Science</span>
+                            <!-- Verification Date -->
+                            <time class="verification-date" datetime="2023-10-30">Verified on 2023-10-30</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">
-                  AI-Powered Data Analytics Platform
-                </h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Raj Patel</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="5 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★★</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(6.3k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  End-to-end data analytics solution with machine learning
-                  capabilities for business intelligence and predictive
-                  analytics.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">Data Science</span>
-                <time class="verification-date" datetime="2023-10-30"
-                  >Verified on 2023-10-30</time
-                >
-              </div>
-            </article>
-          </div>
 
-          <!-- Portfolio Card 4 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+                <!-- =================================================
+                     PORTFOLIO CARD 4 - MOBILE DEVELOPMENT
+                     - Augmented reality mobile application
+                     - Interactive storytelling platform
+                     - Immersive AR experience showcase
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <img src="https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="Immersive Mobile AR Experience"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="Immersive Mobile AR Experience" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <h3 class="card-title h5">Immersive Mobile AR Experience</h3>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Sofia Chen</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display (5 stars) -->
+                                    <div class="rating me-2" role="img" aria-label="5 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★★</span>
+                                    </div>
+                                    <!-- Review Count -->
+                                    <span class="rating-count text-muted small">(2.9k reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Description -->
+                            <p class="card-text">
+                                An augmented reality mobile app that transforms physical
+                                spaces into interactive storytelling platforms.
+                            </p>
+                        </div>
+                        
+                        <!-- Portfolio Card Footer -->
+                        <div class="card-footer">
+                            <!-- Category Tag -->
+                            <span class="category-tag">Mobile Development</span>
+                            <!-- Verification Date -->
+                            <time class="verification-date" datetime="2024-11-05">Verified on 2024-11-05</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Immersive Mobile AR Experience</h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Sofia Chen</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="5 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★★</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(2.9k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  An augmented reality mobile app that transforms physical
-                  spaces into interactive storytelling platforms.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">Mobile Development</span>
-                <time class="verification-date" datetime="2024-11-05"
-                  >Verified on 2024-11-05</time
-                >
-              </div>
-            </article>
-          </div>
 
-          <!-- Portfolio Card 5 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+                <!-- =================================================
+                     PORTFOLIO CARD 5 - UX/UI DESIGN
+                     - E-commerce platform redesign project
+                     - Data-driven design improvements
+                     - Conversion rate optimization focus
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="E-Commerce UX/UI Redesign"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="E-Commerce UX/UI Redesign" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <h3 class="card-title h5">E-Commerce UX/UI Redesign</h3>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Thomas Wright</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display (5 stars) -->
+                                    <div class="rating me-2" role="img" aria-label="5 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★★</span>
+                                    </div>
+                                    <!-- Review Count -->
+                                    <span class="rating-count text-muted small">(4.1k reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Description -->
+                            <p class="card-text">
+                                Complete UX/UI redesign for a major e-commerce platform,
+                                improving conversion rates through data-driven design.
+                            </p>
+                        </div>
+                        
+                        <!-- Portfolio Card Footer -->
+                        <div class="card-footer">
+                            <!-- Category Tag -->
+                            <span class="category-tag">UX/UI Design</span>
+                            <!-- Verification Date -->
+                            <time class="verification-date" datetime="2025-10-12">Verified on 2025-10-12</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">E-Commerce UX/UI Redesign</h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Thomas Wright</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="5 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★★</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(4.1k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  Complete UX/UI redesign for a major e-commerce platform,
-                  improving conversion rates through data-driven design.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">UX/UI Design</span>
-                <time class="verification-date" datetime="2025-10-12"
-                  >Verified on 2025-10-12</time
-                >
-              </div>
-            </article>
-          </div>
 
-          <!-- Portfolio Card 6 -->
-          <div class="col">
-            <article class="portfolio-card card h-100">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  srcset="
+                <!-- =================================================
+                     PORTFOLIO CARD 6 - CYBERSECURITY
+                     - Enterprise security solution implementation
+                     - Comprehensive security architecture
+                     - Advanced threat protection system
+                     ================================================= -->
+                <div class="col">
+                    <!-- Portfolio Article Card -->
+                    <article class="portfolio-card card h-100">
+                        <!-- Portfolio Image Container -->
+                        <div class="card-img-container">
+                            <!-- Portfolio Preview Image -->
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                srcset="
                     https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w,
                     https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80 800w
-                  "
-                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                  class="card-img-top"
-                  alt="Enterprise Security Solution"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                />
-                <div class="verified-badge">
-                  <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                  <span>Verified</span>
+                  " sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" class="card-img-top"
+                                alt="Enterprise Security Solution" width="800" height="600" loading="lazy" />
+                            <!-- Verification Badge -->
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Card Content -->
+                        <div class="card-body">
+                            <!-- Portfolio Title -->
+                            <h3 class="card-title h5">Enterprise Security Solution</h3>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info">
+                                <!-- Author Profile Image -->
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="" class="author-img" width="40" height="40" loading="lazy"
+                                    aria-hidden="true" />
+                                <!-- Author Name -->
+                                <span>Olivia Taylor</span>
+                            </div>
+                            
+                            <!-- Portfolio Rating Section -->
+                            <div class="portfolio-rating mb-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Star Rating Display (5 stars) -->
+                                    <div class="rating me-2" role="img" aria-label="5 out of 5 stars rating">
+                                        <span aria-hidden="true">★★★★★</span>
+                                    </div>
+                                    <span class="rating-count text-muted small">(7.4k reviews)</span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Comprehensive security solution for enterprise networks,
+                                featuring intrusion detection, threat analysis, and
+                                mitigation.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="category-tag">Cybersecurity</span>
+                            <time class="verification-date" datetime="2024-01-18">Verified on 2024-01-18</time>
+                        </div>
+                    </article>
                 </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Enterprise Security Solution</h3>
-                <div class="author-info">
-                  <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                    alt=""
-                    class="author-img"
-                    width="40"
-                    height="40"
-                    loading="lazy"
-                    aria-hidden="true"
-                  />
-                  <span>Olivia Taylor</span>
-                </div>
-                <div class="portfolio-rating mb-2">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="rating me-2"
-                      role="img"
-                      aria-label="5 out of 5 stars rating"
-                    >
-                      <span aria-hidden="true">★★★★★</span>
-                    </div>
-                    <span class="rating-count text-muted small"
-                      >(7.4k reviews)</span
-                    >
-                  </div>
-                </div>
-                <p class="card-text">
-                  Comprehensive security solution for enterprise networks,
-                  featuring intrusion detection, threat analysis, and
-                  mitigation.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="category-tag">Cybersecurity</span>
-                <time class="verification-date" datetime="2024-01-18"
-                  >Verified on 2024-01-18</time
-                >
-              </div>
-            </article>
-          </div>
-        </div>
-        <!-- End row -->
-      </section>
+            </div>
+            <!-- End row -->
+        </section>
     </main>
 
     <!-- Footer Section -->
     <footer id="footer" class="footer" aria-label="Site footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="footer-brand">
-              <a href="index.html" class="navbar-brand me-auto">
-                <!-- Improved image attributes for performance -->
-                <img
-                  class="img-logo align-middle"
-                  src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
-                  alt="Verified Folio Logo"
-                  width="180"
-                  height="40"
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <p>
-              Elevating professional portfolios through our trusted verification
-              process.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook" rel="noopener noreferrer"
-                ><i class="bi bi-facebook" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="Twitter" rel="noopener noreferrer"
-                ><i class="bi bi-twitter" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="Instagram" rel="noopener noreferrer"
-                ><i class="bi bi-instagram" aria-hidden="true"></i
-              ></a>
-              <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"
-                ><i class="bi bi-linkedin" aria-hidden="true"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-            <h5 id="company-links">Company</h5>
-            <ul class="footer-links" aria-labelledby="company-links">
-              <li>
-                <a
-                  href="portfolios.html#container-main"
-                  aria-label="Verified Portfolios"
-                  >Verified Portfolios</a
-                >
-              </li>
-              <li>
-                <a href="index.html#stats-section" aria-label="See Statistics"
-                  >See Statistics</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#testimonials-section"
-                  aria-label="See Testimonials"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#featured-section"
-                  aria-label="Featured Portfolios"
-                  >Featured Portfolios</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-            <h5 id="resource-links">Resources</h5>
-            <ul class="footer-links" aria-labelledby="resource-links">
-              <li>
-                <a
-                  href="apply.html#verification-process-section"
-                  aria-label="Read Verification Information"
-                  >Verification Information</a
-                >
-              </li>
-              <li>
-                <a
-                  href="apply.html#become-expert-section"
-                  aria-label="Become a Portfolio verifier"
-                  >Become Verifier</a
-                >
-              </li>
-              <li>
-                <a href="index.html#process" aria-label="Verification Process"
-                  >Verification Process</a
-                >
-              </li>
-              <li>
-                <a
-                  href="apply.html#apply-page-header"
-                  aria-label="Apply Verification"
-                  >Apply Verification</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <h5 id="newsletter-signup">Stay Updated</h5>
-            <p>
-              Subscribe to our newsletter for the latest updates and features.
-            </p>
-            <form class="footer-subscribe" aria-labelledby="newsletter-signup">
-              <div class="input-group has-validation">
-                <label for="emailAddress" class="visually-hidden"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailAddress"
-                  name="emailAddress"
-                  placeholder="Enter your email address"
-                  pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
-                  aria-describedby="emailAddressError"
-                  required
-                />
-                <button
-                  class="btn btn-primary"
-                  type="submit"
-                  aria-label="Subscribe to newsletter"
-                >
-                  Subscribe
-                </button>
-                <div class="invalid-feedback" id="emailAddressError">
-                  Please enter a valid email address.
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <a href="index.html" class="navbar-brand me-auto">
+                            <!-- Improved image attributes for performance -->
+                            <img class="img-logo align-middle"
+                                src="assets/images/logo/verified_folio_navbar_logo_white_text.png"
+                                alt="Verified Folio Logo" width="180" height="40" loading="lazy" />
+                        </a>
+                    </div>
+                    <p>
+                        Elevating professional portfolios through our trusted verification
+                        process.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="bi bi-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter" rel="noopener noreferrer"><i class="bi bi-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="bi bi-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"
+                                aria-hidden="true"></i></a>
+                    </div>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
 
-        <div class="row mt-5">
-          <div class="col-12">
-            <div
-              class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center animate-footer"
-            >
-              <p class="mb-2 mb-md-0 me-md-3">
-                <small
-                  >&copy; <time datetime="2025">2025</time> Verified Portfolios.
-                  All rights reserved.</small
-                >
-              </p>
-              <nav class="footer-legal" aria-label="Legal links">
-                <a href="#" aria-label="Privacy Policy" class="me-2"
-                  >Privacy Policy</a
-                >
-                <a href="#" aria-label="Terms of Service">Terms of Service</a>
-              </nav>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="company-links">Company</h5>
+                    <ul class="footer-links" aria-labelledby="company-links">
+                        <li>
+                            <a href="portfolios.html#container-main" aria-label="Verified Portfolios">Verified
+                                Portfolios</a>
+                        </li>
+                        <li>
+                            <a href="index.html#stats-section" aria-label="See Statistics">See Statistics</a>
+                        </li>
+                        <li>
+                            <a href="index.html#testimonials-section" aria-label="See Testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="index.html#featured-section" aria-label="Featured Portfolios">Featured
+                                Portfolios</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 id="resource-links">Resources</h5>
+                    <ul class="footer-links" aria-labelledby="resource-links">
+                        <li>
+                            <a href="apply.html#verification-process-section"
+                                aria-label="Read Verification Information">Verification Information</a>
+                        </li>
+                        <li>
+                            <a href="apply.html#become-expert-section" aria-label="Become a Portfolio verifier">Become
+                                Verifier</a>
+                        </li>
+                        <li>
+                            <a href="index.html#process" aria-label="Verification Process">Verification Process</a>
+                        </li>
+                        <li>
+                            <a href="apply.html#apply-page-header" aria-label="Apply Verification">Apply
+                                Verification</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5 id="newsletter-signup">Stay Updated</h5>
+                    <p>
+                        Subscribe to our newsletter for the latest updates and features.
+                    </p>
+                    <form class="footer-subscribe" aria-labelledby="newsletter-signup">
+                        <div class="input-group has-validation">
+                            <label for="emailAddress" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                                placeholder="Enter your email address"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                aria-describedby="emailAddressError" required />
+                            <button class="btn btn-primary" type="submit" aria-label="Subscribe to newsletter">
+                                Subscribe
+                            </button>
+                            <div class="invalid-feedback" id="emailAddressError">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div
+                        class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center animate-footer">
+                        <p class="mb-2 mb-md-0 me-md-3">
+                            <small>&copy; <time datetime="2025">2025</time> Verified Portfolios.
+                                All rights reserved.</small>
+                        </p>
+                        <nav class="footer-legal" aria-label="Legal links">
+                            <a href="#" aria-label="Privacy Policy" class="me-2">Privacy Policy</a>
+                            <a href="#" aria-label="Terms of Service">Terms of Service</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/840b494494.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
 
     <!-- Configuration -->
     <script src="assets/js/config.js"></script>
@@ -950,18 +896,16 @@
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DCG86GVS9E"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCG86GVS9E"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-      gtag("config", "G-DCG86GVS9E");
+        gtag("config", "G-DCG86GVS9E");
     </script>
-  </body>
+</body>
+
 </html>

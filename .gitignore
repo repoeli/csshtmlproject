@@ -1,11 +1,38 @@
 // Project-specific ignores
 .env.local
-assets/js/config.js
+
 presentation/
 style-css-comments.md
 presentation.md
 presentation.html
 
+<<<<<<< HEAD
+# Dependencies
+node_modules/
+
+# ESLint
+.eslintcache
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.eslintrc.json
+.eslintignore
+.eslintignore
+=======
 # Ignore configuration files containing API keys
-#assets/js/config.js
+
 .env.local
+.eslintignore
+.eslintrc.json
