@@ -1,4 +1,3 @@
-/* eslint-disable */
 // Configuration
 const UNSPLASH_API_KEY = CONFIG.UNSPLASH_API_KEY;
 const ITEMS_PER_PAGE = 6;
@@ -142,7 +141,6 @@ async function fetchUnsplashImages(query, count = 10) {
         return data.results;
     } catch (error) {
         console.error(`Error fetching images for "${query}":`, error.message);
-        // Return placeholder data immediately on error
         return Array(count).fill({
             urls: { regular: PLACEHOLDER_IMAGE },
             user: { name: 'Anonymous Artist', profile_image: { medium: PLACEHOLDER_AVATAR } }
@@ -473,3 +471,5 @@ function debounce(func, wait) {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', initializePortfolios);
+}
+// End of portfolios.js
