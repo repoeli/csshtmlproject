@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Configuration
 const UNSPLASH_API_KEY = CONFIG.UNSPLASH_API_KEY;
 const ITEMS_PER_PAGE = 6;

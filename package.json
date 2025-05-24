@@ -1,0 +1,13 @@
+{
+  "name": "verified-portfolios",
+  "version": "1.0.0",
+  "description": "A portfolio verification platform",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
