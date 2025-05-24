@@ -286,8 +286,11 @@ To run this project locally:
 - **Bootstrap 5**: Responsive framework with custom component styling
 
 ### Backend & API Integration
-- **Node.js**: Server-side runtime for proxy development
-- **Express.js**: Web framework for API proxy server
+
+  This is a secure backend proxy built with Flask and deployed on Heroku to interact with the 
+  [Unsplash API](https://unsplash.com/developers). It allows frontend applications (e.g. GitHub Pages, 
+  static websites) to fetch images **without exposing** the Unsplash API key.
+
 - **Heroku**: Cloud platform for proxy deployment and hosting
 - **Environment Variables**: Secure credential management in production
 
