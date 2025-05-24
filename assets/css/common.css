@@ -898,17 +898,8 @@ p.text-muted.mb-0,
         padding-top: 4rem;
     }
 
-    /* Filter buttons adjustments for mobile */
-    .filter-buttons-wrapper {
-        gap: 10px;
-        padding: 5px;
-    }
-
-    /* Smaller filter buttons on mobile */
-    .filter-buttons-wrapper .btn-filter {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
+    /* Filter buttons adjustments for mobile - now handled in portfolios.css */
+    /* These styles are moved to portfolios.css for better organization */
 
     /* General section padding adjustment */
     section {
